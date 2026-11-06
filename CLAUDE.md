@@ -1,5 +1,9 @@
 # Repositório do TCC — instruções para o Claude
 
+> **Leia primeiro `tcc/CONTEXTO_TCC.md`**: resumo do projeto (tema, amostra, cenários,
+> resultados, erros conhecidos nas planilhas e regras de trabalho com o autor). As regras
+> da seção 14 dele valem para todas as tarefas deste repositório, inclusive para as skills ARS.
+
 Este repositório é usado para desenvolver o TCC do autor. Ele traz instalado o
 plugin **Academic Research Skills (ARS)**, uma adaptação em pt-BR de
 [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
