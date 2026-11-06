@@ -1,0 +1,34 @@
+# Compila o TCC (tcc/latex/main.tex) a cada push e guarda o PDF como artefato.
+# Para baixar: GitHub > Actions > "Compilar TCC" > execução mais recente > Artifacts > tcc-pdf
+name: Compilar TCC
+
+on:
+  push:
+    paths:
+      - "tcc/latex/**"
+      - ".github/workflows/compilar-tcc.yml"
+  workflow_dispatch:
+
+jobs:
+  pdf:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar TeX Live (abnTeX2)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends \
+            texlive-latex-base texlive-latex-recommended texlive-latex-extra \
+            texlive-publishers texlive-lang-portuguese texlive-fonts-recommended \
+            lmodern latexmk
+
+      - name: Compilar
+        working-directory: tcc/latex
+        run: latexmk
+
+      - name: Publicar PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: tcc-pdf
+          path: tcc/latex/build/main.pdf

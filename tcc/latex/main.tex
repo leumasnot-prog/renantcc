@@ -1,0 +1,197 @@
+% =====================================================================
+% TCC – Empresas familiares vs. não familiares: comportamentos de endividamento
+% Renan do Amaral Ribeiro – FEA-RP/USP – Ciências Contábeis
+% Classe abnTeX2 (ABNT NBR 14724, 6023, 10520, 6027, 6028)
+% Compilar: latexmk  (ou: make)   →  gera build/main.pdf
+% =====================================================================
+\documentclass[
+  12pt,
+  oneside,          % impressão só frente (use twoside se for frente e verso)
+  a4paper,
+  english,          % idioma adicional (abstract)
+  brazil            % idioma principal: o último da lista
+]{abntex2}
+
+% ---------------------------------------------------------------------
+% Pacotes
+% ---------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{indentfirst}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}   % citações autor-data (NBR 10520)
+
+% ---------------------------------------------------------------------
+% Marcadores de revisão (aparecem em vermelho no PDF)
+%   Para a versão final, troque \revisaotrue por \revisaofalse:
+%   todos os marcadores somem do PDF.
+% ---------------------------------------------------------------------
+\newif\ifrevisao
+\revisaotrue
+\ifrevisao
+  \newcommand{\verificar}[1]{\textcolor{red}{\textbf{[VERIFICAR:} #1\textbf{]}}}
+  \newcommand{\decidir}[1]{\textcolor{orange!80!black}{\textbf{[DECIDIR:} #1\textbf{]}}}
+\else
+  \newcommand{\verificar}[1]{}
+  \newcommand{\decidir}[1]{}
+\fi
+
+% Ambiente "quadro" e Lista de Quadros (receita da documentação do abnTeX2)
+\newcommand{\quadroname}{Quadro}
+\newcommand{\listofquadrosname}{Lista de quadros}
+\newfloat[chapter]{quadro}{loq}{\quadroname}
+\newlistof{listofquadros}{loq}{\listofquadrosname}
+\newlistentry{quadro}{loq}{0}
+\counterwithout{quadro}{chapter}
+\renewcommand{\cftquadroname}{\quadroname\space}
+\renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
+\setfloatlocations{quadro}{hbtp}
+
+% Colunas de tabela com quebra de linha alinhada à esquerda
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% ---------------------------------------------------------------------
+% Dados do trabalho
+% ---------------------------------------------------------------------
+\titulo{Empresas familiares vs. não familiares: comportamentos de endividamento}
+\autor{Renan do Amaral Ribeiro}
+\local{Ribeirão Preto}
+\data{2026}
+\orientador[Orientadora:]{Profa. Dra. Maisa Ribeiro}
+\instituicao{%
+  Universidade de São Paulo
+  \par
+  Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto
+  \par
+  Departamento de Contabilidade}
+\tipotrabalho{Trabalho de Conclusão de Curso (Graduação)}
+\preambulo{Trabalho de Conclusão de Curso apresentado ao Departamento de
+Contabilidade da Faculdade de Economia, Administração e Contabilidade de
+Ribeirão Preto da Universidade de São Paulo, como requisito parcial para a
+obtenção do título de Bacharel em Ciências Contábeis.}
+
+% PDF
+\makeatletter
+\hypersetup{
+  pdftitle={\@title},
+  pdfauthor={\@author},
+  pdfsubject={Trabalho de Conclusão de Curso},
+  pdfkeywords={empresas familiares}{endividamento}{estrutura de capital},
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue!50!black,
+  bookmarksdepth=4
+}
+\makeatother
+
+% Espaçamento de parágrafo e recuo
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+
+% Lista de quadros e texto da referência cruzada das citações
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+% "Citado na página X" nas referências: só na versão de revisão (não é exigido pela ABNT)
+\ifrevisao
+  \renewcommand*{\backrefalt}[4]{%
+    \ifcase #1 Nenhuma citação no texto.%
+    \or Citado na página #2.%
+    \else Citado #1 vezes nas páginas #2.%
+    \fi}
+\else
+  \renewcommand*{\backrefalt}[4]{}
+\fi
+
+% Capa no modelo ABNT (NBR 14724): instituição, autor, título, local e ano
+\renewcommand{\imprimircapa}{%
+  \begin{capa}%
+    \center
+    {\ABNTEXchapterfont\large UNIVERSIDADE DE SÃO PAULO\par
+    FACULDADE DE ECONOMIA, ADMINISTRAÇÃO E CONTABILIDADE\par
+    DE RIBEIRÃO PRETO\par
+    DEPARTAMENTO DE CONTABILIDADE\par}
+    \vspace*{3cm}
+
+    {\ABNTEXchapterfont\large\imprimirautor}
+
+    \vfill
+    \begin{center}
+    \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
+    \end{center}
+    \vfill
+
+    \large\imprimirlocal
+
+    \large\imprimirdata
+
+    \vspace*{1cm}
+  \end{capa}
+}
+
+\makeindex
+
+% =====================================================================
+\begin{document}
+\selectlanguage{brazil}
+\frenchspacing
+
+% ---------------------------------------------------------------------
+% Elementos pré-textuais
+% ---------------------------------------------------------------------
+\pretextual
+\imprimircapa
+\imprimirfolhaderosto
+\cleardoublepage % necessário: sem a quebra, o ambiente resumo falha nesta versão do abnTeX2
+% \include{pretextuais/ficha}       % ficha catalográfica, se exigida
+% \include{pretextuais/aprovacao}   % folha de aprovação, se exigida
+\input{pretextuais/resumo}
+\input{pretextuais/abstract}
+
+% Listas: descomente a de ilustrações e a de tabelas quando houver figuras e tabelas
+% (uma lista vazia não deve aparecer no trabalho).
+% \pdfbookmark[0]{\listfigurename}{lof}
+% \listoffigures*
+% \cleardoublepage
+\pdfbookmark[0]{\listofquadrosname}{loq}
+\listofquadros*
+\cleardoublepage
+% \pdfbookmark[0]{\listtablename}{lot}
+% \listoftables*
+% \cleardoublepage
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+% ---------------------------------------------------------------------
+% Elementos textuais
+% ---------------------------------------------------------------------
+\textual
+\input{capitulos/01-introducao}
+\input{capitulos/02-referencial}
+\input{capitulos/03-metodologia}
+\input{capitulos/04-resultados}
+\input{capitulos/05-consideracoes}
+
+% ---------------------------------------------------------------------
+% Elementos pós-textuais
+% ---------------------------------------------------------------------
+\postextual
+\bibliography{referencias}
+
+% \begin{apendicesenv}
+% \partapendices
+% \chapter{Planilha de apoio}
+% \end{apendicesenv}
+
+\end{document}

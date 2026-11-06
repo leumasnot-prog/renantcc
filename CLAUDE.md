@@ -36,8 +36,18 @@ plugin **Academic Research Skills (ARS)**, uma adaptação em pt-BR de
   decide e assume a autoria. Lembre o usuário de conferir as regras da instituição
   sobre uso de IA e de declarar esse uso quando for exigido (`/ars-disclosure`).
 
+## Texto do TCC: LaTeX (abnTeX2)
+- A fonte oficial do texto é `tcc/latex/` (desde 06/11/2026). Edite os capítulos em
+  `tcc/latex/capitulos/*.tex` e as referências em `tcc/latex/referencias.bib`.
+  `tcc/redacao/*.md` e o Word são histórico: não edite.
+- Compile com `make` em `tcc/latex` e confira que não há erros (`grep '^!' build/main.log`).
+  Se o TeX Live não estiver instalado na sessão, instale com:
+  `apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-publishers texlive-lang-portuguese texlive-fonts-recommended lmodern latexmk`.
+- Citações com `\cite{}` / `\citeonline{}`; pendências com `\verificar{}` e `\decidir{}`.
+  Detalhes em `tcc/latex/README.md`.
+
 ## Organização sugerida
-- `tcc/` — capítulos e textos do TCC (Markdown).
+- `tcc/latex/` — texto do TCC em LaTeX.
 - `tcc/referencias/` — BibTeX/RIS exportados do Zotero/Mendeley e PDFs de apoio.
 - `tcc/ars-saidas/` — relatórios gerados pelas skills (Material Passport,
   pareceres, relatórios de integridade).

@@ -1,0 +1,17 @@
+build/
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.loq
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.idx
+*.ilg
+*.ind

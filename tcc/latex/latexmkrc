@@ -1,0 +1,6 @@
+# Configuração do latexmk: compila main.tex com pdflatex + bibtex e coloca tudo em build/
+$pdf_mode = 1;
+$bibtex_use = 2;
+$out_dir = 'build';
+@default_files = ('main.tex');
+$pdflatex = 'pdflatex -interaction=nonstopmode -file-line-error -synctex=1 %O %S';
