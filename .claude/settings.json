@@ -1,0 +1,13 @@
+{
+  "enabledPlugins": {
+    "academic-research-skills@ars-ptbr": true
+  },
+  "extraKnownMarketplaces": {
+    "ars-ptbr": {
+      "source": {
+        "source": "directory",
+        "path": "./ars"
+      }
+    }
+  }
+}
