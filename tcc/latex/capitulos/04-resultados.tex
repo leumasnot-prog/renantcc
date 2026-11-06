@@ -1,23 +1,193 @@
 % =====================================================================
 \chapter{Resultados e discussão}\label{cap:resultados}
 % =====================================================================
-% A ESCREVER. Estrutura sugerida (números já auditados em
-% tcc/auditoria/AUDITORIA_CENARIO3.md, seção 3):
-%
-% 4.1 Estatística descritiva e evolução dos grupos
-%     - gráficos trimestrais feitos pelo autor no Google Planilhas
-%       (exportar como PDF/PNG para tcc/latex/figuras/ e inserir com \includegraphics)
-% 4.2 Testes de diferença no período completo (tabela 3.1 da auditoria)
-% 4.3 Subperíodos: pré, pandemia e pós (tabela 3.2)
-% 4.4 Robustez: Cenários 1 e 2 (refazer após corrigir as planilhas) e sem SAUD (tabela 3.3)
-% 4.5 Discussão à luz do referencial (SEW, Diamond (1991), argumento oposto)
-%
-% Modelo de figura:
+% Todos os números deste capítulo saem de tcc/analise/resultados_c3.py, que lê a base
+% da Economática e gera as tabelas em tabelas/*.tex. Se a base mudar, rode o script de
+% novo e confira os números citados no texto (procure por "%" seguido de "fonte:").
+
+Este capítulo apresenta a evolução do endividamento dos dois grupos, os testes de
+diferença no período completo e nos subperíodos e as análises de robustez, e
+discute os resultados à luz do referencial teórico.
+
+% ---------------------------------------------------------------------
+\section{Evolução do endividamento dos grupos}\label{sec:evolucao}
+% ---------------------------------------------------------------------
+
+A \autoref{tab:anuais} apresenta as médias anuais dos três indicadores centrais da
+análise. No endividamento oneroso, medido pela Dívida bruta / Ativo total, as
+empresas familiares ficaram abaixo das não familiares em todos os oito exercícios.
+A distância, porém, não foi constante: em 2018 e 2019, os grupos estavam próximos
+(23,9\% contra 26,4\% e 27,0\% contra 28,3\%); a diferença se ampliou em 2021 e 2022,
+quando as não familiares chegaram a 35,4\% e 36,1\%, contra 26,0\% e 24,9\% das
+familiares; e voltou a se estreitar a partir de 2024, até quase desaparecer em 2025
+(26,4\% contra 26,9\%).
+% fonte: saidas/resultados.md, seção 2
+
+\input{tabelas/tab-medias-anuais}
+
+O endividamento geral, medido pelo Exigível total / Ativo total, não seguiu o
+mesmo padrão. As familiares tiveram médias superiores às das não familiares em
+quatro dos oito exercícios, incluindo os anos anteriores à pandemia, e as médias
+dos dois grupos ficaram entre 47,8\% e 62,1\% ao longo de todo o período. A
+diferença observada na dívida onerosa, portanto, não corresponde a um passivo
+total menor, e sim a uma composição do passivo com menos dívida financeira.
+
+A composição da dívida por prazo apresentou a diferença mais persistente. Em todos
+os exercícios, a participação da dívida de curto prazo foi menor nas familiares, e
+a distância se tornou expressiva a partir de 2021: desde então, a dívida de curto
+prazo representou entre 16\% e 22\% da dívida total das familiares, contra 36\% a
+54\% nas não familiares.
+
+% Gráficos do autor (exportar do Google Planilhas para figuras/ como PDF ou PNG):
 % \begin{figure}[htb]
 %   \caption{Dívida bruta / Ativo total: média trimestral por grupo (2018--2025)}\label{fig:divbruta}
 %   \centering
 %   \includegraphics[width=\textwidth]{figuras/div-bruta-ativo.pdf}
 %   \fonte{Elaborado pelo autor (2026), com dados da Economática.}
 % \end{figure}
+% (repetir para Exigível / Ativo e Dívida CP / Dívida total)
+\verificar{inserir os gráficos trimestrais dos três indicadores (Figuras 1 a 3) e
+citá-los neste ponto do texto}
 
-\textcolor{red}{[Capítulo a escrever.]}
+% ---------------------------------------------------------------------
+\section{Comparação entre os grupos no período completo}\label{sec:completo}
+% ---------------------------------------------------------------------
+
+A \autoref{tab:completo} apresenta os testes de diferença para o período de 2018 a
+2025. Nos cinco indicadores, a média das familiares foi inferior à das não
+familiares, mas nenhuma diferença foi significativa ao nível de 5\% em qualquer dos
+dois testes.
+
+\input{tabelas/tab-periodo-completo}
+
+No indicador principal, a Dívida bruta / Ativo total, a média das familiares foi
+de 26,1\%, contra 30,6\% das não familiares, diferença de 4,5 pontos percentuais que
+não foi estatisticamente significativa (p = 0,556 no teste t e p = 0,255 no teste
+de Mann-Whitney). O Exigível total / Ativo total praticamente não diferiu entre os
+grupos (55,4\% e 56,2\%; p = 0,885 e 0,957). A estrutura de capital, medida pela
+Dívida bruta / (Dívida bruta + PL), seguiu a mesma direção da dívida onerosa
+(37,2\% contra 43,5\%), também sem significância.
+
+O resultado mais próximo da significância foi o da composição da dívida: a dívida
+de curto prazo representou, em média, 20,4\% da dívida total das familiares e
+38,2\% da dívida das não familiares. A diferença foi significativa apenas ao nível
+de 10\% no teste de Mann-Whitney (p = 0,058) e não foi significativa no teste t
+(p = 0,112). A divergência entre os testes é coerente com a dispersão do grupo não
+familiar, em que a Lifemed concentrou 66\% de sua dívida no curto prazo, valor que
+eleva a variância e reduz o poder do teste t.
+\verificar{conferir no Google Planilhas o valor da LMED (média de 66,3\%) antes de
+citar}
+
+Na Dívida líquida / EBITDA, a média das não familiares (4,4x) foi três vezes a das
+familiares (1,4x), mas esse contraste se deve, em grande parte, à Biomm, cujo
+indicador só pôde ser calculado em 2025 (16,1x), já que o EBITDA da empresa foi
+negativo nos anos anteriores. Sem a Biomm, a média das não familiares cai para
+2,0x (p = 0,560 no teste t), e as medianas dos grupos são 1,6x e 2,6x. Esse
+indicador, portanto, não permite concluir que as familiares tenham maior
+capacidade de pagamento.
+\decidir{confirmar este tratamento da Biomm (apresentar o valor com e sem a empresa
+e as medianas) e ajustar a seção 3.4 de acordo}
+
+% ---------------------------------------------------------------------
+\section{Subperíodos: antes, durante e depois da pandemia}\label{sec:subperiodos}
+% ---------------------------------------------------------------------
+
+A \autoref{tab:subperiodos} repete os testes em cada subperíodo. Antes da pandemia
+(2018--2019), os grupos foram semelhantes em todos os indicadores, e nenhuma
+diferença se aproximou da significância.
+
+\input{tabelas/tab-subperiodos}
+
+Durante a pandemia (2020--2021), a diferença na composição da dívida tornou-se
+significativa ao nível de 5\% nos dois testes: a dívida de curto prazo representou
+19,5\% da dívida total das familiares e 36,4\% da das não familiares (p = 0,040 no
+teste t e p = 0,043 no teste de Mann-Whitney). No mesmo período, a dívida onerosa
+das familiares também foi menor (27,8\% contra 33,0\% do ativo), mas sem
+significância (p = 0,543 e 0,255), e o endividamento geral permaneceu semelhante
+(56,8\% e 58,1\%).
+
+Após a pandemia (2022--2025), a distância na composição da dívida aumentou em
+termos absolutos (18,4\% contra 41,5\%), mas a significância se reduziu: a
+diferença foi significativa apenas a 10\% no teste de Mann-Whitney (p = 0,098) e
+não foi significativa no teste t (p = 0,130).
+
+Como explicado na \autoref{sec:procedimentos}, a divisão em subperíodos tem caráter
+exploratório, e o resultado da pandemia é o único significativo a 5\% entre os
+testes realizados. Ele deve, por isso, ser lido como um indício compatível com a
+hipótese, e não como sua confirmação.
+
+% ---------------------------------------------------------------------
+\section{Análises de robustez}\label{sec:robustez}
+% ---------------------------------------------------------------------
+
+A \autoref{tab:robustez} mostra como os resultados se alteram com a exclusão da
+Bradsaúde e com as classificações alternativas de empresa familiar.
+
+\input{tabelas/tab-robustez}
+
+A exclusão da Bradsaúde, única empresa da amostra sem dívida financeira, eleva a
+média de endividamento oneroso das não familiares de 30,6\% para 36,7\% e torna a
+diferença significativa a 5\% no teste t (p = 0,027) e a 10\% no teste de
+Mann-Whitney (p = 0,058). O resultado do indicador principal depende, portanto, de
+uma única observação: com ela, a diferença não é significativa; sem ela, passa a
+ser.
+
+As classificações alternativas produzem um quadro distinto. Nos Cenários 1 e 2, que
+exigem participação familiar maior, a diferença na dívida onerosa inverte o sinal:
+as familiares passam a ter média superior à das não familiares (30,9\% contra
+26,4\% no Cenário 1 e 28,7\% contra 27,0\% no Cenário 2), sem significância. A
+inversão ocorre porque RaiaDrogasil, Profarma e Hypera, familiares apenas no
+Cenário 3, passam ao grupo não familiar. As duas primeiras, que atuam no comércio e
+na distribuição de medicamentos, estão entre as empresas menos endividadas da
+amostra (12,8\% e 16,5\% do ativo, em média). Parte da diferença observada no
+Cenário 3 pode refletir, portanto, o modelo de negócio desse subsetor, e não
+apenas a estrutura de controle.
+
+A composição da dívida, por outro lado, manteve a direção nos três cenários: a
+participação da dívida de curto prazo foi menor nas familiares em todos eles (19,1\%
+contra 32,6\% no Cenário 2, com p = 0,080 no teste t, e 19,2\% contra 29,9\% no
+Cenário 1, sem significância). É, entre os indicadores analisados, o resultado
+menos sensível ao critério de classificação.
+
+% ---------------------------------------------------------------------
+\section{Discussão}\label{sec:discussao}
+% ---------------------------------------------------------------------
+
+Os resultados não permitem confirmar a hipótese H1. Embora as empresas familiares
+tenham apresentado menor endividamento oneroso em todos os exercícios, a diferença
+não foi estatisticamente significativa na amostra principal, não se manteve sob as
+classificações alternativas e dependeu da presença de uma única empresa sem dívida.
+Não foram encontradas, portanto, evidências estatisticamente significativas de que
+as empresas familiares do setor de saúde da B3 se endividem menos que as não
+familiares.
+
+Esse resultado é coerente com a literatura inconclusiva apresentada no
+\autoref{cap:referencial}. As duas forças discutidas na \autoref{sec:risco} podem
+atuar em sentidos opostos: a aversão à interferência de credores, associada à
+preservação da riqueza socioemocional \cite{santos2018,ames2020}, levaria a menos
+dívida, enquanto o receio de diluir o controle levaria a preferir a dívida à emissão
+de ações \cite{poletti2022}. No Brasil, \citeonline{kayo2018} encontraram empresas
+familiares mais endividadas, o que indica que a segunda força pode ser relevante no
+mercado brasileiro. Em uma amostra pequena, a combinação dessas forças é compatível
+com diferenças de pequena magnitude e instáveis entre especificações, como as
+observadas.
+
+O resultado mais consistente refere-se ao prazo, e não ao nível, da dívida. As
+familiares concentraram menos dívida no curto prazo em todos os exercícios e nos
+três critérios de classificação, e a diferença foi significativa durante a
+pandemia. Esse padrão é compatível com o argumento de \citeonline{diamond1991}: a
+dívida de curto prazo precisa ser renovada com frequência e expõe a empresa ao
+risco de que os credores não a refinanciem, risco que se agrava em períodos de
+crise. Para uma família que busca preservar a autonomia decisória, alongar a dívida
+reduz a necessidade de renegociações frequentes e, com ela, a exposição à avaliação
+dos credores. Assim, a aversão à interferência de credores parece se manifestar
+mais na escolha do prazo do que na quantidade de dívida.
+
+Dois cuidados limitam essa interpretação. Primeiro, a diferença de prazo foi
+significativa a 5\% apenas em um subperíodo definido durante a análise, entre
+diversos testes realizados, o que aumenta a chance de um resultado significativo
+ocorrer por acaso. Segundo, o desenho descritivo não permite separar o efeito do
+controle familiar de outras características das empresas, como o subsetor de
+atuação \cite{oliveira2020} e o tamanho. Os resultados devem, por isso, ser lidos como evidência
+descritiva de uma postura mais conservadora das famílias em relação ao prazo da
+dívida, a ser testada em amostras maiores e com controles.
