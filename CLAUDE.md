@@ -46,6 +46,12 @@ plugin **Academic Research Skills (ARS)**, uma adaptação em pt-BR de
 - Citações com `\cite{}` / `\citeonline{}`; pendências com `\verificar{}` e `\decidir{}`.
   Detalhes em `tcc/latex/README.md`.
 
+## Planilhas
+- Em 07/11/2026 os erros da seção 10 do `tcc/CONTEXTO_TCC.md` foram corrigidos nas cópias
+  `tcc/arquivos/TCC Atual - Cenário N (corrigido).xlsx` (script `tcc/auditoria/corrigir_planilhas.py`;
+  detalhes e o que ficou pendente em `tcc/auditoria/ROTEIRO_CORRECAO_PLANILHAS.md`).
+- Os números do TCC saem de `tcc/analise/resultados_c3.py`, que lê a base e gera `tcc/latex/tabelas/`.
+
 ## Organização sugerida
 - `tcc/latex/` — texto do TCC em LaTeX.
 - `tcc/referencias/` — BibTeX/RIS exportados do Zotero/Mendeley e PDFs de apoio.

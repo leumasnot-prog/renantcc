@@ -1,5 +1,7 @@
 # Auditoria da planilha `TCC Atual - Cenário 3.xlsx`
 
+> **Atualização 07/11/2026:** as correções da seção 4 foram aplicadas nos três cenários. Ver `ROTEIRO_CORRECAO_PLANILHAS.md`.
+
 *Feita em 06/11/2026. Todos os números foram recalculados de forma independente, a partir da aba-base
 `Saúde - 1218 à 1225`, com o script `recalculo_c3.py`, e comparados com os valores salvos na
 planilha e com o `CONTEXTO_TCC.md`.*
