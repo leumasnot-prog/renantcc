@@ -38,16 +38,34 @@ a distância se tornou expressiva a partir de 2021: desde então, a dívida de c
 prazo representou entre 16\% e 22\% da dívida total das familiares, contra 36\% a
 54\% nas não familiares.
 
-% Gráficos do autor (exportar do Google Planilhas para figuras/ como PDF ou PNG):
-% \begin{figure}[htb]
-%   \caption{Dívida bruta / Ativo total: média trimestral por grupo (2018--2025)}\label{fig:divbruta}
-%   \centering
-%   \includegraphics[width=\textwidth]{figuras/div-bruta-ativo.pdf}
-%   \fonte{Elaborado pelo autor (2026), com dados da Economática.}
-% \end{figure}
-% (repetir para Exigível / Ativo e Dívida CP / Dívida total)
-\verificar{inserir os gráficos trimestrais dos três indicadores (Figuras 1 a 3) e
-citá-los neste ponto do texto}
+As \autoref{fig:divbruta} e \autoref{fig:exigivel} mostram a evolução trimestral
+dos dois indicadores de nível. Na dívida onerosa, as curvas permanecem próximas até
+o início de 2021, separam-se no segundo trimestre daquele ano, quando a diferença
+passa de cerca de 1 para 8 pontos percentuais, voltam a se aproximar a partir de
+2024 e se cruzam em 2025. No endividamento geral, as familiares ficam ligeiramente
+acima até o início de 2021, abaixo entre meados de 2021 e o fim de 2023, e os grupos
+se alternam a partir de 2024, sem que um deles fique sistematicamente acima do
+outro em todo o período.
+
+\begin{figure}[htb]
+  \caption{Dívida bruta / Ativo total: média trimestral por grupo (2018--2025)}\label{fig:divbruta}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuras/div-bruta-ativo-trimestral.png}
+  \fonte{Elaborado pelo autor (2026), com dados da Economática.}
+\end{figure}
+
+\begin{figure}[htb]
+  \caption{Exigível total / Ativo total: média trimestral por grupo (2018--2025)}\label{fig:exigivel}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figuras/exigivel-ativo-trimestral.png}
+  \fonte{Elaborado pelo autor (2026), com dados da Economática.}
+\end{figure}
+% Figuras extraídas da planilha "TCC Atual - Cenário 3" (gráficos do autor no Google Planilhas).
+\verificar{refazer os gráficos no Google Planilhas com: datas no formato dd/mm/aaaa,
+eixo vertical em \% (sem quatro casas decimais), título do eixo horizontal
+``Data-base'' e sem o título genérico ``Familiar e Não Familiar''; exportar em alta
+resolução para figuras/ com os mesmos nomes; criar também o gráfico da Dívida CP /
+Dívida total, que hoje não existe na planilha}
 
 % ---------------------------------------------------------------------
 \section{Comparação entre os grupos no período completo}\label{sec:completo}
@@ -75,8 +93,6 @@ de 10\% no teste de Mann-Whitney (p = 0,058) e não foi significativa no teste t
 (p = 0,112). A divergência entre os testes é coerente com a dispersão do grupo não
 familiar, em que a Lifemed concentrou 66\% de sua dívida no curto prazo, valor que
 eleva a variância e reduz o poder do teste t.
-\verificar{conferir no Google Planilhas o valor da LMED (média de 66,3\%) antes de
-citar}
 
 Na Dívida líquida / EBITDA, a média das não familiares (4,4x) foi três vezes a das
 familiares (1,4x), mas esse contraste se deve, em grande parte, à Biomm, cujo
@@ -85,8 +101,6 @@ negativo nos anos anteriores. Sem a Biomm, a média das não familiares cai para
 2,0x (p = 0,560 no teste t), e as medianas dos grupos são 1,6x e 2,6x. Esse
 indicador, portanto, não permite concluir que as familiares tenham maior
 capacidade de pagamento.
-\decidir{confirmar este tratamento da Biomm (apresentar o valor com e sem a empresa
-e as medianas) e ajustar a seção 3.4 de acordo}
 
 % ---------------------------------------------------------------------
 \section{Subperíodos: antes, durante e depois da pandemia}\label{sec:subperiodos}
