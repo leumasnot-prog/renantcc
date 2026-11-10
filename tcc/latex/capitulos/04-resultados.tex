@@ -16,6 +16,8 @@ discute os resultados à luz do referencial teórico.
 A \autoref{tab:anuais} apresenta as médias anuais dos três indicadores centrais da
 análise. No endividamento oneroso, medido pela Dívida bruta / Ativo total, as
 empresas familiares ficaram abaixo das não familiares em todos os oito exercícios.
+Essa contagem é descritiva: como os anos de uma mesma empresa não são
+independentes, ela não equivale a oito confirmações da diferença.
 A distância, porém, não foi constante: em 2018 e 2019, os grupos estavam próximos
 (23,9\% contra 26,4\% e 27,0\% contra 28,3\%); a diferença se ampliou em 2021 e 2022,
 quando as não familiares chegaram a 35,4\% e 36,1\%, contra 26,0\% e 24,9\% das
@@ -38,7 +40,7 @@ a distância se tornou expressiva a partir de 2021: desde então, a dívida de c
 prazo representou entre 16\% e 22\% da dívida total das familiares, contra 36\% a
 54\% nas não familiares.
 
-As \autoref{fig:divbruta} e \autoref{fig:exigivel} mostram a evolução trimestral
+As Figuras \ref{fig:divbruta} e \ref{fig:exigivel} mostram a evolução trimestral
 dos dois indicadores de nível. Na dívida onerosa, as curvas permanecem próximas até
 o início de 2021, separam-se no segundo trimestre daquele ano, quando a diferença
 passa de cerca de 1 para 8 pontos percentuais, voltam a se aproximar a partir de
@@ -98,9 +100,20 @@ Na Dívida líquida / EBITDA, a média das não familiares (4,4x) foi três veze
 familiares (1,4x), mas esse contraste se deve, em grande parte, à Biomm, cujo
 indicador só pôde ser calculado em 2025 (16,1x), já que o EBITDA da empresa foi
 negativo nos anos anteriores. Sem a Biomm, a média das não familiares cai para
-2,0x (p = 0,560 no teste t), e as medianas dos grupos são 1,6x e 2,6x. Esse
-indicador, portanto, não permite concluir que as familiares tenham maior
-capacidade de pagamento.
+2,0x (p = 0,560 no teste t), e as medianas dos grupos, com a Biomm incluída, são
+1,6x e 2,6x. Esse indicador, portanto, não permite concluir que as familiares
+tenham maior capacidade de pagamento.
+
+A \autoref{tab:efeito} apresenta a magnitude das diferenças. Os intervalos de
+confiança são amplos: no indicador principal, os dados são compatíveis tanto com
+familiares 21 pontos percentuais menos endividadas quanto com familiares 12 pontos
+mais endividadas que as não familiares. A ausência de significância reflete,
+portanto, estimativas imprecisas, próprias de uma amostra de 16 empresas, e não a
+demonstração de que os grupos são iguais. Na composição da dívida, a diferença
+padronizada é grande (g de Hedges de $-1,28$), mas o intervalo de confiança do
+período completo também inclui o zero.
+
+\input{tabelas/tab-efeito}
 
 % ---------------------------------------------------------------------
 \section{Subperíodos: antes, durante e depois da pandemia}\label{sec:subperiodos}
@@ -129,24 +142,41 @@ Como explicado na \autoref{sec:procedimentos}, a divisão em subperíodos tem ca
 exploratório. Na amostra principal, o resultado da pandemia é o único
 significativo a 5\% nos dois testes; entre as análises de robustez, apenas a
 exclusão da Bradsaúde produz outro resultado significativo a 5\%, e somente no
-teste t (\autoref{sec:robustez}). Ele deve, por isso, ser lido como um indício
-compatível com a hipótese, e não como sua confirmação.
+teste t (\autoref{sec:robustez}). Além disso, a \autoref{tab:subperiodos} reúne 18
+testes, e o p-valor do resultado da pandemia, ajustado pelo método de Holm para
+esse conjunto, é de 0,725. O resultado deve, por isso, ser lido como um indício
+exploratório, e não como confirmação de uma diferença. A comparação entre
+subperíodos também é descritiva: não foi testado se a diferença entre os grupos
+mudou de um subperíodo para outro.
 
 % ---------------------------------------------------------------------
 \section{Análises de robustez}\label{sec:robustez}
 % ---------------------------------------------------------------------
 
 A \autoref{tab:robustez} mostra como os resultados se alteram com a exclusão da
-Bradsaúde e com as classificações alternativas de empresa familiar.
+Bradsaúde e com as classificações alternativas de empresa familiar. As
+classificações alternativas compartilham a maior parte das empresas com a
+principal e não são, por isso, replicações independentes do resultado.
 
 \input{tabelas/tab-robustez}
 
 A exclusão da Bradsaúde, única empresa da amostra sem dívida financeira, eleva a
 média de endividamento oneroso das não familiares de 30,6\% para 36,7\% e torna a
 diferença significativa a 5\% no teste t (p = 0,027) e a 10\% no teste de
-Mann-Whitney (p = 0,058). O resultado do indicador principal depende, portanto, de
-uma única observação: com ela, a diferença não é significativa; sem ela, passa a
-ser.
+Mann-Whitney (p = 0,058). A significância do indicador principal depende,
+portanto, da exclusão de uma única empresa. A ausência de dívida da Bradsaúde não
+é um erro de dado, e sim uma característica do seu modelo de negócio, de modo que
+o resultado da amostra completa permanece como o principal.
+
+A \autoref{tab:loo} generaliza essa verificação, retirando uma empresa de cada
+vez. Na dívida onerosa, a média das familiares fica abaixo da média das não
+familiares nas 16 repetições, mas a diferença só é significativa a 5\% quando a
+empresa retirada é a Bradsaúde. Na composição da dívida, o sinal também se mantém
+nas 16 repetições; no período da pandemia, a diferença é significativa a 5\% em 10
+das 16 repetições no teste t e em 8 no teste de Mann-Whitney, o que mostra que
+esse resultado também depende da composição da amostra.
+
+\input{tabelas/tab-loo}
 
 As classificações alternativas produzem um quadro distinto. Nos Cenários 1 e 2, que
 exigem participação familiar maior, a diferença na dívida onerosa inverte o sinal:
@@ -162,8 +192,25 @@ apenas a estrutura de controle.
 A composição da dívida, por outro lado, manteve a direção nos três cenários: a
 participação da dívida de curto prazo foi menor nas familiares em todos eles (19,1\%
 contra 32,6\% no Cenário 2, com p = 0,080 no teste t, e 19,2\% contra 29,9\% no
-Cenário 1, sem significância). É, entre os indicadores analisados, o resultado
-menos sensível ao critério de classificação.
+Cenário 1, sem significância). É, entre os indicadores analisados, o único cujo
+sinal se manteve em todas as especificações, embora com significância frágil.
+
+Como o subsetor de Comércio e Distribuição reúne apenas empresas familiares, os
+testes foram repetidos sem as suas três empresas. A diferença na dívida onerosa
+praticamente desaparece (28,6\% contra 30,6\%; p = 0,810 no teste t), o que
+confirma que ela se deve, em boa parte, a esse subsetor. A diferença na composição
+da dívida, ao contrário, permanece: 17,1\% contra 38,2\% no período completo
+(p = 0,073 no teste t e p = 0,035 no teste de Mann-Whitney) e 15,5\% contra 36,4\%
+na pandemia (p = 0,018 e p = 0,023). O padrão de prazo não é explicado, portanto,
+pela presença do varejo e da distribuição farmacêutica entre as familiares.
+
+Por fim, a \autoref{tab:tamanho} compara o tamanho dos grupos. As familiares são
+maiores: a mediana do capital empregado é de R\$ 6,5 bilhões, contra R\$ 1,7
+bilhão nas não familiares, e as duas maiores empresas da amostra são familiares.
+Quando as médias são ponderadas pelo tamanho, a diferença na dívida onerosa se
+reduz de 4,5 para 2,0 pontos percentuais (32,5\% contra 34,5\%).
+
+\input{tabelas/tab-tamanho}
 
 % ---------------------------------------------------------------------
 \section{Discussão}\label{sec:discussao}
@@ -178,32 +225,52 @@ as empresas familiares do setor de saúde da B3 se endividem menos que as não
 familiares.
 
 Esse resultado é coerente com a literatura inconclusiva apresentada no
-\autoref{cap:referencial}. As duas forças discutidas na \autoref{sec:risco} podem
-atuar em sentidos opostos: a aversão à interferência de credores, associada à
-preservação da riqueza socioemocional \cite{santos2018,ames2020}, levaria a menos
-dívida, enquanto o receio de diluir o controle levaria a preferir a dívida à emissão
-de ações \cite{poletti2022}. No Brasil, \citeonline{kayo2018} encontraram empresas
+\autoref{cap:referencial}. Como discutido na \autoref{sec:risco}, a preservação do
+controle pode atuar em dois sentidos: a aversão à interferência de credores levaria
+a menos dívida, enquanto o receio de diluir a participação da família levaria a
+preferir a dívida à emissão de ações \cite{gonzalez2013,poletti2022}. Essa
+ambiguidade tem um custo interpretativo, que deve ser reconhecido: um referencial
+que admite os dois sinais não é contrariado por nenhum resultado, e o que este
+trabalho testa é apenas a direção adotada na hipótese. No Brasil, \citeonline{kayo2018} encontraram empresas
 familiares mais endividadas, o que indica que a segunda força pode ser relevante no
 mercado brasileiro. Em uma amostra pequena, a combinação dessas forças é compatível
 com diferenças de pequena magnitude e instáveis entre especificações, como as
 observadas.
 
-O resultado mais consistente refere-se ao prazo, e não ao nível, da dívida. As
+O padrão mais persistente refere-se ao prazo, e não ao nível, da dívida. As
 familiares concentraram menos dívida no curto prazo em todos os exercícios e nos
 três critérios de classificação, e a diferença foi significativa durante a
-pandemia. Esse padrão é compatível com o argumento de \citeonline{diamond1991}: a
-dívida de curto prazo precisa ser renovada com frequência e expõe a empresa ao
-risco de que os credores não a refinanciem, risco que se agrava em períodos de
-crise. Para uma família que busca preservar a autonomia decisória, alongar a dívida
-reduz a necessidade de renegociações frequentes e, com ela, a exposição à avaliação
-dos credores. Assim, a aversão à interferência de credores parece se manifestar
-mais na escolha do prazo do que na quantidade de dívida.
+pandemia e se manteve sem o subsetor de Comércio e Distribuição. Esse padrão é
+compatível com o argumento de \citeonline{diamond1991}: a dívida de curto prazo
+precisa ser renovada com frequência e expõe a empresa ao risco de que os credores
+não a refinanciem, risco que se agrava em períodos de crise. Para uma família que
+busca preservar a autonomia decisória, alongar a dívida reduz a necessidade de
+renegociações frequentes e, com ela, a exposição à avaliação dos credores.
 
-Dois cuidados limitam essa interpretação. Primeiro, a diferença de prazo foi
-significativa a 5\% apenas em um subperíodo definido durante a análise, entre
-diversos testes realizados, o que aumenta a chance de um resultado significativo
-ocorrer por acaso. Segundo, o desenho descritivo não permite separar o efeito do
-controle familiar de outras características das empresas, como o subsetor de
-atuação \cite{oliveira2020} e o tamanho. Os resultados devem, por isso, ser lidos como evidência
-descritiva de uma postura mais conservadora das famílias em relação ao prazo da
-dívida, a ser testada em amostras maiores e com controles.
+O mesmo padrão é compatível, porém, com explicações que não dependem do controle
+familiar. A primeira é o tamanho: as familiares da amostra são maiores
+(\autoref{tab:tamanho}), e empresas maiores têm mais acesso ao mercado de
+capitais e a instrumentos de prazo longo, como as debêntures. No próprio modelo de
+\citeonline{diamond1991}, o prazo da dívida depende da qualidade de crédito do
+tomador, e não apenas da sua preferência. A segunda são causas pontuais, como o
+vencimento concentrado de uma dívida ou a sua reclassificação para o curto prazo,
+que podem elevar o indicador de uma empresa em determinado ano sem refletir uma
+política de financiamento. A terceira são os eventos societários do período, como
+aberturas de capital e fusões, que alteraram o balanço de várias empresas da
+amostra a partir de 2020.
+\verificar{citar os eventos com data confirmada em fato relevante: abertura de
+capital da Rede D'Or (2020) e da Blau (2021), combinação Hapvida--NotreDame
+Intermédica (2022), Rede D'Or--SulAmérica (2022) e Fleury--Hermes Pardini}
+Com 16 empresas, o desenho deste trabalho não permite separar essas explicações.
+
+Três cuidados limitam, portanto, a interpretação. Primeiro, a composição da dívida
+não fazia parte da hipótese, e a diferença foi significativa a 5\% apenas em um
+subperíodo definido durante a análise; ajustado para os múltiplos testes, o
+resultado não é significativo. Segundo, ele depende da composição da amostra, como
+mostra a retirada de uma empresa por vez. Terceiro, o desenho descritivo não
+separa o efeito do controle familiar de outras características das empresas, como
+o subsetor de atuação \cite{oliveira2020} e o tamanho. Os resultados devem, por
+isso, ser lidos como evidência descritiva e exploratória de que as familiares
+mantiveram dívida mais longa, padrão que pode refletir uma postura mais
+conservadora das famílias, mas que precisa ser testado em amostras maiores e com
+controles.

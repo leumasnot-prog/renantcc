@@ -27,7 +27,6 @@ número de empresas consideravelmente maior que o de instrumentos. Optou-se, por
 isso, pela comparação entre grupos por meio de estatística descritiva e de testes
 de diferença entre grupos, complementados por análises de subperíodos e de
 robustez.
-\decidir{manter ou não a menção à proposta inicial com System-GMM}
 
 % ---------------------------------------------------------------------
 \section{Definição da amostra e fontes de dados}\label{sec:amostra}
@@ -131,8 +130,8 @@ classificação principal por três razões de método: trata-se de critério de
 brasileiro que utiliza a mesma fonte de informação desta pesquisa (Formulário de
 Referência) e a mesma base de participação (ações ordinárias); capta o controle
 exercido por blocos familiares com participação inferior a 50\%, frequentemente
-organizados por acordo de acionistas, situação comum entre as companhias da B3; e
-produz grupos de tamanho mais equilibrado, o que é relevante em uma amostra
+organizados por acordo de acionistas, situação comum entre as companhias da B3; e,
+de forma secundária, produz grupos de tamanho mais equilibrado, o que é relevante em uma amostra
 pequena. Os Cenários 1 e 2 são utilizados como testes de robustez, para verificar
 se os resultados se mantêm quando se exige uma participação familiar maior.
 
@@ -197,7 +196,7 @@ organizados em três níveis de prioridade conforme a sua relação com a hipót
 Principal & Dívida bruta / Ativo total & (Empréstimos, financiamentos e debêntures de curto e longo prazo) $\div$ Ativo total & Endividamento oneroso: parcela do ativo financiada por credores financeiros, que impõem \textit{covenants} e monitoramento \\ \hline
 Principal & Exigível total / Ativo total & (Passivo circulante + Passivo não circulante) $\div$ Ativo total & Endividamento geral, incluindo obrigações operacionais (fornecedores, salários, tributos, provisões) \\ \hline
 Complementar & Dívida bruta / (Dívida bruta + PL) & Dívida bruta $\div$ (Dívida bruta + Patrimônio líquido) & Estrutura de capital: proporção de dívida no capital investido \\ \hline
-Complementar & Dívida líquida / EBITDA & (Dívida bruta $-$ Caixa e aplicações) $\div$ EBITDA dos últimos 12 meses & Capacidade de pagamento; principal métrica utilizada em \textit{covenants} financeiros \\ \hline
+Complementar & Dívida líquida / EBITDA & (Dívida bruta $-$ Caixa e aplicações) $\div$ EBITDA dos últimos 12 meses & Capacidade de pagamento; métrica usual em \textit{covenants} financeiros \\ \hline
 Complementar & Dívida de curto prazo / Dívida total & Dívida onerosa de curto prazo $\div$ Dívida onerosa total & Composição da dívida por prazo e exposição ao risco de refinanciamento \\ \hline
 Secundário & Exigível total / PL; Dívida bruta / PL; Dívida líquida / PL & Passivo ou dívida $\div$ Patrimônio líquido & Grau de endividamento em relação ao capital próprio \\ \hline
 \end{tabularx}
@@ -228,9 +227,11 @@ ocorre com a Alliar em 2025.
 \section{Procedimentos de análise}\label{sec:procedimentos}
 % ---------------------------------------------------------------------
 
-A análise foi realizada em quatro etapas, com uso do Google Planilhas. A planilha
-de apoio, com a base de dados, a classificação das empresas e todas as fórmulas,
-acompanha este trabalho.
+A análise foi realizada em cinco etapas. Os cálculos foram feitos no Google
+Planilhas e repetidos, de forma independente, em um \textit{script} em Python que
+lê a mesma base e gera as tabelas deste trabalho; os dois procedimentos produzem
+os mesmos resultados. A planilha de apoio, com a base de dados, a classificação
+das empresas e as fórmulas, e o \textit{script} acompanham este trabalho.
 \verificar{forma de disponibilização da planilha à banca: anexo, apêndice ou link}
 
 \textbf{a) Análise descritiva.} Para cada indicador, calculou-se a média de cada
@@ -255,9 +256,8 @@ grupos sem exigir variâncias iguais nem grupos de mesmo tamanho; e
 posições (postos) das empresas de cada grupo e é menos sensível a valores
 extremos e à ausência de normalidade, comuns em indicadores contábeis de amostras
 pequenas. O p-valor foi obtido pela aproximação normal com correção de
-continuidade.
-\decidir{se a opção for pelo p exato, troque a última frase por ``O p-valor foi
-calculado de forma exata''}
+continuidade; o p-valor exato, calculado para conferência, não altera nenhuma das
+conclusões.
 \end{itemize}
 
 Adotaram-se como referência os níveis de significância de 1\%, 5\% e 10\%, e um
@@ -269,22 +269,33 @@ não significativos são interpretados como ausência de evidência estatística
 diferença, e não como evidência de que os grupos são iguais
 \cite{wasserstein2016}.
 
-\textbf{c) Análise por subperíodos.} Para verificar se o comportamento dos grupos
-se alterou diante de um choque externo, o período foi dividido em três
+\textbf{c) Análise por subperíodos.} Para examinar se a diferença entre os grupos
+se altera diante de um choque externo, o período foi dividido em três
 subperíodos: pré-pandemia (2018--2019), pandemia de COVID-19 (2020--2021) e
 pós-pandemia (2022--2025). A pandemia exigiu decisões de financiamento rápidas e
-fora do planejamento das empresas, situação em que a aversão da família à
-exposição a credores, prevista pela perspectiva da riqueza socioemocional, deveria
-se manifestar com mais clareza. Os testes da etapa (b) foram repetidos com a média
-de cada empresa em cada subperíodo. Por ter sido definida durante a análise, essa
-divisão tem caráter exploratório, e os resultados dos três subperíodos são
-reportados integralmente, inclusive os não significativos.
+fora do planejamento das empresas, o que a torna um período de interesse para
+observar a relação das empresas com os credores. Os testes da etapa (b) foram
+repetidos com a média de cada empresa em cada subperíodo. Essa divisão foi definida
+durante a análise, depois de observados os dados, e tem, por isso, caráter
+exploratório: os resultados dos três subperíodos são reportados integralmente,
+inclusive os não significativos, e, para o conjunto desses testes, informa-se o
+p-valor ajustado pelo método de Holm.
 
 \textbf{d) Análises de robustez.} Os testes foram repetidos (i) com as
 classificações dos Cenários 1 e 2, para verificar a sensibilidade dos resultados ao
-critério de empresa familiar; e (ii) excluindo a Bradsaúde, única companhia da
-amostra sem dívida financeira, cujos valores nulos reduzem a média das não
-familiares nos indicadores de dívida onerosa.
+critério de empresa familiar; (ii) excluindo a Bradsaúde, operadora de planos
+controlada por uma instituição financeira e única companhia da amostra sem dívida
+financeira, para avaliar a influência dessa observação sobre o resultado, sem que
+isso signifique tratar a ausência de dívida como erro, já que ela é uma escolha
+legítima de financiamento; (iii) retirando uma empresa de cada vez, entre as 16,
+para verificar se algum resultado depende de uma única companhia; e (iv) excluindo
+as três empresas do subsetor de Comércio e Distribuição, em que não há empresas
+não familiares.
+
+\textbf{e) Magnitude das diferenças.} Além dos p-valores, são apresentados a
+diferença entre as médias dos grupos, o seu intervalo de confiança de 95\% e o
+tamanho de efeito (g de Hedges), para indicar a magnitude e a imprecisão das
+estimativas.
 
 Como foram realizados diversos testes (vários indicadores, dois testes,
 subperíodos e cenários), um resultado significativo isolado deve ser interpretado

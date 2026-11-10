@@ -160,15 +160,15 @@ obtenção do título de Bacharel em Ciências Contábeis.}
 
 % Listas: descomente a de ilustrações e a de tabelas quando houver figuras e tabelas
 % (uma lista vazia não deve aparecer no trabalho).
-% \pdfbookmark[0]{\listfigurename}{lof}
-% \listoffigures*
-% \cleardoublepage
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
 \pdfbookmark[0]{\listofquadrosname}{loq}
 \listofquadros*
 \cleardoublepage
-% \pdfbookmark[0]{\listtablename}{lot}
-% \listoftables*
-% \cleardoublepage
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents*
 \cleardoublepage
@@ -189,9 +189,10 @@ obtenção do título de Bacharel em Ciências Contábeis.}
 \postextual
 \bibliography{referencias}
 
-% \begin{apendicesenv}
-% \partapendices
-% \chapter{Planilha de apoio}
-% \end{apendicesenv}
+\begin{apendicesenv}
+\partapendices
+\input{capitulos/apendice-a}
+\input{capitulos/apendice-b}
+\end{apendicesenv}
 
 \end{document}
