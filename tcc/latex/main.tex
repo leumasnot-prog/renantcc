@@ -9,7 +9,8 @@
   oneside,          % impressão só frente (use twoside se for frente e verso)
   a4paper,
   english,          % idioma adicional (abstract)
-  brazil            % idioma principal: o último da lista
+  brazil,           % idioma principal: o último da lista
+  chapter=TITLE     % títulos de capítulo em caixa alta (NBR 6024)
 ]{abntex2}
 
 % ---------------------------------------------------------------------
@@ -18,7 +19,13 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{mathptmx}  % Times New Roman (texto e fórmulas)
-\renewcommand{\ABNTEXchapterfont}{\rmfamily}  % títulos também em Times
+\renewcommand{\ABNTEXchapterfont}{\rmfamily\bfseries}  % títulos em Times, negrito
+% Tamanhos (pedido do autor): títulos de capítulo em 14 pt; seções e texto em 12 pt
+\renewcommand{\ABNTEXchapterfontsize}{\fontsize{14}{17}\selectfont}
+\renewcommand{\ABNTEXsectionfont}{\rmfamily\bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\fontsize{12}{14}\selectfont}
+\renewcommand{\ABNTEXsubsectionfont}{\rmfamily\bfseries}
+\renewcommand{\ABNTEXsubsectionfontsize}{\fontsize{12}{14}\selectfont}
 \usepackage{indentfirst}
 \usepackage{microtype}
 \usepackage{xcolor}
@@ -37,7 +44,7 @@
 %   todos os marcadores somem do PDF.
 % ---------------------------------------------------------------------
 \newif\ifrevisao
-\revisaotrue
+\revisaofalse
 \ifrevisao
   \newcommand{\verificar}[1]{\textcolor{red}{\textbf{[VERIFICAR:} #1\textbf{]}}}
   \newcommand{\decidir}[1]{\textcolor{orange!80!black}{\textbf{[DECIDIR:} #1\textbf{]}}}
@@ -97,8 +104,8 @@ obtenção do título de Bacharel em Ciências Contábeis.}
 \makeatother
 
 % Espaçamento de parágrafo e recuo
-\setlength{\parindent}{1.3cm}
-\setlength{\parskip}{0.2cm}
+\setlength{\parindent}{1.25cm}  % recuo de 1,25 cm
+\setlength{\parskip}{0cm}
 
 % Lista de quadros e texto da referência cruzada das citações
 \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
@@ -196,10 +203,5 @@ obtenção do título de Bacharel em Ciências Contábeis.}
 \postextual
 \bibliography{referencias}
 
-\begin{apendicesenv}
-\partapendices
-\input{capitulos/apendice-a}
-\input{capitulos/apendice-b}
-\end{apendicesenv}
 
 \end{document}
