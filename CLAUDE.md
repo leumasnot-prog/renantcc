@@ -51,6 +51,7 @@ plugin **Academic Research Skills (ARS)**, uma adaptação em pt-BR de
   `tcc/arquivos/TCC Atual - Cenário N (corrigido).xlsx` (script `tcc/auditoria/corrigir_planilhas.py`;
   detalhes e o que ficou pendente em `tcc/auditoria/ROTEIRO_CORRECAO_PLANILHAS.md`).
 - Os números do TCC saem de `tcc/analise/resultados_c3.py`, que lê a base e gera `tcc/latex/tabelas/`.
+- Os gráficos do Cap. 4 saem de `tcc/analise/graficos.py` (PDF em `tcc/latex/figuras/`), a pedido do autor em 11/11/2026.
 
 ## Organização sugerida
 - `tcc/latex/` — texto do TCC em LaTeX.
