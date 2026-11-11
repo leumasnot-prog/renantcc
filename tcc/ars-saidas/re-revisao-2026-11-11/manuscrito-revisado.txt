@@ -1,0 +1,1270 @@
+             UNIVERSIDADE DE SÃO PAULO
+FACULDADE DE ECONOMIA, ADMINISTRAÇÃO E CONTABILIDADE
+                 DE RIBEIRÃO PRETO
+          DEPARTAMENTO DE CONTABILIDADE
+
+
+
+
+                 Renan do Amaral Ribeiro
+
+
+
+
+    Empresas familiares vs. não familiares:
+     comportamentos de endividamento
+
+
+
+
+                     Ribeirão Preto
+                          2026
+                        Renan do Amaral Ribeiro
+
+
+
+
+Empresas familiares vs. não familiares: comportamentos
+                         de endividamento
+
+
+
+
+                                    Trabalho de Conclusão de Curso apresentado
+                                    ao Departamento de Contabilidade da Facul-
+                                    dade de Economia, Administração e Conta-
+                                    bilidade de Ribeirão Preto da Universidade
+                                    de São Paulo, como requisito parcial para a
+                                    obtenção do título de Bacharel em Ciências
+                                    Contábeis.
+
+
+
+
+                         Universidade de São Paulo
+   Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto
+                      Departamento de Contabilidade
+
+
+
+
+               Orientadora: Profa. Dra. Maisa Ribeiro
+
+
+
+
+                             Ribeirão Preto
+                                   2026
+                                       Resumo
+Este trabalho investiga se empresas familiares brasileiras de capital aberto apresentam
+endividamento diferente do das empresas não familiares. Com base na perspectiva da
+riqueza socioemocional, a pesquisa parte da hipótese de que a aversão à interferência
+de credores e à perda de controle leva as famílias controladoras a adotarem políticas
+de financiamento mais conservadoras. A amostra compreende 16 companhias do setor
+de saúde da B3, com dados trimestrais da Economática de 2018 a 2025. As empresas
+foram classificadas como familiares segundo o critério de Santos e Silva (2018), e dois
+critérios alternativos foram usados como testes de robustez. O endividamento foi medido
+por indicadores contábeis de nível, de capacidade de pagamento e de composição da dívida,
+e as diferenças entre os grupos foram avaliadas pelos testes t de Welch e de Mann-Whitney,
+para o período completo e para os subperíodos anterior, durante e posterior à pandemia
+de COVID-19. Os resultados indicam que as empresas familiares apresentaram, em todos
+os exercícios, menor endividamento oneroso e menor participação da dívida de curto prazo
+que as não familiares, mas essas diferenças não foram estatisticamente significativas no
+período completo, e o endividamento total dos dois grupos foi semelhante. A exceção é
+a composição da dívida durante a pandemia, quando a menor participação da dívida de
+curto prazo nas empresas familiares foi significativa ao nível de 5%, em análise exploratória
+por subperíodos, sem correção para múltiplos testes. A diferença no endividamento oneroso
+inverteu o sinal sob os critérios alternativos de classificação e mostrou-se sensível à exclusão
+de uma empresa sem dívida financeira. Conclui-se que a hipótese não pode ser confirmada
+estatisticamente. A evidência descritiva é compatível com uma postura mais conservadora
+das famílias em relação ao prazo da dívida, mas também com diferenças de tamanho e de
+acesso ao crédito entre os grupos.
+Palavras-chave: empresas familiares; endividamento; estrutura de capital; riqueza socioe-
+mocional; setor de saúde.
+                                      Abstract
+This study examines whether Brazilian listed family firms differ from non-family firms
+in their use of debt. Drawing on the socioemotional wealth perspective, it hypothesizes
+that controlling families, averse to creditor interference and to the loss of control, adopt
+more conservative financing policies. The sample comprises 16 healthcare companies listed
+on B3, with quarterly Economática data from 2018 to 2025. Firms were classified as
+family firms following Santos e Silva (2018), and two alternative definitions were used
+as robustness checks. Debt was measured by accounting ratios of leverage, debt service
+capacity and debt maturity, and group differences were assessed with Welch’s t test and
+the Mann-Whitney test over the full period and over the pre-pandemic, pandemic and
+post-pandemic subperiods. Family firms showed lower financial debt and a smaller share
+of short-term debt in every year, but these differences were not statistically significant
+over the full period, and total liabilities were similar in both groups. The exception is debt
+maturity during the COVID-19 pandemic, when the smaller share of short-term debt in
+family firms was significant at the 5% level, in an exploratory subperiod analysis without
+correction for multiple testing. The difference in financial debt changed sign under the
+alternative family firm definitions and was sensitive to the exclusion of one firm with no
+financial debt. The hypothesis is therefore not statistically supported. The descriptive
+evidence is consistent with a more conservative stance of families towards debt maturity,
+but also with differences in firm size and access to credit between the groups.
+
+
+Keywords: family firms; debt; capital structure; socioemotional wealth; healthcare sector.
+                        Lista de ilustrações
+
+Figura 1 – Dívida bruta / Ativo total: média trimestral por grupo (2018–2025) . . 22
+Figura 2 – Exigível total / Ativo total: média trimestral por grupo (2018–2025) . . 23
+                            Lista de quadros
+
+Quadro 1 – Composição da amostra por subsetor e classificação (Cenário 3) . . . .        15
+Quadro 2 – Critérios de classificação de empresa familiar na literatura . . . . . . .    16
+Quadro 3 – Cenários de classificação adotados . . . . . . . . . . . . . . . . . . . .    17
+Quadro 4 – Indicadores de endividamento . . . . . . . . . . . . . . . . . . . . . .      18
+Quadro 5 – Participação familiar e classificação por cenário . . . . . . . . . . . . .   36
+                             Lista de tabelas
+
+Tabela 1 – Médias anuais por grupo em 31 de dezembro (%) . . . . . . . . . . . . 21
+Tabela 2 – Endividamento das empresas familiares (F) e não familiares (NF),
+           2018–2025 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Tabela 3 – Diferença entre os grupos, intervalo de confiança e tamanho de efeito . 24
+Tabela 4 – Comparação entre os grupos por subperíodo . . . . . . . . . . . . . . . 25
+Tabela 5 – Análises de robustez . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+Tabela 6 – Sensibilidade à retirada de uma empresa por vez . . . . . . . . . . . . 27
+Tabela 7 – Tamanho das empresas e endividamento oneroso ponderado pelo tamanho 28
+Tabela 8 – Indicadores secundários e liquidez corrente, 2018–2025 . . . . . . . . . 37
+                               Sumário
+
+1     INTRODUÇÃO          . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    8
+
+2     REFERENCIAL TEÓRICO . . . . . . . . . . . . . . . . . . . . . . . 11
+2.1   Empresas familiares e a riqueza socioemocional (SEW) . . . . . . . 11
+2.2   Endividamento elevado e o risco de interferência . . . . . . . . . . . 12
+
+3     METODOLOGIA . . . . . . . . . . . . . . . . . . . . . . . . . . . .             14
+3.1   Abordagem e estratégia da pesquisa . . . . . . . . . . . . . . . . . . .        14
+3.2   Definição da amostra e fontes de dados . . . . . . . . . . . . . . . .          14
+3.3   Classificação das empresas familiares . . . . . . . . . . . . . . . . . .       15
+3.4   Indicadores de endividamento . . . . . . . . . . . . . . . . . . . . . .        18
+3.5   Procedimentos de análise . . . . . . . . . . . . . . . . . . . . . . . . .      19
+
+4     RESULTADOS E DISCUSSÃO . . . . . . . . . . . . . . . . . . . . .                21
+4.1   Evolução do endividamento dos grupos . . . . . . . . . . . . . . . . .          21
+4.2   Comparação entre os grupos no período completo . . . . . . . . . .              23
+4.3   Subperíodos: antes, durante e depois da pandemia . . . . . . . . . .            25
+4.4   Análises de robustez . . . . . . . . . . . . . . . . . . . . . . . . . . . .    26
+4.5   Discussão . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   28
+
+5     CONSIDERAÇÕES FINAIS . . . . . . . . . . . . . . . . . . . . . . . 30
+
+
+      REFERÊNCIAS         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+
+
+      APÊNDICES                                                                       35
+
+      APÊNDICE A – CLASSIFICAÇÃO DAS EMPRESAS DA AMOSTRA 36
+
+      APÊNDICE B – INDICADORES SECUNDÁRIOS . . . . . . . . . . 37
+                                                                                          8
+
+
+
+1 Introdução
+
+        O ambiente corporativo brasileiro é composto por empresas com diferentes estrutu-
+ras de propriedade e de governança. Entre elas, destacam-se as empresas familiares, que
+representam uma parcela relevante das organizações e possuem características particulares
+relacionadas à preservação do controle, sucessão e continuidade do negócio ao longo das
+gerações (PESTANA; GOMES; LOPES, 2021). Em contraste, empresas com estruturas
+acionárias mais dispersas tendem a apresentar modelos de gestão mais profissionalizados
+e menor influência de um grupo controlador específico. Neste cenário, as decisões de
+estrutura de capital, isto é, a combinação entre capital próprio e de terceiros, representam
+um dilema central da gestão financeira. Teorias clássicas como o Trade-Off, que explica a
+escolha ótima de endividamento com base no equilíbrio entre benefícios fiscais e custos
+de falência, e a Pecking Order, que propõe uma hierarquia de financiamento baseada na
+preferência por recursos internos, oferecem interpretações racionais para essas decisões,
+assumindo como objetivo primordial a maximização do valor da firma (MYERS, 1984;
+MYERS; MAJLUF, 1984).
+       Contudo, a aplicação direta destes modelos torna-se complexa no contexto de
+empresas familiares. A literatura sobre governança em firmas familiares introduz o conceito
+de riqueza socioemocional (socioemotional wealth – SEW), que representa a utilidade não
+financeira que a família extrai do negócio (GóMEZ-MEJíA et al., 2007). Essa “riqueza”
+abrange a manutenção do controle, a perpetuidade do legado e a identidade familiar
+atrelada à organização, objetivos que podem se sobrepor à pura maximização de resultados
+econômicos (SANTOS; SILVA, 2018).
+        Essa busca pela preservação do SEW colide diretamente com os riscos inerentes
+ao endividamento. Contratos de dívida, especialmente os de longo prazo, frequentemente
+impõem cláusulas restritivas (covenants) que servem como mecanismo de disciplina,
+mas que também representam uma potencial ameaça à autonomia gerencial (COSTA;
+MATTE; MONTE-MOR, 2018). A violação dessas cláusulas pode resultar em penalidades
+como a renegociação compulsória das obrigações financeiras ou até mesmo o vencimento
+antecipado da dívida. Nesse contexto, verificou-se que empresas com níveis mais elevados
+de endividamento podem apresentar incentivos ao gerenciamento de resultados, buscando
+reduzir a probabilidade de descumprimento dos covenants e os custos associados à sua
+violação (COSTA; MATTE; MONTE-MOR, 2018). Para uma família controladora, a
+mera possibilidade de intervenção de credores representa uma ameaça direta ao seu poder
+decisório.
+       Assim, a aversão à interferência de credores, que ameaça o SEW, pode levar a uma
+Capítulo 1. Introdução                                                                        9
+
+
+política de endividamento mais conservadora. Como o setor de atuação também influencia
+a estrutura de capital (OLIVEIRA; KAYO, 2020), a comparação entre empresas familiares
+e não familiares precisa reduzir o risco de que diferenças setoriais sejam confundidas com o
+efeito da estrutura de controle. Por isso, esta pesquisa concentra a análise nas companhias
+de um único setor, o de saúde da B3 S.A. – Brasil, Bolsa, Balcão (B3). [VERIFICAR:
+conferir em Oliveira e Kayo (2020) a passagem sobre o efeito do setor]
+        Diante do exposto, emerge o seguinte problema de pesquisa: a estrutura de controle
+familiar está associada a diferentes níveis de endividamento quando comparada à estrutura
+de controle não familiar nas companhias abertas brasileiras do setor de saúde? A resposta
+a esta questão pode subsidiar investidores, credores e os próprios gestores familiares
+na formulação de estratégias financeiras alinhadas a seus objetivos econômicos e não
+econômicos.
+        O objetivo geral deste trabalho é comparar o nível e a composição do endividamento
+de empresas familiares e não familiares do setor de saúde da B3 no período de 2018 a
+2025. Como objetivos específicos, busca-se: (i) classificar as companhias quanto ao controle
+familiar a partir de critérios da literatura; (ii) comparar os grupos quanto ao endividamento
+oneroso, ao endividamento total, à capacidade de pagamento e, de forma complementar e
+exploratória, ao prazo da dívida; e (iii) verificar se as diferenças se mantêm em subperíodos
+e sob critérios alternativos de classificação.
+        Nesse contexto, justifica-se a realização deste estudo pela relevância prática e teórica
+do tema. Apesar da extensa literatura sobre estrutura de capital e empresas familiares,
+representada por estudos como Kayo, Brunaldi e Aldrighi (2018), Wildner, Oro e Petry
+(2020) e, em empresas portuguesas, Pestana, Gomes e Lopes (2021), os resultados acerca da
+influência da estrutura de controle familiar sobre o endividamento corporativo permanecem
+inconclusivos. Enquanto alguns estudos apontam para uma postura mais conservadora e
+menores níveis de alavancagem em empresas familiares, outros identificam comportamentos
+distintos em função de características específicas de governança, do ambiente institucional
+e das particularidades de cada mercado. Além disso, esta pesquisa examina um período
+recente, que inclui o choque da pandemia de COVID-19, concentra a comparação em um
+único setor e verifica se os resultados se mantêm sob diferentes critérios de classificação
+de empresa familiar, aspecto em que os estudos nacionais divergem. Com isso, busca
+oferecer uma contribuição empírica adicional para a literatura de finanças corporativas e
+de governança em empresas familiares. Do ponto de vista gerencial, os resultados podem
+auxiliar gestores, credores e investidores a compreender de forma mais clara como a
+presença da família no controle afeta o apetite ao endividamento e, consequentemente, o
+risco financeiro da organização.
+       Além desta introdução, o trabalho está organizado da seguinte forma: o Capítulo 2
+apresenta o referencial teórico e a hipótese de pesquisa; o Capítulo 3 descreve a amostra,
+Capítulo 1. Introdução                                                                 10
+
+
+a classificação das empresas, os indicadores e os procedimentos estatísticos; o Capítulo 4
+apresenta e discute os resultados; e o Capítulo 5 traz as considerações finais.
+                                                                                            11
+
+
+
+2 Referencial teórico
+
+       O referencial teórico a seguir constrói a base conceitual que suporta a hipótese de
+menor endividamento em empresas familiares, partindo das teorias clássicas e aprofundando-
+se nas particularidades de sua governança.
+
+
+2.1 Empresas familiares e a riqueza socioemocional (SEW)
+        O arcabouço teórico que define as empresas familiares enfatiza o envolvimento da
+família no controle, propriedade e gestão (SANTOS; SILVA, 2018). Entre as companhias
+analisadas nesta pesquisa, a Baumer ilustra a presença simultânea dessas três dimensões:
+a família detém cerca de 89% das ações ordinárias, integra o bloco de controle e ocupa
+a presidência do conselho de administração e a diretoria-presidência. Já a RaiaDrogasil
+exemplifica um arranjo comum no mercado brasileiro, em que três famílias reunidas em um
+mesmo bloco de controle detêm, em conjunto, menos da metade das ações ordinárias, mas
+mantêm membros no conselho de administração. [VERIFICAR: participação e cargos
+atuais na BALM e na RADL no Formulário de Referência mais recente]
+         Em contraste com o modelo de agência clássico, que foca nos conflitos entre
+gestores e acionistas, estudos sobre empresas familiares destacam que essas organizações
+frequentemente perseguem objetivos que transcendem a maximização do retorno econômico,
+incorporando aspectos relacionados à preservação do controle, da identidade familiar e da
+continuidade do negócio ao longo das gerações (AMES et al., 2020; SANTOS; SILVA, 2018).
+Nesse contexto, ganha destaque o conceito de riqueza socioemocional (SEW), proposto por
+Gómez-Mejía et al. (2007) para explicar por que famílias controladoras aceitam riscos ao
+desempenho para não perder o que o negócio lhes proporciona além do retorno financeiro.
+Berrone, Cruz e Gómez-Mejía (2012) organizam o conceito em dimensões como o controle
+e a influência da família, a identificação dos familiares com a empresa, os vínculos sociais, o
+apego emocional e a renovação dos laços familiares por meio da sucessão. [VERIFICAR:
+ler Gómez-Mejía et al. (2007) e Berrone, Cruz e Gómez-Mejía (2012) e conferir se a
+descrição acima corresponde aos textos]
+        Santos e Silva (2018), ao analisarem a remuneração executiva, fornecem evidências
+de que a prioridade em preservar o SEW pode se manifestar em incentivos menos intensos
+em remuneração pecuniária, com remuneração total e variável menores, sugerindo um
+alinhamento de interesses intrínseco que minimiza o conflito clássico entre gestor e propri-
+etário. Contudo, a prevalência do SEW gera um conflito latente com os credores, uma vez
+que a dívida, por meio de mecanismos de monitoramento e restrições contratuais, pode
+representar uma ameaça à manutenção do controle e da autonomia da família controladora,
+Capítulo 2. Referencial teórico                                                            12
+
+
+aspectos considerados centrais para a preservação da riqueza socioemocional (SANTOS;
+SILVA, 2018; AMES et al., 2020).
+
+
+2.2 Endividamento elevado e o risco de interferência
+        A dívida corporativa, embora ofereça benefícios fiscais, eleva o risco de dificuldade
+financeira. Um dos mecanismos contratuais mais relevantes nesse contexto é o covenant, uma
+cláusula restritiva presente em contratos de dívida que estabelece limites para determinados
+indicadores econômico-financeiros e atua como instrumento de monitoramento e proteção
+dos credores (COSTA; MATTE; MONTE-MOR, 2018).
+       A relação entre endividamento e escolhas contábeis não é linear. Costa, Matte e
+Monte-Mor (2018) encontraram evidências de que, ao atingir níveis muito elevados de
+endividamento, as empresas brasileiras tendem a aumentar o componente discricionário
+dos lucros para evitar a quebra de cláusulas contratuais. Nesse contexto, a redução da
+qualidade dos lucros pode ser percebida pelos gestores como menos onerosa do que os
+custos decorrentes da violação dos covenants, incluindo a renegociação compulsória ou o
+vencimento antecipado das obrigações financeiras. Essa relação de risco é especialmente
+associada às dívidas de longo prazo, que normalmente apresentam cláusulas restritivas
+mais rigorosas.
+        O prazo da dívida, contudo, expõe a empresa aos credores de outra forma. Enquanto
+a dívida de longo prazo concentra as restrições nas cláusulas contratuais, a dívida de curto
+prazo precisa ser renovada com frequência e sujeita a empresa ao risco de liquidez, isto é, ao
+risco de que os credores se recusem a refinanciá-la ou o façam em condições desfavoráveis
+(DIAMOND, 1991). Esse risco tende a se agravar em períodos de crise, quando o crédito se
+torna mais escasso. Para uma família que busca preservar a autonomia decisória, depender
+de renovações frequentes significa submeter-se repetidamente à avaliação dos credores. A
+previsão teórica sobre o prazo é, portanto, ambígua: a aversão à interferência de credores
+tanto pode levar a família a evitar as cláusulas da dívida longa quanto a evitar as renovações
+da dívida curta. Por essa razão, a composição da dívida por prazo é examinada neste
+trabalho como questão complementar, de caráter exploratório, e não integra a hipótese.
+       Para as empresas familiares, o risco de violação de covenants pode ser particular-
+mente relevante, uma vez que a eventual intervenção dos credores pode limitar a autonomia
+decisória da família controladora. Considerando que a preservação do controle e da inde-
+pendência da gestão constitui um dos principais componentes da riqueza socioemocional,
+a exposição excessiva ao endividamento pode representar uma ameaça a objetivos que
+transcendem o desempenho econômico da firma (SANTOS; SILVA, 2018; PESTANA;
+GOMES; LOPES, 2021). Portanto, espera-se que a família controladora apresente maior
+aversão à alavancagem excessiva como forma de reduzir o risco de perda de controle.
+Capítulo 2. Referencial teórico                                                            13
+
+
+         A preservação do controle, contudo, não aponta em uma única direção. O mesmo
+motivo que leva a família a evitar a interferência de credores pode levá-la a evitar a emissão
+de novas ações, que dilui a sua participação, e, com isso, a preferir a dívida ao capital
+próprio. A literatura descreve esse dilema como uma escolha entre a aversão ao risco, que
+favorece menos dívida, e o risco de perder o controle, que favorece mais dívida (GONZáLEZ
+et al., 2013). [VERIFICAR: ler González et al. (2013) e conferir a descrição do dilema]
+Poletti-Hughes e Martínez García (2022), em empresas latino-americanas, encontraram
+empresas familiares mais alavancadas quando a participação da família é menor, como forma
+de manter o controle, e redução da alavancagem quando essa participação é elevada. No
+Brasil, Kayo, Brunaldi e Aldrighi (2018) observaram empresas familiares mais endividadas
+e com ajuste mais lento da estrutura de capital. Essas evidências ajudam a explicar por que
+a literatura permanece inconclusiva. Ainda assim, considerando a perspectiva da riqueza
+socioemocional e o papel dos credores discutido nesta seção, adota-se como hipótese a
+direção de menor endividamento. [VERIFICAR: conferir nos artigos de Poletti-Hughes
+e Martínez Garcia (2022) e de Kayo, Brunaldi e Aldrighi (2018) os resultados descritos
+neste parágrafo]
+        Com base no exposto, formula-se a seguinte hipótese:
+
+
+      H1: Empresas de controle familiar apresentam um nível de alavanca-
+      gem financeira inferior ao de empresas não familiares.
+
+
+       A hipótese é avaliada principalmente pela Dívida bruta / Ativo total, que mede o
+endividamento oneroso (seção 3.4).
+                                                                                         14
+
+
+
+3 Metodologia
+
+        Este capítulo descreve o delineamento da pesquisa, a amostra e as fontes de dados,
+o critério de classificação das empresas familiares, os indicadores de endividamento e os
+procedimentos estatísticos empregados para avaliar a hipótese H1.
+
+
+3.1 Abordagem e estratégia da pesquisa
+       A pesquisa adota abordagem quantitativa, de natureza descritiva e comparativa,
+com uso de dados secundários de companhias abertas. O objetivo é verificar se empresas de
+controle familiar e não familiar diferem quanto ao nível e à composição do endividamento,
+e não estimar uma relação causal entre a estrutura de controle e a estrutura de capital.
+        A proposta inicial previa um modelo de painel dinâmico estimado por System-GMM,
+aplicado a todas as companhias não financeiras da B3. Ao longo da coleta, a classificação
+manual das empresas a partir dos Formulários de Referência levou à delimitação de um
+único setor (seção 3.2), o que resultou em uma amostra de 16 companhias. Com esse
+número de unidades, estimadores de painel dinâmico baseados em instrumentos internos
+não são adequados, pois exigem um número de empresas consideravelmente maior que o
+de instrumentos. Optou-se, por isso, pela comparação entre grupos por meio de estatística
+descritiva e de testes de diferença entre grupos, complementados por análises de subperíodos
+e de robustez.
+
+
+3.2 Definição da amostra e fontes de dados
+         A população do estudo compreende as companhias abertas classificadas pela B3 no
+setor econômico de Saúde. A restrição a um único setor tem duas finalidades: reduzir a
+influência de diferenças setoriais na estrutura de capital, que a literatura aponta como
+determinante relevante do endividamento (OLIVEIRA; KAYO, 2020), e viabilizar a
+classificação manual de cada companhia quanto ao controle familiar, que exige a leitura
+individual dos Formulários de Referência. [VERIFICAR: incluir outro motivo para a
+escolha do setor de saúde, se houver]
+        Os dados contábeis foram extraídos da base Economática, em valores consolidados,
+com frequência trimestral, de 31/12/2018 a 31/12/2025 (29 datas-base). Os indicadores de
+fluxo, como EBITDA e despesa financeira, correspondem aos últimos 12 meses de cada
+data-base. Das 22 companhias do setor com dados na base, foram mantidas apenas as
+que possuem informações em todo o intervalo, para que os dois grupos sejam comparados
+Capítulo 3. Metodologia                                                                       15
+
+
+no mesmo período. Foram excluídas seis empresas que abriram capital ou passaram a ter
+dados durante o período: D1000 (DMVF, dados a partir de 12/2019), Eurofarma (EUFA),
+Oncoclínicas (ONCO) e Viveo (VVEO), a partir de 12/2020, Mater Dei (MATD), a partir
+de 09/2021, e Pague Menos (PGMN), a partir de 09/2022. A amostra final é composta
+por 16 companhias, distribuídas em quatro subsetores da B3 (Quadro 1).
+
+       Quadro 1 – Composição da amostra por subsetor e classificação (Cenário 3)
+ Subsetor (B3)                 Familiares                        Não familiares
+ Comércio e Distribuição       Dimed/Panvel (PNVL),              –
+                               Profarma (PFRM),
+                               RaiaDrogasil (RADL)
+ Medicamentos e Outros         Blau (BLAU), Hypera               Biomm (BIOM)
+ Produtos                      (HYPE), Ourofino (OFSA)
+ Serviços                      Dasa (DASA), Hapvida             Alliar (AALR), Bradsaúde
+ Médico-Hospitalares,          (HAPV), Rede D’Or (RDOR)         (SAUD), Fleury (FLRY),
+ Análises e Diagnósticos                                        Qualicorp (QUAL)
+ Equipamentos                  Baumer (BALM)                    Lifemed (LMED)
+ Total                         10                               6
+Fonte: Elaborado pelo autor (2026), com base na classificação setorial da B3 e nos Formulários de
+       Referência (CVM).
+
+
+       A série da Bradsaúde (SAUD) corresponde, no período analisado, à antiga Odonto-
+prev (ODPV3), cuja denominação e código de negociação foram alterados. A companhia
+não apresenta dívida financeira em nenhuma das datas-base e foi mantida na amostra
+principal, com análise de robustez que a exclui (seção 3.5). [VERIFICAR: confirmar
+na DFP a ausência de empréstimos e financiamentos da SAUD e a dívida bruta nula da
+HAPV em 31/12/2018]
+
+
+3.3 Classificação das empresas familiares
+        Não há definição única de empresa familiar na literatura, e os estudos brasileiros
+combinam, de formas diferentes, critérios de propriedade, de controle e de participação da
+família na administração. Para esta pesquisa, foram reunidos os critérios de seis trabalhos
+(Quadro 2), e a partir deles foram construídos três cenários de classificação, que diferem
+principalmente no percentual mínimo de ações ordinárias detido pela família.
+       Em todos os cenários, a empresa é classificada como familiar somente se atender,
+simultaneamente, a três condições: (i) a família detém um percentual mínimo das ações
+ordinárias, somando a participação direta e a indireta; (ii) a família integra o controle
+declarado da companhia; e (iii) há membro da família na administração. A empresa que
+deixa de atender a pelo menos uma condição é classificada como não familiar. O Quadro 3
+apresenta os três cenários.
+Capítulo 3. Metodologia                                                                            16
+
+
+          Quadro 2 – Critérios de classificação de empresa familiar na literatura
+ Estudo                   Participação              Envolvimento na            Amostra
+                          mínima                    administração
+ Santos e Silva           Mais de 15% das ações     Familiar no conselho       110 empresas da
+ (2018)                   ordinárias, com a         de administração           B3, 2010–2016
+                          família no controle
+ Tommasetti et al.        Mais de 50% dos votos     Familiar como              151 empresas da
+ (2019)                                             diretor-presidente ou      B3, 2012–2016
+                                                    presidente do conselho
+ Voelcker, Macagnan       Família como acionista    Membro indicado pelo       1.188 observações
+ e Vancin (2020)          controladora declarada    controlador ao             da B3, 2010–2017
+                                                    conselho
+ Poletti-Hughes e         Pelo menos 20% das        Familiar conselheiro,      187 empresas da
+ Martínez García          ações                     diretor-presidente ou      América Latina,
+ (2022)                                             presidente do conselho     2005–2016
+ Ribeiro et al. (2026)    Pelo menos 10% das        Familiar na                105 empresas da
+                          ações ordinárias          administração              B3, 2010–2024
+                                                    (dimensões tratadas
+                                                    separadamente)
+ EY e UNIVERSITY          Pelo menos 32% dos        Não exige                  500 maiores
+ OF ST.GALLEN             votos (companhia                                     empresas familiares
+ (s.d.)                   aberta)                                              do mundo
+                  Fonte: Elaborado pelo autor (2026), com base nos estudos citados.
+
+
+
+         O Cenário 3, que reproduz o critério de Santos e Silva (2018), foi adotado como
+classificação principal por três razões de método: trata-se de critério de estudo brasileiro
+que utiliza a mesma fonte de informação desta pesquisa (Formulário de Referência) e
+a mesma base de participação (ações ordinárias); capta o controle exercido por blocos
+familiares com participação inferior a 50%, frequentemente organizados por acordo de
+acionistas, situação comum entre as companhias da B3; e, de forma secundária, produz
+grupos de tamanho mais equilibrado, o que é relevante em uma amostra pequena. Os
+Cenários 1 e 2 são utilizados como testes de robustez, para verificar se os resultados se
+mantêm quando se exige uma participação familiar maior.
+       Para aplicar as condições, adotaram-se as seguintes regras, comuns aos três cenários:
+
+        a) base de participação: considera-se o percentual das ações ordinárias, isto é,
+           das ações com direito a voto, e não do capital total;
+       b) grupo familiar: a “família” pode corresponder a uma ou mais famílias que
+          integram o mesmo bloco de controle, inclusive por acordo de acionistas, nos
+          termos do art. 116 da Lei n.º 6.404/1976 (BRASIL, 1976). É o caso da Raia-
+          Drogasil (RADL), controlada por um bloco formado por três famílias que, em
+          conjunto, detêm cerca de 28% das ações ordinárias e têm membros no conselho
+          de administração, o que a classifica como familiar no Cenário 3, mas não nos
+Capítulo 3. Metodologia                                                                                17
+
+
+                          Quadro 3 – Cenários de classificação adotados
+ Cenário          Ações             Administração             Base                       Familiares
+                  ordinárias                                                             × não
+                  da família                                                             familiares
+ Cenário 1        Mais de 50%       Familiar como             Tommasetti et al.          5 × 11
+                                    diretor-presidente ou     (2019)
+                                    presidente do
+                                    conselho
+ Cenário 2        Pelo menos        Familiar no conselho      EY e UNIVERSITY            7×9
+                  32%               de administração          OF ST.GALLEN
+                                                              (s.d.); Voelcker,
+                                                              Macagnan e Vancin
+                                                              (2020)
+ Cenário 3        Mais de           Familiar no               Santos e Silva             10 × 6
+ (principal)      15%               conselho de               (2018)
+                                    administração
+Fonte: Elaborado pelo autor (2026). Em todos os cenários, exige-se também que a família integre o controle
+       declarado da companhia.
+
+
+
+             Cenários 1 e 2;
+         c) participação indireta: soma-se a participação detida por meio de holdings,
+            fundos de investimento em participações ou outras pessoas jurídicas controladas
+            pela família, seguindo a cadeia societária até as pessoas físicas. Na Dasa (DASA),
+            por exemplo, a participação da família Bueno, de cerca de 57% das ações
+            ordinárias, é detida por meio de um fundo de investimento em participações;
+        d) família no controle: a participação relevante não basta se a família não integra
+           o controle declarado. Na Fleury (FLRY), a família Pardini detém cerca de 20%
+           das ações ordinárias desde a incorporação do Instituto Hermes Pardini, mas
+           não faz parte do bloco de controle, e por isso a companhia é classificada como
+           não familiar em todos os cenários. Também são não familiares as companhias
+           de capital disperso ou controladas por instituições, como a Bradsaúde (SAUD),
+           controlada pelo Banco Bradesco;
+         e) fonte e data de referência: as informações foram obtidas no Formulário de
+            Referência mais recente disponível no site da Comissão de Valores Mobiliários
+            (CVM), nos itens de controle e composição acionária (itens 15.1 e 15.2 até 2022
+            e itens 6.1 e 6.2 a partir de 2023) e de administração, complementadas pelos
+            sites de relações com investidores. A classificação é mantida fixa em todo o
+            período, como em Tommasetti et al. (2019). Mudanças relevantes de controle
+            ao longo do período, como as reorganizações de Hapvida, Rede D’Or e Fleury
+            em 2021–2022, são reconhecidas como limitação.
+
+        [VERIFICAR: percentuais de RADL (28,3%), DASA (56,7%) e FLRY (19,73%)
+Capítulo 3. Metodologia                                                                         18
+
+
+no Formulário de Referência mais recente]
+
+
+3.4 Indicadores de endividamento
+       Na ausência de dados de valor de mercado e de um modelo de regressão, o endivi-
+damento foi medido por indicadores contábeis calculados pela Economática, organizados
+em três níveis de prioridade conforme a sua relação com a hipótese (Quadro 4).
+
+                          Quadro 4 – Indicadores de endividamento
+ Prioridade        Indicador            Cálculo                        O que mede
+ Principal         Dívida bruta /       (Empréstimos,                  Endividamento oneroso:
+                   Ativo total          financiamentos e               parcela do ativo financiada
+                                        debêntures de curto e          por credores financeiros,
+                                        longo prazo) ÷ Ativo total     que impõem covenants e
+                                                                       monitoramento
+ Principal         Exigível total /     (Passivo circulante +          Endividamento geral,
+                   Ativo total          Passivo não circulante) ÷      incluindo obrigações
+                                        Ativo total                    operacionais (fornecedores,
+                                                                       salários, tributos,
+                                                                       provisões)
+ Complementar      Dívida bruta /       Dívida bruta ÷ (Dívida         Estrutura de capital:
+                   (Dívida bruta +      bruta + Patrimônio             proporção de dívida no
+                   PL)                  líquido)                       capital investido
+ Complementar      Dívida líquida /     (Dívida bruta − Caixa e        Capacidade de pagamento;
+                   EBITDA               aplicações) ÷ EBITDA           métrica usual em
+                                        dos últimos 12 meses           covenants financeiros
+ Complementar      Dívida de curto      Dívida onerosa de curto        Composição da dívida por
+                   prazo / Dívida       prazo ÷ Dívida onerosa         prazo e exposição ao risco
+                   total                total                          de refinanciamento
+ Secundário        Exigível total /     Passivo ou dívida ÷            Grau de endividamento
+                   PL; Dívida bruta     Patrimônio líquido             em relação ao capital
+                   / PL; Dívida                                        próprio
+                   líquida / PL
+             Fonte: Elaborado pelo autor (2026), com base nas definições da Economática.
+
+
+        A Dívida bruta / Ativo total é o indicador mais diretamente ligado à hipótese,
+pois mede a dívida financeira, que traz os credores e as cláusulas restritivas discutidos na
+seção 2.2. O Exigível total / Ativo total permite verificar se uma eventual diferença se
+restringe à dívida financeira ou alcança o passivo como um todo. A composição da dívida
+por prazo foi incluída porque a dívida de curto prazo exige renovações frequentes com os
+credores e, portanto, aumenta a exposição da empresa à sua interferência (DIAMOND,
+1991).
+       Alguns indicadores não podem ser calculados em determinadas situações, e esses
+casos foram tratados da seguinte forma: a Dívida de curto prazo / Dívida total não é
+definida para a Bradsaúde, que não possui dívida financeira, e essa empresa é excluída
+Capítulo 3. Metodologia                                                                   19
+
+
+apenas desse indicador; a Dívida líquida / EBITDA não é informada pela base quando o
+EBITDA é negativo, o que ocorre com a Biomm de 2018 a 2024. Nesse indicador, a média
+da Biomm corresponde apenas ao exercício de 2025, e os resultados são apresentados com e
+sem a empresa, acompanhados das medianas dos grupos, que são menos sensíveis a valores
+extremos. Os indicadores calculados sobre o patrimônio líquido (PL) são tratados como
+secundários, por se tornarem instáveis quando o PL é pequeno ou negativo, como ocorre
+com a Alliar em 2025.
+
+
+3.5 Procedimentos de análise
+        A análise foi realizada em cinco etapas. Os cálculos foram feitos no Google Planilhas
+e repetidos, de forma independente, em um script em Python que lê a mesma base e
+gera as tabelas deste trabalho; os dois procedimentos produzem os mesmos resultados. A
+planilha de apoio, com a base de dados, a classificação das empresas e as fórmulas, e o
+script acompanham este trabalho. [VERIFICAR: forma de disponibilização da planilha
+à banca: anexo, apêndice ou link]
+       a) Análise descritiva. Para cada indicador, calculou-se a média de cada grupo em
+cada data-base, como média simples entre as empresas, de modo que todas as companhias
+tenham o mesmo peso. A evolução dos grupos é apresentada em gráficos com as 29 datas
+trimestrais, e as tabelas registram os valores de 31 de dezembro de cada exercício, bem
+como o número de exercícios em que a média das familiares ficou abaixo da média das não
+familiares.
+       b) Testes de diferença entre os grupos. A unidade de análise dos testes é
+a empresa: para cada companhia, calculou-se a média do indicador nas oito datas de
+encerramento de exercício (31/12/2018 a 31/12/2025), obtendo-se uma observação por
+empresa. Esse procedimento foi adotado porque as observações de uma mesma empresa
+em trimestres ou anos consecutivos não são independentes entre si, e tratá-las como
+observações distintas superestimaria a significância das diferenças. Sobre essas médias,
+aplicaram-se dois testes bicaudais:
+
+
+   • o teste t de Welch (WELCH, 1947), que compara as médias dos dois grupos sem
+     exigir variâncias iguais nem grupos de mesmo tamanho; e
+
+   • o teste U de Mann-Whitney (MANN; WHITNEY, 1947), não paramétrico, que
+     compara as posições (postos) das empresas de cada grupo e é menos sensível a
+     valores extremos e à ausência de normalidade, comuns em indicadores contábeis de
+     amostras pequenas. O p-valor foi obtido pela aproximação normal com correção de
+     continuidade; o p-valor exato, calculado para conferência, não altera nenhuma das
+     conclusões.
+Capítulo 3. Metodologia                                                                    20
+
+
+        Adotaram-se como referência os níveis de significância de 1%, 5% e 10%, e um
+p-valor entre 5% e 10% é interpretado como evidência fraca. Embora a hipótese H1 seja
+direcional, os testes bicaudais foram mantidos por serem mais conservadores e por a
+literatura apresentar argumentos nos dois sentidos (seção 2.2). Dado o número reduzido de
+empresas, que limita o poder dos testes, os resultados não significativos são interpretados
+como ausência de evidência estatística de diferença, e não como evidência de que os grupos
+são iguais (WASSERSTEIN; LAZAR, 2016).
+        c) Análise por subperíodos. Para examinar se a diferença entre os grupos se
+altera diante de um choque externo, o período foi dividido em três subperíodos: pré-
+pandemia (2018–2019), pandemia de COVID-19 (2020–2021) e pós-pandemia (2022–2025).
+A pandemia exigiu decisões de financiamento rápidas e fora do planejamento das empresas,
+o que a torna um período de interesse para observar a relação das empresas com os
+credores. Os testes da etapa (b) foram repetidos com a média de cada empresa em cada
+subperíodo. Essa divisão foi definida durante a análise, depois de observados os dados,
+e tem, por isso, caráter exploratório: os resultados dos três subperíodos são reportados
+integralmente, inclusive os não significativos, e, para o conjunto desses testes, informa-se o
+p-valor ajustado pelo método de Holm.
+        d) Análises de robustez. Os testes foram repetidos (i) com as classificações
+dos Cenários 1 e 2, para verificar a sensibilidade dos resultados ao critério de empresa
+familiar; (ii) excluindo a Bradsaúde, operadora de planos controlada por uma instituição
+financeira e única companhia da amostra sem dívida financeira, para avaliar a influência
+dessa observação sobre o resultado, sem que isso signifique tratar a ausência de dívida como
+erro, já que ela é uma escolha legítima de financiamento; (iii) retirando uma empresa de
+cada vez, entre as 16, para verificar se algum resultado depende de uma única companhia;
+e (iv) excluindo as três empresas do subsetor de Comércio e Distribuição, em que não há
+empresas não familiares.
+       e) Magnitude das diferenças. Além dos p-valores, são apresentados a diferença
+entre as médias dos grupos, o seu intervalo de confiança de 95% e o tamanho de efeito (g
+de Hedges), para indicar a magnitude e a imprecisão das estimativas.
+       Como foram realizados diversos testes (vários indicadores, dois testes, subperíodos
+e cenários), um resultado significativo isolado deve ser interpretado com cautela, e as
+conclusões consideram o conjunto dos resultados, e não testes individuais.
+                                                                                                     21
+
+
+
+4 Resultados e discussão
+
+       Este capítulo apresenta a evolução do endividamento dos dois grupos, os testes de
+diferença no período completo e nos subperíodos e as análises de robustez, e discute os
+resultados à luz do referencial teórico.
+
+
+4.1 Evolução do endividamento dos grupos
+       A Tabela 1 apresenta as médias anuais dos três indicadores centrais da análise. No
+endividamento oneroso, medido pela Dívida bruta / Ativo total, as empresas familiares
+ficaram abaixo das não familiares em todos os oito exercícios. Essa contagem é descritiva:
+como os anos de uma mesma empresa não são independentes, ela não equivale a oito
+confirmações da diferença. A distância, porém, não foi constante: em 2018 e 2019, os grupos
+estavam próximos (23,9% contra 26,4% e 27,0% contra 28,3%); a diferença se ampliou em
+2021 e 2022, quando as não familiares chegaram a 35,4% e 36,1%, contra 26,0% e 24,9%
+das familiares; e voltou a se estreitar a partir de 2024, até quase desaparecer em 2025
+(26,4% contra 26,9%).
+
+                Tabela 1 – Médias anuais por grupo em 31 de dezembro (%)
+               Ano Dívida bruta / Ativo Exigível / Ativo Dívida CP / Dívida total
+                        F               NF      F        NF      F                   NF
+               2018   23,9             26,4   50,2      47,8   29,2                 41,4
+               2019   27,0             28,3   56,1      53,3   23,0                 25,4
+               2020   29,6             30,5   59,0      56,0   17,2                 25,8
+               2021   26,0             35,4   54,5      60,1   21,9                 47,0
+               2022   24,9             36,1   54,9      59,0   19,6                 35,9
+               2023   26,2             32,8   55,5      56,8   18,9                 36,8
+               2024   24,7             28,2   55,6      54,6   16,1                 39,1
+               2025   26,4             26,9   57,2      62,1   19,1                 54,3
+
+                   Fonte: Elaborado pelo autor (2026), com dados da Economática.
+
+Nota: F: familiares (10 empresas); NF: não familiares (6 empresas; 5 na Dívida CP / Dívida total). Média
+      simples entre as empresas de cada grupo.
+
+
+       O endividamento geral, medido pelo Exigível total / Ativo total, não seguiu o
+mesmo padrão. As familiares tiveram médias superiores às das não familiares em quatro
+dos oito exercícios, incluindo os anos anteriores à pandemia, e as médias dos dois grupos
+ficaram entre 47,8% e 62,1% ao longo de todo o período. A diferença observada na dívida
+onerosa, portanto, não corresponde a um passivo total menor, e sim a uma composição do
+passivo com menos dívida financeira.
+Capítulo 4. Resultados e discussão                                                     22
+
+
+       A composição da dívida por prazo apresentou a diferença mais persistente. Em
+todos os exercícios, a participação da dívida de curto prazo foi menor nas familiares, e
+a distância se tornou expressiva a partir de 2021: desde então, a dívida de curto prazo
+representou entre 16% e 22% da dívida total das familiares, contra 36% a 54% nas não
+familiares.
+        As Figuras 1 e 2 mostram a evolução trimestral dos dois indicadores de nível.
+Na dívida onerosa, as curvas permanecem próximas até o início de 2021, separam-se no
+segundo trimestre daquele ano, quando a diferença passa de cerca de 1 para 8 pontos
+percentuais, voltam a se aproximar a partir de 2024 e se cruzam em 2025. No endividamento
+geral, as familiares ficam ligeiramente acima até o início de 2021, abaixo entre meados de
+2021 e o fim de 2023, e os grupos se alternam a partir de 2024, sem que um deles fique
+sistematicamente acima do outro em todo o período.
+
+     Figura 1 – Dívida bruta / Ativo total: média trimestral por grupo (2018–2025)
+
+
+
+
+                   Fonte: Elaborado pelo autor (2026), com dados da Economática.
+
+
+        [VERIFICAR: refazer os gráficos no Google Planilhas com: datas no formato
+dd/mm/aaaa, eixo vertical em % (sem quatro casas decimais), título do eixo horizontal
+“Data-base” e sem o título genérico “Familiar e Não Familiar”; exportar em alta resolução
+para figuras/ com os mesmos nomes; criar também o gráfico da Dívida CP / Dívida total,
+que hoje não existe na planilha]
+Capítulo 4. Resultados e discussão                                                                 23
+
+
+     Figura 2 – Exigível total / Ativo total: média trimestral por grupo (2018–2025)
+
+
+
+
+                   Fonte: Elaborado pelo autor (2026), com dados da Economática.
+
+
+
+4.2 Comparação entre os grupos no período completo
+        A Tabela 2 apresenta os testes de diferença para o período de 2018 a 2025. Nos
+cinco indicadores, a média das familiares foi inferior à das não familiares, mas nenhuma
+diferença foi significativa ao nível de 5% em qualquer dos dois testes.
+
+Tabela 2 – Endividamento das empresas familiares (F) e não familiares (NF), 2018–2025
+     Indicador                                 F     NF       n      Anos F < NF p (t) p (MW)
+     Dívida bruta / Ativo total           26,1%    30,6%    10 × 6     8 de 8    0,556   0,255
+     Exigível total / Ativo total         55,4%    56,2%    10 × 6     4 de 8    0,885   0,957
+     Dívida bruta / (Dívida bruta + PL)   37,2%    43,5%    10 × 6     6 de 8    0,563   0,255
+     Dívida líquida / EBITDA                1,4x     4,4x   10 × 6     5 de 8    0,285   0,416
+     Dívida CP / Dívida total             20,4%    38,2%    10 × 5     8 de 8    0,112   0,058∗
+
+                   Fonte: Elaborado pelo autor (2026), com dados da Economática.
+
+Nota: Testes bicaudais sobre a média de cada empresa nas datas de 31/12 do período. p (MW): teste
+      de Mann-Whitney, aproximação normal com correção de continuidade. ∗∗∗ , ∗∗ e ∗ : significativo a
+      1%, 5% e 10%. Valores: média simples das médias por empresa. Na Dívida CP / Dívida total, a
+      Bradsaúde é excluída por não ter dívida financeira; na Dívida líquida / EBITDA, a Biomm tem um
+      único ano com EBITDA positivo (2025).
+
+
+        No indicador principal, a Dívida bruta / Ativo total, a média das familiares foi de
+26,1%, contra 30,6% das não familiares, diferença de 4,5 pontos percentuais que não foi
+estatisticamente significativa (p = 0,556 no teste t e p = 0,255 no teste de Mann-Whitney).
+O Exigível total / Ativo total praticamente não diferiu entre os grupos (55,4% e 56,2%;
+Capítulo 4. Resultados e discussão                                                                        24
+
+
+p = 0,885 e 0,957). A estrutura de capital, medida pela Dívida bruta / (Dívida bruta
++ PL), seguiu a mesma direção da dívida onerosa (37,2% contra 43,5%), também sem
+significância.
+        O resultado mais próximo da significância foi o da composição da dívida: a dívida
+de curto prazo representou, em média, 20,4% da dívida total das familiares e 38,2% da
+dívida das não familiares. A diferença foi significativa apenas ao nível de 10% no teste de
+Mann-Whitney (p = 0,058) e não foi significativa no teste t (p = 0,112). A divergência entre
+os testes é coerente com a dispersão do grupo não familiar, em que a Lifemed concentrou
+66% de sua dívida no curto prazo, valor que eleva a variância e reduz o poder do teste t.
+        Na Dívida líquida / EBITDA, a média das não familiares (4,4x) foi três vezes a das
+familiares (1,4x), mas esse contraste se deve, em grande parte, à Biomm, cujo indicador
+só pôde ser calculado em 2025 (16,1x), já que o EBITDA da empresa foi negativo nos
+anos anteriores. Sem a Biomm, a média das não familiares cai para 2,0x (p = 0,560 no
+teste t), e as medianas dos grupos, com a Biomm incluída, são 1,6x e 2,6x. Esse indicador,
+portanto, não permite concluir que as familiares tenham maior capacidade de pagamento.
+        A Tabela 3 apresenta a magnitude das diferenças. Os intervalos de confiança são
+amplos: no indicador principal, os dados são compatíveis tanto com familiares 21 pontos
+percentuais menos endividadas quanto com familiares 12 pontos mais endividadas que
+as não familiares. A ausência de significância reflete, portanto, estimativas imprecisas,
+próprias de uma amostra de 16 empresas, e não a demonstração de que os grupos são
+iguais. Na composição da dívida, a diferença padronizada é grande (g de Hedges de −1, 28),
+mas o intervalo de confiança do período completo também inclui o zero.
+
+    Tabela 3 – Diferença entre os grupos, intervalo de confiança e tamanho de efeito
+        Indicador                               Período       F − NF       IC 95%        g de Hedges
+        Dívida bruta / Ativo total              2018–2025 -4,5 p.p.      [-21,3; 12,2]      -0,32
+        Exigível total / Ativo total            2018–2025 -0,8 p.p.      [-13,0; 11,4]      -0,07
+        Dívida bruta / (Dívida bruta + PL)      2018–2025 -6,3 p.p.      [-30,6; 18,0]      -0,33
+        Dívida líquida / EBITDA                 2018–2025      -3,0x       [-9,3; 3,4]      -0,76
+        Dívida CP / Dívida total                2018–2025 -17,8 p.p.      [-41,7; 6,1]      -1,28
+        Dívida CP / Dívida total                2020–2021 -16,8 p.p.     [-32,6; -1,0]      -1,39
+
+                    Fonte: Elaborado pelo autor (2026), com dados da Economática.
+
+Nota: Diferença entre as médias das familiares e das não familiares (p.p.: pontos percentuais), com intervalo
+      de confiança de 95% pela aproximação de Welch. g de Hedges: diferença padronizada, com correção
+      para amostras pequenas; por convenção, valores em torno de 0,2, 0,5 e 0,8 indicam efeitos pequeno,
+      médio e grande.
+Capítulo 4. Resultados e discussão                                                                 25
+
+
+4.3 Subperíodos: antes, durante e depois da pandemia
+       A Tabela 4 repete os testes em cada subperíodo. Antes da pandemia (2018–2019),
+os grupos foram semelhantes em todos os indicadores, e nenhuma diferença se aproximou
+da significância.
+
+                  Tabela 4 – Comparação entre os grupos por subperíodo
+                 Indicador             Subperíodo       F     NF    p (t)   p (MW)
+                 Dív. bruta / Ativo   2018–2019     25,4%   27,3% 0,815    0,625
+                                      2020–2021     27,8%   33,0% 0,543    0,255
+                                      2022–2025     25,5%   31,0% 0,497    0,416
+                 Exigível / Ativo     2018–2019     53,1%   50,6% 0,703    0,704
+                                      2020–2021     56,8%   58,1% 0,825    0,871
+                                      2022–2025     55,8%   58,1% 0,760    0,957
+                 Dív. CP / Dív. total 2018–2019     24,9%   33,4% 0,435    0,298
+                                      2020–2021     19,5%   36,4% 0,040∗∗ 0,043∗∗
+                                      2022–2025     18,4%   41,5% 0,130    0,098∗
+
+                   Fonte: Elaborado pelo autor (2026), com dados da Economática.
+
+Nota: Testes bicaudais sobre a média de cada empresa nas datas de 31/12 do período. p (MW): teste
+      de Mann-Whitney, aproximação normal com correção de continuidade. ∗∗∗ , ∗∗ e ∗ : significativo a
+      1%, 5% e 10%. Subperíodos: pré-pandemia (2018–2019), pandemia (2020–2021) e pós-pandemia
+      (2022–2025).
+
+
+        Durante a pandemia (2020–2021), a diferença na composição da dívida tornou-se
+significativa ao nível de 5% nos dois testes: a dívida de curto prazo representou 19,5% da
+dívida total das familiares e 36,4% da das não familiares (p = 0,040 no teste t e p = 0,043
+no teste de Mann-Whitney). No mesmo período, a dívida onerosa das familiares também
+foi menor (27,8% contra 33,0% do ativo), mas sem significância (p = 0,543 e 0,255), e o
+endividamento geral permaneceu semelhante (56,8% e 58,1%).
+        Após a pandemia (2022–2025), a distância na composição da dívida aumentou em
+termos absolutos (18,4% contra 41,5%), mas a significância se reduziu: a diferença foi
+significativa apenas a 10% no teste de Mann-Whitney (p = 0,098) e não foi significativa
+no teste t (p = 0,130).
+        Como explicado na seção 3.5, a divisão em subperíodos tem caráter exploratório.
+Na amostra principal, o resultado da pandemia é o único significativo a 5% nos dois testes;
+entre as análises de robustez, apenas a exclusão da Bradsaúde produz outro resultado
+significativo a 5%, e somente no teste t (seção 4.4). Além disso, a Tabela 4 reúne 18 testes,
+e o p-valor do resultado da pandemia, ajustado pelo método de Holm para esse conjunto,
+é de 0,725. O resultado deve, por isso, ser lido como um indício exploratório, e não como
+confirmação de uma diferença. A comparação entre subperíodos também é descritiva: não
+foi testado se a diferença entre os grupos mudou de um subperíodo para outro.
+Capítulo 4. Resultados e discussão                                                                 26
+
+
+4.4 Análises de robustez
+       A Tabela 5 mostra como os resultados se alteram com a exclusão da Bradsaúde
+e com as classificações alternativas de empresa familiar. As classificações alternativas
+compartilham a maior parte das empresas com a principal e não são, por isso, replicações
+independentes do resultado.
+
+                                Tabela 5 – Análises de robustez
+         Especificação       Indicador                 F     NF      n      p (t)   p (MW)
+         C3 (principal)   Dív. bruta / Ativo       26,1%   30,6%   10 × 6 0,556      0,255
+                          Exigível / Ativo         55,4%   56,2%   10 × 6 0,885      0,957
+                          Dív. CP / Dív. total     20,4%   38,2%   10 × 5 0,112      0,058∗
+         C3 sem Bradsaúde Dív. bruta / Ativo       26,1%   36,7%   10 × 5 0,027∗∗    0,058∗
+                          Exigível / Ativo         55,4%   59,8%   10 × 5 0,348      0,759
+                          Dív. CP / Dív. total     20,4%   38,2%   10 × 5 0,112      0,058∗
+         C2               Dív. bruta / Ativo       28,7%   27,0%    7×9    0,801     1,000
+                          Exigível / Ativo         53,6%   57,3%    7×9    0,567     0,597
+                          Dív. CP / Dív. total     19,1%   32,6%    7 × 8 0,080∗     0,118
+         C1               Dív. bruta / Ativo       30,9%   26,3%   5 × 11 0,558      0,734
+                          Exigível / Ativo         55,8%   55,7%   5 × 11 0,987      0,910
+                          Dív. CP / Dív. total     19,2%   29,9%   5 × 10 0,131      0,245
+
+                   Fonte: Elaborado pelo autor (2026), com dados da Economática.
+
+Nota: Testes bicaudais sobre a média de cada empresa nas datas de 31/12 do período. p (MW): teste
+      de Mann-Whitney, aproximação normal com correção de continuidade. ∗∗∗ , ∗∗ e ∗ : significativo a
+      1%, 5% e 10%. C1, C2 e C3: Cenários 1, 2 e 3; C1 e C2 são classificações alternativas de empresa
+      familiar (Quadro 3).
+
+
+       A exclusão da Bradsaúde, única empresa da amostra sem dívida financeira, eleva
+a média de endividamento oneroso das não familiares de 30,6% para 36,7% e torna a
+diferença significativa a 5% no teste t (p = 0,027) e a 10% no teste de Mann-Whitney (p
+= 0,058). A significância do indicador principal depende, portanto, da exclusão de uma
+única empresa. A ausência de dívida da Bradsaúde não é um erro de dado, e sim uma
+característica do seu modelo de negócio, de modo que o resultado da amostra completa
+permanece como o principal.
+        A Tabela 6 generaliza essa verificação, retirando uma empresa de cada vez. Na
+dívida onerosa, a média das familiares fica abaixo da média das não familiares nas 16
+repetições, mas a diferença só é significativa a 5% quando a empresa retirada é a Bradsaúde.
+Na composição da dívida, o sinal também se mantém nas 16 repetições; no período da
+pandemia, a diferença é significativa a 5% em 10 das 16 repetições no teste t e em 8 no
+teste de Mann-Whitney, o que mostra que esse resultado também depende da composição
+da amostra.
+       As classificações alternativas produzem um quadro distinto. Nos Cenários 1 e 2,
+que exigem participação familiar maior, a diferença na dívida onerosa inverte o sinal:
+Capítulo 4. Resultados e discussão                                                                   27
+
+
+                Tabela 6 – Sensibilidade à retirada de uma empresa por vez
+    Indicador             Período      p (t): faixa   p < 0,05 p (MW): faixa p < 0,05 F < NF
+    Dív. bruta / Ativo   2018–2025 0,027 a 0,772 1 de 16        0,058 a 0,426   0 de 16   16 de 16
+    Dív. CP / Dív. total 2018–2025 0,063 a 0,251 0 de 16        0,020 a 0,138   4 de 16   16 de 16
+    Dív. CP / Dív. total 2020–2021 0,021 a 0,120 10 de 16       0,020 a 0,104   8 de 16   16 de 16
+
+                   Fonte: Elaborado pelo autor (2026), com dados da Economática.
+
+Nota: Cada teste foi repetido 16 vezes, retirando uma empresa de cada vez. Faixa: menor e maior p-valor
+      obtidos. F < NF: número de repetições em que a média das familiares ficou abaixo da média das
+      não familiares.
+
+
+as familiares passam a ter média superior à das não familiares (30,9% contra 26,3% no
+Cenário 1 e 28,7% contra 27,0% no Cenário 2), sem significância. A inversão ocorre porque
+RaiaDrogasil, Profarma e Hypera, familiares apenas no Cenário 3, passam ao grupo não
+familiar. As duas primeiras, que atuam no comércio e na distribuição de medicamentos,
+estão entre as empresas menos endividadas da amostra (12,8% e 16,5% do ativo, em média).
+Parte da diferença observada no Cenário 3 pode refletir, portanto, o modelo de negócio
+desse subsetor, e não apenas a estrutura de controle.
+        A composição da dívida, por outro lado, manteve a direção nos três cenários: a
+participação da dívida de curto prazo foi menor nas familiares em todos eles (19,1% contra
+32,6% no Cenário 2, com p = 0,080 no teste t, e 19,2% contra 29,9% no Cenário 1, sem
+significância). É, entre os indicadores analisados, o único cujo sinal se manteve em todas
+as especificações, embora com significância frágil.
+        Como o subsetor de Comércio e Distribuição reúne apenas empresas familiares,
+os testes foram repetidos sem as suas três empresas. A diferença na dívida onerosa
+praticamente desaparece (28,6% contra 30,6%; p = 0,810 no teste t), o que confirma
+que ela se deve, em boa parte, a esse subsetor. A diferença na composição da dívida, ao
+contrário, permanece: 17,1% contra 38,2% no período completo (p = 0,073 no teste t e
+p = 0,035 no teste de Mann-Whitney) e 15,5% contra 36,4% na pandemia (p = 0,018 e
+p = 0,023). O padrão de prazo não é explicado, portanto, pela presença do varejo e da
+distribuição farmacêutica entre as familiares.
+       Por fim, a Tabela 7 compara o tamanho dos grupos. As familiares são maiores: a
+mediana do capital empregado é de R$ 6,5 bilhões, contra R$ 1,7 bilhão nas não familiares,
+e as duas maiores empresas da amostra são familiares. Quando as médias são ponderadas
+pelo tamanho, a diferença na dívida onerosa se reduz de 4,5 para 2,0 pontos percentuais
+(32,5% contra 34,5%).
+Capítulo 4. Resultados e discussão                                                            28
+
+
+ Tabela 7 – Tamanho das empresas e endividamento oneroso ponderado pelo tamanho
+         Grupo           n   Mediana Mínimo Máximo Média simples Média ponderada
+         Familiares     10      6.537     176    58.835      26,1%           32,5%
+         Não familiares 6       1.705     265     7.403      30,6%           34,5%
+
+                   Fonte: Elaborado pelo autor (2026), com dados da Economática.
+
+Nota: Tamanho: capital empregado (Capital Employed, Economática), média de 2018 a 2025, em R$
+      milhões. Médias simples e ponderada (pelo capital empregado) da Dívida bruta / Ativo total.
+
+
+
+4.5 Discussão
+         Os resultados não permitem confirmar a hipótese H1. Embora as empresas fa-
+miliares tenham apresentado menor endividamento oneroso em todos os exercícios, a
+diferença não foi estatisticamente significativa na amostra principal, não se manteve sob as
+classificações alternativas e dependeu da presença de uma única empresa sem dívida. Não
+foram encontradas, portanto, evidências estatisticamente significativas de que as empresas
+familiares do setor de saúde da B3 se endividem menos que as não familiares.
+        Esse resultado é coerente com a literatura inconclusiva apresentada no Capítulo 2.
+Como discutido na seção 2.2, a preservação do controle pode atuar em dois sentidos: a
+aversão à interferência de credores levaria a menos dívida, enquanto o receio de diluir
+a participação da família levaria a preferir a dívida à emissão de ações (GONZáLEZ et
+al., 2013; POLETTI-HUGHES; Martínez García, 2022). Essa ambiguidade tem um custo
+interpretativo, que deve ser reconhecido: um referencial que admite os dois sinais não é
+contrariado por nenhum resultado, e o que este trabalho testa é apenas a direção adotada
+na hipótese. No Brasil, Kayo, Brunaldi e Aldrighi (2018) encontraram empresas familiares
+mais endividadas, o que indica que a segunda força pode ser relevante no mercado brasileiro.
+Em uma amostra pequena, a combinação dessas forças é compatível com diferenças de
+pequena magnitude e instáveis entre especificações, como as observadas.
+         O padrão mais persistente refere-se ao prazo, e não ao nível, da dívida. As familiares
+concentraram menos dívida no curto prazo em todos os exercícios e nos três critérios de
+classificação, e a diferença foi significativa durante a pandemia e se manteve sem o subsetor
+de Comércio e Distribuição. Esse padrão é compatível com o argumento de Diamond
+(1991): a dívida de curto prazo precisa ser renovada com frequência e expõe a empresa
+ao risco de que os credores não a refinanciem, risco que se agrava em períodos de crise.
+Para uma família que busca preservar a autonomia decisória, alongar a dívida reduz a
+necessidade de renegociações frequentes e, com ela, a exposição à avaliação dos credores.
+       O mesmo padrão é compatível, porém, com explicações que não dependem do
+controle familiar. A primeira é o tamanho: as familiares da amostra são maiores (Tabela 7),
+e empresas maiores têm mais acesso ao mercado de capitais e a instrumentos de prazo
+Capítulo 4. Resultados e discussão                                                          29
+
+
+longo, como as debêntures. No próprio modelo de Diamond (1991), o prazo da dívida
+depende da qualidade de crédito do tomador, e não apenas da sua preferência. A segunda
+são causas pontuais, como o vencimento concentrado de uma dívida ou a sua reclassificação
+para o curto prazo, que podem elevar o indicador de uma empresa em determinado
+ano sem refletir uma política de financiamento. A terceira são os eventos societários do
+período, como aberturas de capital e fusões, que alteraram o balanço de várias empresas
+da amostra a partir de 2020. [VERIFICAR: citar os eventos com data confirmada em
+fato relevante: abertura de capital da Rede D’Or (2020) e da Blau (2021), combinação
+Hapvida–NotreDame Intermédica (2022), Rede D’Or–SulAmérica (2022) e Fleury–Hermes
+Pardini] Com 16 empresas, o desenho deste trabalho não permite separar essas explicações.
+        Três cuidados limitam, portanto, a interpretação. Primeiro, a composição da dívida
+não fazia parte da hipótese, e a diferença foi significativa a 5% apenas em um subperíodo
+definido durante a análise; ajustado para os múltiplos testes, o resultado não é significativo.
+Segundo, ele depende da composição da amostra, como mostra a retirada de uma empresa
+por vez. Terceiro, o desenho descritivo não separa o efeito do controle familiar de outras
+características das empresas, como o subsetor de atuação (OLIVEIRA; KAYO, 2020) e o
+tamanho. Os resultados devem, por isso, ser lidos como evidência descritiva e exploratória
+de que as familiares mantiveram dívida mais longa, padrão que pode refletir uma postura
+mais conservadora das famílias, mas que precisa ser testado em amostras maiores e com
+controles.
+                                                                                         30
+
+
+
+5 Considerações finais
+
+        Este trabalho teve como objetivo comparar o nível e a composição do endividamento
+de empresas familiares e não familiares do setor de saúde da B3 entre 2018 e 2025. A
+partir da perspectiva da riqueza socioemocional, formulou-se a hipótese de que as empresas
+de controle familiar apresentariam menor alavancagem financeira, em razão da aversão
+da família à interferência de credores e ao risco de perda de controle. Para testá-la, 16
+companhias foram classificadas segundo o critério de Santos e Silva (2018), e as diferenças
+entre os grupos foram avaliadas por indicadores contábeis de endividamento, com os testes
+t de Welch e de Mann-Whitney, para o período completo e para subperíodos definidos em
+torno da pandemia de COVID-19.
+        Os resultados indicam que as empresas familiares apresentaram, ao longo de 2018–
+2025, menor endividamento oneroso e menor concentração de dívida no curto prazo que
+as não familiares. A diferença na dívida onerosa ampliou-se em 2021 e 2022 e voltou
+a se estreitar no fim do período, enquanto a diferença no prazo da dívida permaneceu
+ampla de 2021 em diante. Contudo, as diferenças não se mostraram estatisticamente
+significativas de forma consistente entre os indicadores e os testes aplicados, de modo
+que a hipótese H1 não pode ser confirmada. Na análise exploratória por subperíodos, a
+menor participação da dívida de curto prazo nas empresas familiares foi significativa ao
+nível de 5% durante a pandemia, resultado que não se mantém quando ajustado para os
+múltiplos testes realizados. O endividamento total, por sua vez, foi semelhante nos dois
+grupos: descritivamente, as familiares tiveram menos dívida financeira, mas passivo total
+equivalente.
+        As análises de robustez reforçam a cautela na leitura desses resultados. A diferença
+no endividamento oneroso só foi significativa com a exclusão da única empresa sem
+dívida financeira, inverteu o sinal quando se exigiu uma participação familiar maior
+para classificar a empresa como familiar e praticamente desapareceu sem as empresas de
+comércio e distribuição. Já a menor participação da dívida de curto prazo nas familiares
+manteve a direção em todas as especificações, inclusive sem esse subsetor, embora com
+significância frágil e dependente da composição da amostra.
+       Em resposta ao problema de pesquisa, conclui-se que não foram encontradas
+evidências estatisticamente significativas de que a estrutura de controle familiar esteja
+associada a um nível de endividamento diferente nas companhias abertas do setor de saúde.
+A evidência descritiva, de caráter exploratório, sugere que a diferença entre os grupos está
+mais no prazo do que na quantidade de dívida. Esse padrão é compatível com a ideia
+de que a aversão da família à interferência de credores se manifesta na preferência por
+Capítulo 5. Considerações finais                                                         31
+
+
+dívidas mais longas, que reduzem a necessidade de renegociações frequentes e a exposição
+ao risco de refinanciamento (DIAMOND, 1991), mas também com o maior tamanho
+das empresas familiares da amostra e o seu acesso a instrumentos de prazo longo. A
+ausência de evidência no nível de endividamento, com estimativas imprecisas, é coerente
+com a literatura inconclusiva sobre o tema e com o fato de que a preservação do controle
+pode tanto desestimular a dívida quanto levar a família a preferi-la à emissão de novas
+ações (GONZáLEZ et al., 2013; POLETTI-HUGHES; Martínez García, 2022; KAYO;
+BRUNALDI; ALDRIGHI, 2018).
+        Como contribuição, o trabalho reúne evidências recentes, que incluem o período
+da pandemia, sobre um setor que nenhum dos estudos revisados analisa isoladamente,
+e mostra que os resultados dependem do critério adotado para definir empresa familiar,
+aspecto em que a literatura nacional diverge. Do ponto de vista prático, os resultados
+indicam a credores e investidores que a análise do endividamento de empresas familiares
+pode se beneficiar de considerar a composição da dívida por prazo, e não apenas o seu
+nível, e que a classificação de uma companhia como familiar depende do critério adotado,
+o que deve ser observado ao comparar estudos.
+        O estudo apresenta limitações que devem ser consideradas na interpretação dos
+resultados. A amostra é pequena, com 16 empresas de um único setor, o que reduz o poder
+dos testes estatísticos, torna as estimativas imprecisas e impede generalizar as conclusões
+para outros setores. A exigência de dados em todo o período excluiu as empresas que
+abriram capital depois de 2018, o que pode introduzir viés de seleção. Uma das empresas
+não familiares, a Bradsaúde, não possui dívida financeira, e sua presença altera o resultado
+do indicador principal. A classificação das empresas foi feita com base no Formulário de
+Referência mais recente e mantida fixa em todo o período, embora algumas companhias
+tenham passado por mudanças relevantes de controle; eventuais erros de classificação
+tendem a aproximar os grupos e a atenuar as diferenças. Não há empresas não familiares
+no subsetor de comércio e distribuição, e as familiares são, em média, maiores que as
+não familiares, de modo que parte das diferenças pode refletir o subsetor e o tamanho, e
+não apenas a estrutura de controle. Aberturas de capital e fusões ocorridas no período
+alteraram o balanço de várias empresas e não foram tratadas separadamente, assim como
+não foi verificado, nas notas explicativas, se variações pontuais da dívida de curto prazo
+decorrem de vencimentos concentrados ou de reclassificações. Também não foi examinado
+o efeito da adoção da norma de arrendamentos (CPC 06 (R2)/IFRS 16), em 2019, sobre os
+indicadores. [VERIFICAR: confirmar na Economática se a dívida bruta inclui passivos de
+arrendamento] Por fim, o subperíodo anterior à pandemia abrange apenas dois exercícios,
+e a análise por subperíodos e a do prazo da dívida, por terem sido definidas durante a
+pesquisa, têm caráter exploratório.
+        Para pesquisas futuras, sugere-se ampliar a amostra para outros setores ou para
+Capítulo 5. Considerações finais                                                        32
+
+
+o conjunto das companhias não financeiras da B3, o que permitiria estimar modelos de
+regressão em painel com controles de tamanho, rentabilidade, tangibilidade e setor. Sugere-
+se também testar, como hipótese formulada de antemão, a relação entre o controle familiar
+e o prazo da dívida, que neste trabalho apareceu apenas como padrão exploratório, e
+examinar se a relação entre a participação da família e o endividamento é não linear, como
+apontado por Poletti-Hughes e Martínez García (2022). Outra possibilidade é classificar
+as empresas ano a ano, captando as mudanças de controle ao longo do tempo.
+                                                                                          33
+
+
+
+                                   Referências
+
+AMES, A. C. et al. Preservação da riqueza socioemocional e a profissionalização em
+empresas familiares. RACE – Revista de Administração, Contabilidade e Economia,
+Joaçaba, v. 19, n. 3, p. 513–536, 2020. Citado 2 vezes nas páginas 11 e 12.
+
+BERRONE, P.; CRUZ, C.; GóMEZ-MEJíA, L. R. Socioemotional wealth in family firms:
+theoretical dimensions, assessment approaches, and agenda for future research. Family
+Business Review, v. 25, n. 3, p. 258–279, 2012. Citado na página 11.
+
+BRASIL. Lei n.º 6.404, de 15 de dezembro de 1976. 1976. Disponível em:
+<https://www.planalto.gov.br/ccivil_03/leis/l6404consol.htm>. Dispõe sobre as
+Sociedades por Ações. Citado na página 16.
+
+COSTA, C. M.; MATTE, A. M.; MONTE-MOR, D. S. Endividamento e decisões
+contábeis: a relação não linear entre dívida e qualidade dos lucros. Revista de Contabilidade
+e Organizações, v. 12, p. e137077, 2018. Citado 2 vezes nas páginas 8 e 12.
+
+DIAMOND, D. W. Debt maturity structure and liquidity risk. The Quarterly Journal of
+Economics, v. 106, n. 3, p. 709–737, 1991. Citado 5 vezes nas páginas 12, 18, 28, 29 e 31.
+
+EY; UNIVERSITY OF ST.GALLEN. Global 500 Family Business Index. s.d. Disponível
+em: <https://familybusinessindex.com>. Citado 2 vezes nas páginas 16 e 17.
+
+GONZáLEZ, M. et al. Family firms and debt: risk aversion versus risk of losing control.
+Journal of Business Research, v. 66, n. 11, p. 2308–2320, 2013. Citado 3 vezes nas páginas
+13, 28 e 31.
+
+GóMEZ-MEJíA, L. R. et al. Socioemotional wealth and business risks in family-controlled
+firms: evidence from Spanish olive oil mills. Administrative Science Quarterly, v. 52, n. 1,
+p. 106–137, 2007. Citado 2 vezes nas páginas 8 e 11.
+
+KAYO, E. K.; BRUNALDI, E. O.; ALDRIGHI, D. M. Capital structure adjustment in
+Brazilian family firms. Revista de Administração Contemporânea, Rio de Janeiro, v. 22,
+n. 1, p. 92–114, 2018. Citado 4 vezes nas páginas 9, 13, 28 e 31.
+
+MANN, H. B.; WHITNEY, D. R. On a test of whether one of two random variables is
+stochastically larger than the other. The Annals of Mathematical Statistics, v. 18, n. 1, p.
+50–60, 1947. Citado na página 19.
+
+MYERS, S. C. The capital structure puzzle. The Journal of Finance, v. 39, n. 3, p.
+575–592, 1984. Citado na página 8.
+
+MYERS, S. C.; MAJLUF, N. S. Corporate financing and investment decisions when firms
+have information that investors do not have. Journal of Financial Economics, v. 13, n. 2,
+p. 187–221, 1984. Citado na página 8.
+
+OLIVEIRA, R. L.; KAYO, E. K. Leverage and investment opportunities: the effect on
+high growth firms. Revista Contabilidade & Finanças, v. 31, n. 83, p. 302–317, 2020.
+Citado 3 vezes nas páginas 9, 14 e 29.
+Referências                                                                             34
+
+
+PESTANA, L. J.; GOMES, L. P.; LOPES, C. Testando a estrutura de capital de empresas
+familiares portuguesas. Revista Contabilidade & Finanças, São Paulo, 2021. Citado 3
+vezes nas páginas 8, 9 e 12.
+
+POLETTI-HUGHES, J.; Martínez García, B. Leverage in family firms: the moderating
+role of female directors and board quality. International Journal of Finance & Economics,
+v. 27, n. 1, p. 207–223, 2022. Citado 5 vezes nas páginas 13, 16, 28, 31 e 32.
+
+RIBEIRO, M. J. S. et al. Family hands, greener firms? The effects of family management
+and ownership on ESG performance. Business Strategy & Development, v. 9, p. e70331,
+2026. Citado na página 16.
+
+SANTOS, T. R.; SILVA, J. O. A influência da família tem algum efeito? Análise
+da remuneração dos executivos das empresas familiares e não familiares. Revista de
+Contabilidade e Organizações, v. 12, p. e148149, 2018. Citado 8 vezes nas páginas 2, 3, 8,
+11, 12, 16, 17 e 30.
+
+TOMMASETTI, R. et al. Family control and earnings management in Brazilian listed
+companies: a relationship mediated by age. Revista Universo Contábil, Blumenau, v. 15,
+n. 1, p. 151–169, 2019. Citado 2 vezes nas páginas 16 e 17.
+
+VOELCKER, G.; MACAGNAN, C. B.; VANCIN, D. Uma análise da tomada de risco em
+firmas familiares listadas na B3. BBR – Brazilian Business Review, Vitória, v. 17, n. 4, p.
+399–418, 2020. Citado 2 vezes nas páginas 16 e 17.
+
+WASSERSTEIN, R. L.; LAZAR, N. A. The ASA statement on p-values: context, process,
+and purpose. The American Statistician, v. 70, n. 2, p. 129–133, 2016. Citado na página
+20.
+
+WELCH, B. L. The generalization of “Student’s” problem when several different
+population variances are involved. Biometrika, v. 34, n. 1-2, p. 28–35, 1947. Citado na
+página 19.
+
+WILDNER, R.; ORO, I. M.; PETRY, D. R. Influência da propriedade familiar na
+estrutura e custo de capital das empresas brasileiras. Revista Catarinense da Ciência
+Contábil, Florianópolis, v. 19, p. e2913, 2020. Citado na página 9.
+Apêndices
+                                                                                                 36
+
+
+
+APÊNDICE A – Classificação das empresas
+           da amostra
+
+       O Quadro 5 apresenta, para cada empresa da amostra, a participação aproximada
+da família (ou do grupo de famílias) nas ações ordinárias, somadas a participação direta
+e a indireta, e a classificação resultante em cada cenário. [VERIFICAR: conferir cada
+percentual, o item e a data do Formulário de Referência consultado, e completar o tipo de
+controlador das não familiares]
+
+               Quadro 5 – Participação familiar e classificação por cenário
+ Código   Ações            C1    C2    C3    Observação
+          ordinárias da
+          família
+          (aprox.)
+ BLAU     82,5%             F     F     F    Abertura de capital em 2021
+ BALM     89%               F     F     F    Familiar preside o conselho e a diretoria
+ DASA     56,7%             F     F     F    Participação por fundo de investimento em
+                                             participações
+ OFSA     56,7%             F     F     F    Bloco de duas famílias
+ RDOR     50,2%             F     F     F    No limite do Cenário 1
+ HAPV     38%              NF     F     F    Acima de 50% até a combinação com a NotreDame
+                                             Intermédica
+ PNVL     38,8%            NF     F     F    Bloco de três famílias
+ RADL     28,3%            NF    NF     F    Bloco de três famílias
+ PFRM     28%              NF    NF     F    Controle compartilhado com investidor estratégico
+ HYPE     25,9%            NF    NF     F
+ FLRY     19,7%            NF    NF    NF    Família não integra o controle
+ BIOM     8%               NF    NF    NF
+ AALR     –                NF    NF    NF    Sem família no controle
+ QUAL     –                NF    NF    NF    Sem família no controle
+ LMED     –                NF    NF    NF    Sem família no controle
+ SAUD     –                NF    NF    NF    Controlada por instituição financeira
+        Fonte: Elaborado pelo autor (2026), com base nos Formulários de Referência (CVM).
+
+          Nota: F: familiar; NF: não familiar. C1, C2 e C3: Cenários 1, 2 e 3 (Quadro 3).
+                                                                                                    37
+
+
+
+   APÊNDICE B – Indicadores secundários
+
+        A Tabela 8 apresenta os indicadores calculados sobre o patrimônio líquido, tratados
+como secundários (seção 3.4), e a liquidez corrente. Nenhuma diferença é significativa a
+5%. A liquidez corrente das familiares foi maior em todos os exercícios, com diferença
+significativa a 10% no teste t, o que é coerente com a sua menor participação de dívida de
+curto prazo.
+
+             Tabela 8 – Indicadores secundários e liquidez corrente, 2018–2025
+                   Indicador                  F      NF      n     p (t)   p (MW)
+                   Exigível total / PL 153,6% 116,7% 10 × 6 0,349           0,416
+                   Dívida bruta / PL    73,0% 74,7% 10 × 6 0,950            0,786
+                   Dívida líquida / PL 37,8% 41,4% 10 × 6 0,855             0,625
+                   Liquidez corrente      2,2x   1,5x 10 × 6 0,064∗         0,116
+
+                   Fonte: Elaborado pelo autor (2026), com dados da Economática.
+
+Nota: Testes bicaudais sobre a média de cada empresa nas datas de 31/12 do período. p (MW): teste de
+      Mann-Whitney, aproximação normal com correção de continuidade. ∗∗∗ , ∗∗ e ∗ : significativo a 1%,
+      5% e 10%. Os indicadores sobre o patrimônio líquido (PL) incluem a Alliar em 2025, quando o PL
+      da empresa foi negativo.
+
