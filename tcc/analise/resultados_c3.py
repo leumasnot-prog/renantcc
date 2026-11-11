@@ -201,7 +201,9 @@ def main():
                  ['Indicador', 'F', 'NF', 'n', 'Anos F $<$ NF', 'p (t)', 'p (MW)'], linhas_tex,
                  NOTA_P + ' Valores: média simples das médias por empresa. '
                  'Na Dívida CP / Dívida total, a Bradsaúde é excluída por não ter dívida financeira; '
-                 'na Dívida líquida / EBITDA, a Biomm tem um único ano com EBITDA positivo (2025).',
+                 'na Dívida líquida / EBITDA, a Biomm tem um único ano com EBITDA positivo (2025). '
+                 'Na Dívida bruta / (Dívida bruta + PL), o valor da Alliar em 2025 supera 100\\% porque o PL da empresa '
+                 'foi negativo nesse ano.',
                  'lrrcccc')
 
     # 2. Médias anuais ------------------------------------------------------------
