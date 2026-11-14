@@ -1,0 +1,37 @@
+% =====================================================================
+\chapter{Planilha de apoio}\label{an:planilha}
+% =====================================================================
+
+A planilha de apoio é entregue em arquivo eletrônico, com o nome
+\texttt{TCC Atual - Cenário 3 (corrigido).xlsx}, acompanhada das versões dos
+Cenários 1 e 2, usadas nos testes de robustez. Ela contém as seguintes abas:
+
+\begin{alineas}
+\item \textbf{Saúde - 1218 à 1225:} base da Economática com as 16 companhias e os
+indicadores trimestrais de 31/12/2018 a 31/12/2025;
+\item \textbf{Classificação, Estudos, Resumo dos Critérios, Metodologia e Cenários:}
+critérios de classificação e sua aplicação a cada empresa;
+\item \textbf{Indicadores e Metodologias:} definição dos indicadores e explicação dos
+testes estatísticos;
+\item \textbf{Análises:} médias anuais por grupo, testes do período completo e testes
+por subperíodo, para o indicador escolhido na célula B1;
+\item \textbf{uma aba por indicador:} médias trimestrais por grupo, valores por
+empresa e testes sobre a média anual de cada empresa.
+\end{alineas}
+
+% =====================================================================
+\chapter{Código dos cálculos}\label{an:script}
+% =====================================================================
+
+Os resultados, as tabelas e as figuras do \autoref{cap:resultados} foram gerados
+pelos programas a seguir, escritos em Python, que leem a aba-base da planilha do
+\autoref{an:planilha}.
+
+\section*{resultados\_c3.py}
+\lstinputlisting{anexos/resultados_c3.py}
+
+\section*{robustez\_extra.py}
+\lstinputlisting{anexos/robustez_extra.py}
+
+\section*{graficos.py}
+\lstinputlisting{anexos/graficos.py}

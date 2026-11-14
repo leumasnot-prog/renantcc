@@ -35,6 +35,13 @@
 \usepackage{array}
 \usepackage{enumitem}
 \usepackage{amsmath}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\scriptsize, breaklines=true, columns=fullflexible,
+  frame=single, showstringspaces=false, inputencoding=utf8, extendedchars=true,
+  literate={á}{{\'a}}1 {à}{{\`a}}1 {â}{{\^a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {ê}{{\^e}}1
+    {í}{{\'i}}1 {ó}{{\'o}}1 {ô}{{\^o}}1 {õ}{{\~o}}1 {ú}{{\'u}}1 {ç}{{\c{c}}}1
+    {Á}{{\'A}}1 {É}{{\'E}}1 {Ó}{{\'O}}1 {Ç}{{\c{C}}}1 {Ã}{{\~A}}1 {×}{{$\times$}}1
+    {–}{{--}}1 {—}{{---}}1 {−}{{-}}1 {‑}{{-}}1 {·}{{$\cdot$}}1 {↳}{{->}}1 {≤}{{$\le$}}1 {º}{{o}}1 {ª}{{a}}1}
 \usepackage[brazilian,hyperpageref]{backref}
 \usepackage[alf]{abntex2cite}   % citações autor-data (NBR 10520)
 
@@ -202,6 +209,11 @@ obtenção do título de Bacharel em Ciências Contábeis.}
 % ---------------------------------------------------------------------
 \postextual
 \bibliography{referencias}
+
+\begin{anexosenv}
+\partanexos
+\input{capitulos/anexos}
+\end{anexosenv}
 
 
 \end{document}
