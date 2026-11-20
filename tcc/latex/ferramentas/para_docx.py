@@ -183,20 +183,23 @@ def main():
     # referências: texto do PDF já formatado pelo abntex2cite
     txt = subprocess.run(['pdftotext', os.path.join(B, 'main.pdf'), '-'], capture_output=True, text=True).stdout
     i = txt.rfind('\nREFERÊNCIAS\n'); f = txt.find('\nANEXOS', i)
+    f = f if f > 0 else len(txt)
     refs = re.sub(r'\n\d+\n', '\n', txt[i + 13:f]).strip()
     refs = [re.sub(r'\s*\n\s*', ' ', r).strip() for r in re.split(r'\n\s*\n', refs) if r.strip()]
     refs = [r for r in refs if not re.fullmatch(r'\d+', r)]
     reftex = '\\chapter*{REFERÊNCIAS}\n' + '\n\n'.join(esc(r) for r in refs)
 
-    # anexos
-    an = sem_comentarios(ler('capitulos/anexos.tex'))
+    # anexos (só se estiverem ativos no main.tex)
+    tem_anexos = '\\input{capitulos/anexos}' in sem_comentarios(ler('main.tex'))
+    an = sem_comentarios(ler('capitulos/anexos.tex')) if tem_anexos else ''
     an = an.replace('\\begin{alineas}', '\\begin{itemize}').replace('\\end{alineas}', '\\end{itemize}')
     an = re.sub(r'\\autoref\{([^}]+)\}', rauto, an)
     an = re.sub(r'\\label\{[^}]+\}', '', an)
     letras = iter('AB')
     an = re.sub(r'\\chapter\{([^}]*)\}', lambda m: f'\\chapter*{{ANEXO {next(letras)} -- {m.group(1).upper()}}}', an)
     an = re.sub(r'\\section\*\{[^}]*\}\s*\\lstinputlisting\{anexos/([^}]+)\}', lambda m: '\\begin{itemize}\\item ' + m.group(1).replace('_', '\\_') + '\\end{itemize}', an)
-    an += '\n\nO código completo de cada programa está nos arquivos acima, entregues em formato eletrônico junto com a planilha.\n'
+    if tem_anexos:
+        an += '\n\nO código completo de cada programa está nos arquivos acima, entregues em formato eletrônico junto com a planilha.\n'
 
     doc = ('\\documentclass{report}\n\\begin{document}\n' + pre + corpo + reftex + '\n' + an + '\n\\end{document}\n')
     tmp = os.path.join(B, 'tcc_docx.tex'); open(tmp, 'w', encoding='utf-8').write(doc)

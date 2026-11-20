@@ -50,6 +50,9 @@ plugin **Academic Research Skills (ARS)**, uma adaptação em pt-BR de
 - Em 07/11/2026 os erros da seção 10 do `tcc/CONTEXTO_TCC.md` foram corrigidos nas cópias
   `tcc/arquivos/TCC Atual - Cenário N (corrigido).xlsx` (script `tcc/auditoria/corrigir_planilhas.py`;
   detalhes e o que ficou pendente em `tcc/auditoria/ROTEIRO_CORRECAO_PLANILHAS.md`).
+- Em 20/11/2026 a Lifemed passou a familiar (FRE 2026) e as planilhas finais são `tcc/arquivos/TCC Atual - Cenário N (final).xlsx`
+  (script `tcc/auditoria/atualizar_planilhas_fre2026.py`). A classificação dos cenários fica em `FAMILIARES` (`resultados_c3.py`);
+  rode os scripts com `TCC_PLANILHA="caminho da planilha"`.
 - Os números do TCC saem de `tcc/analise/resultados_c3.py`, que lê a base e gera `tcc/latex/tabelas/`.
 - Os gráficos do Cap. 4 saem de `tcc/analise/graficos.py` (PDF em `tcc/latex/figuras/`), a pedido do autor em 11/11/2026.
 
