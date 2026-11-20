@@ -64,16 +64,13 @@ Fichas de leitura com páginas e trechos conferidos: `LEITURA_ARTIGOS_INTL.md` e
 |---|---|---|---|---|
 | HANSEN; BLOCK (2021). *Corporate Governance: An International Review*, 29(3) | Introdução, 2.2, 4.6 | Meta-análise (613 estudos): efeito médio quase nulo; positivo no Brasil; depende da definição de empresa familiar | https://doi.org/10.1111/corg.12354 | Aberto (EconStor) |
 | MUÑOZ-BULLÓN; SANCHEZ-BUENO; VELASCO (2024). *Review of Managerial Science*, 18(11) | 2.1, 2.2, 4.6 | SEW explica a menor alavancagem das familiares; efeito concentrado na dívida de curto prazo | https://doi.org/10.1007/s11846-023-00713-1 | Aberto |
-| VOORDECKERS et al. (2026). *European Journal of Family Business*, 16(1) | 2.2 | Heterogeneidade das familiares; dívida zero | https://doi.org/10.24310/ejfb.16.1.2026.21412 | Aberto |
 | MONTEIRO; GASPARETTO; LUNKES (2019). *Revista Pensamento Contemporâneo em Administração*, 13(2) | Introdução, 2.2, 4.6 | B3: gestão familiar sem efeito no endividamento total; mais passivo circulante | https://doi.org/10.12712/rpca.v13i2.28146 | Aberto |
-| QUIRAQUE; SOUSA; COLAUTO (2026). *Journal of Globalization, Competitiveness and Governability*, 20(1) | Introdução | Limitação declarada: não separam dívida de curto e longo prazo | https://doi.org/10.58416/gcg.2026.v20.n1.04 | Aberto |
-| VALCANOVER; SONZA (2023). *RAM*, 24(3) | 3.3 | Critérios de empresa familiar em estudos recentes da B3 | https://doi.org/10.1590/1678-6971/eRAMF230028.en | Aberto |
 | ANDRIETTA; MONTE-CARDOSO (2022). *Cadernos de Saúde Pública*, 38(supl. 2) | 3.2, 4.6 | Subsetores da saúde financiam-se de formas diferentes (varejo × planos) | https://doi.org/10.1590/0102-311X00006020 | Aberto |
-| GOULART et al. (2023). *Contextus*, 21 | 3.2 | Efeito da pandemia variou por subsetor da saúde na B3 | https://doi.org/10.19094/contextus.2023.81813 | Aberto |
 | LUO; LIU; TRIPATHY (2021). *International Review of Finance*, 21(1) | 3.5(f) | PL negativo é heterogêneo e diferente de prejuízo: base do filtro adotado | https://doi.org/10.1111/irfi.12260 | USP/CAPES |
 | BRASIL. Lei n.º 9.656/1998 | 3.2, 4.6 | Regras de garantias e ativos garantidores das operadoras (ANS) | https://www.planalto.gov.br/ccivil_03/leis/l9656.htm | Aberto |
 
 ## Observações
 - JENSEN (1986) e BARCLAY; SMITH (1995) não são mais citados e não aparecem nas Referências.
+- VOORDECKERS et al. (2026), QUIRAQUE; SOUSA; COLAUTO (2026), VALCANOVER; SONZA (2023) e GOULART et al. (2023) foram lidos (fichas em `LEITURA_ARTIGOS_*.md`), mas retirados do texto para não inflar a lista.
 - O link DOI leva à página oficial do artigo; o PDF fica nessa página.
 - Salve os PDFs nesta pasta (`tcc/referencias/`), com o nome `sobrenome-ano.pdf`.
