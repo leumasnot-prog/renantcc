@@ -103,7 +103,7 @@ def fp(p):
 
 CURTA = {'Completa': 'Completa', 'Sem operadoras': 'Sem operadoras', 'Sem comércio': 'Sem comércio',
          'Sem operadoras e sem comércio': 'Sem ambos'}
-FILTROS = [('PL negativo ou prejuízo', True), ('Só PL negativo', False)]
+FILTROS = [('Só PL negativo', False), ('PL negativo ou prejuízo', True)]  # o primeiro é o principal
 
 
 def bloco_amostras(dados, grupo):
@@ -166,26 +166,26 @@ def main():
             for ind, rot, un in PRINCIPAIS:
                 for l in por_ano(dados, grupo, ind, ex):
                     md.append(f"| {rot} | {l['ano']} | {l['F']:.2f} | {l['NF']:.2f} | {l['nF']}×{l['nNF']} | {l['p_t']:.3f} | {l['p_mw']:.3f} |")
-        if prej:
+        if not prej:
             R.tabela_latex('tab-banca-amostras.tex',
                            'Comparação entre os grupos por composição da amostra (observações empresa-ano)',
                            'tab:banca-amostras', CAB_TEX, tex,
                            'F e NF: média de todas as observações empresa-ano válidas do grupo (31/12, 2018--2025), '
-                           'excluídas as observações com PL negativo ou prejuízo. Testes t de Welch e de Mann-Whitney '
+                           'excluídas as observações com PL negativo. Testes t de Welch e de Mann-Whitney '
                            '(exato) aplicados a cada ano separadamente; contam-se os anos com ao menos duas empresas por grupo '
                            'e aqueles em que pelo menos um dos testes é significativo. ' + OPER_TXT, 'llrrcccc')
             for nome_a, ex in (AMOSTRAS[0], AMOSTRAS[-1]):
                 suf = 'completa' if not ex else 'homogenea'
                 tabela_anual(dados, grupo, ex, f'tab-banca-anual-{suf}.tex',
                              f'Comparação ano a ano -- amostra {nome_a.lower()}', f'tab:banca-anual-{suf}',
-                             NOTA_ANUAL.format(filtro='excluídas as observações com PL negativo ou prejuízo')
+                             NOTA_ANUAL.format(filtro='excluídas as observações com PL negativo')
                              + ('' if not ex else ' ' + OPER_TXT))
         else:
-            R.tabela_latex('tab-banca-sopl.tex',
-                           'Sensibilidade: exclusão apenas das observações com PL negativo',
-                           'tab:banca-sopl', CAB_TEX, tex,
-                           'Mesmo procedimento da \\autoref{tab:banca-amostras}, mantendo as observações com prejuízo e '
-                           'excluindo apenas as com PL negativo. ' + OPER_TXT, 'llrrcccc')
+            R.tabela_latex('tab-banca-prejuizo.tex',
+                           'Sensibilidade: exclusão também dos exercícios com prejuízo',
+                           'tab:banca-prejuizo', CAB_TEX, tex,
+                           'Mesmo procedimento da \\autoref{tab:banca-amostras}, excluindo também as observações '
+                           'com prejuízo no exercício (ROA negativo). ' + OPER_TXT, 'llrrcccc')
 
     os.makedirs(os.path.dirname(SAIDA_MD), exist_ok=True)
     with open(SAIDA_MD, 'w', encoding='utf-8') as fh:
