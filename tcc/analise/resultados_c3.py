@@ -155,7 +155,7 @@ NOTA_P = ('Testes bicaudais sobre a média de cada empresa nas datas de 31/12 do
 
 def tabela_latex(arquivo, legenda, rotulo, cabecalho, linhas, nota, especificacao):
     corpo = '\n'.join(' & '.join(l) + r' \\' for l in linhas)
-    tex = rf"""% Gerado por tcc/analise/resultados_c3.py -- não edite à mão; rode o script de novo.
+    tex = rf"""% Gerado por tcc/analise/resultados_c3.py ou ajustes_banca.py -- não edite à mão; rode o script de novo.
 \begin{{table}}[htb]
 \caption{{{legenda}}}\label{{{rotulo}}}
 \centering\footnotesize\setlength{{\tabcolsep}}{{4pt}}

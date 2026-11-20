@@ -17,7 +17,9 @@ Usa as funções e a base de resultados_c3.py. Gera:
   tcc/latex/tabelas/tab-banca-amostras.tex   (comparação empresa-ano por amostra)
   tcc/latex/tabelas/tab-banca-anual.tex      (testes ano a ano, amostra recomendada)
 
-Uso (na raiz do repositório):  python3 tcc/analise/ajustes_banca.py
+Uso (na raiz do repositório):  python3 tcc/analise/ajustes_banca.py [planilha.xlsx]
+A base é igual nos arquivos dos três cenários; a classificação usada é sempre a do Cenário 3
+(lista FAMILIARES_C3 abaixo), e não a coluna B do arquivo.
 """
 import os
 import sys
@@ -36,13 +38,14 @@ AMOSTRAS = [
     ('Sem comércio', COMERCIO),
     ('Sem operadoras e sem comércio', OPERADORAS + COMERCIO),
 ]
+FAMILIARES_C3 = {'BLAU', 'DASA', 'BALM', 'OFSA', 'RDOR', 'HAPV', 'PNVL', 'RADL', 'PFRM', 'HYPE'}
 PL_IND, ROA_IND = 'Exigivel Tt / Pat Liq %', 'ROA Rentab do Ativo %'
 PRINCIPAIS = [R.INDICADORES[0], R.INDICADORES[1], R.INDICADORES[4]]  # Dív/Ativo, Exig/Ativo, CP/Total
 SAIDA_MD = os.path.join(R.RAIZ, 'tcc', 'analise', 'saidas', 'ajustes_banca.md')
 
 
-def filtrar(dados, grupo):
-    """Anula as observações empresa-ano com PL <= 0 ou ROA < 0. Retorna (dados filtrados, lista de exclusões)."""
+def filtrar(dados, grupo, prejuizo=True):
+    """Anula as observações empresa-ano com PL < 0 (e, se prejuizo=True, com ROA < 0). Retorna (dados filtrados, lista de exclusões)."""
     for ind in (PL_IND, ROA_IND):
         if not any(k[1] == ind for k in dados):
             raise KeyError(f'indicador "{ind}" não encontrado na base')
@@ -55,7 +58,7 @@ def filtrar(dados, grupo):
             motivo = []
             if pl is not None and pl < 0:
                 motivo.append('PL negativo')
-            if roa is not None and roa < 0:
+            if prejuizo and roa is not None and roa < 0:
                 motivo.append('prejuízo')
             if motivo:
                 excl.append((t, a, ', '.join(motivo)))
@@ -98,63 +101,96 @@ def fp(p):
     return '--' if np.isnan(p) else R.fmt_p(p)
 
 
-def main():
-    dados0, grupo, _ = R.carregar()
-    dados, excl = filtrar(dados0, grupo)
-    md = ['# Ajustes pedidos pela orientadora\n',
-          '## Observações empresa-ano excluídas (PL negativo ou prejuízo)\n']
-    md += [f'- {t} {a}: {m} ({grupo[t]})' for t, a, m in excl] or ['- nenhuma']
+CURTA = {'Completa': 'Completa', 'Sem operadoras': 'Sem operadoras', 'Sem comércio': 'Sem comércio',
+         'Sem operadoras e sem comércio': 'Sem ambos'}
+FILTROS = [('PL negativo ou prejuízo', True), ('Só PL negativo', False)]
 
-    # 1. Comparação empresa-ano por amostra ---------------------------------------
-    md.append('\n## Comparação por amostra (média de todas as observações empresa-ano; testes ano a ano)\n')
-    md.append('| Amostra | Indicador | F | NF | obs F | obs NF | anos F<NF | anos p<5% | anos p<10% | mediana F | mediana NF |')
-    md.append('|---|---|---|---|---|---|---|---|---|---|---|')
-    tex = []
+
+def bloco_amostras(dados, grupo):
+    linhas, tex = [], []
     for nome_a, ex in AMOSTRAS:
         nF = sum(1 for t in grupo if grupo[t] == 'F' and t not in ex)
         nN = sum(1 for t in grupo if grupo[t] == 'NF' and t not in ex)
         for ind, rot, un in PRINCIPAIS:
             f, n = obs(dados, grupo, ind, R.ANOS, ex, 'F'), obs(dados, grupo, ind, R.ANOS, ex, 'NF')
             ra = resumo_anual(por_ano(dados, grupo, ind, ex))
-            md.append(f"| {nome_a} ({nF}F×{nN}NF) | {rot} | {np.mean(f):.2f} | {np.mean(n):.2f} | {len(f)} | {len(n)} | "
-                      f"{ra['menor']}/{ra['k']} | {ra['sig5']} | {ra['sig10']} | {np.median(f):.2f} | {np.median(n):.2f} |")
-            tex.append([f'{nome_a} ({nF} $\\times$ {nN})' if ind == PRINCIPAIS[0][0] else '', R.CURTO.get(rot, rot),
-                        R.fmt_val(np.mean(f), un), R.fmt_val(np.mean(n), un), f'{len(f)} / {len(n)}',
+            linhas.append(f"| {nome_a} ({nF}F×{nN}NF) | {rot} | {np.mean(f):.2f} | {np.mean(n):.2f} | {len(f)} | {len(n)} | "
+                          f"{ra['menor']}/{ra['k']} | {ra['sig5']} | {ra['sig10']} | {np.median(f):.2f} | {np.median(n):.2f} |")
+            tex.append([f'{CURTA[nome_a]} ({nF} $\\times$ {nN})' if ind == PRINCIPAIS[0][0] else '', R.CURTO.get(rot, rot),
+                        R.fmt_val(np.mean(f), un), R.fmt_val(np.mean(n), un), f'{len(f)}/{len(n)}',
                         f"{ra['menor']} de {ra['k']}", str(ra['sig5']), str(ra['sig10'])])
-    R.tabela_latex('tab-banca-amostras.tex',
-                   'Comparação entre os grupos por composição da amostra (observações empresa-ano)',
-                   'tab:banca-amostras',
-                   ['Amostra (F $\\times$ NF)', 'Indicador', 'F', 'NF', 'Obs. F / NF', 'Anos F $<$ NF',
-                    'Anos p $<$ 5\\%', 'Anos p $<$ 10\\%'], tex,
-                   'F e NF: média de todas as observações empresa-ano válidas do grupo (31/12, 2018--2025), '
-                   'excluídas as observações com PL negativo ou prejuízo. Testes t de Welch e de Mann-Whitney '
-                   '(exato) aplicados a cada ano separadamente; contam-se os anos em que ao menos um dos testes '
-                   'é significativo. Operadoras: Hapvida, Qualicorp e Bradsaúde; Comércio: RaiaDrogasil, Panvel e Profarma.',
-                   'llrrcccc')
+    return linhas, tex
 
-    # 2. Testes ano a ano em cada amostra -----------------------------------------
-    for nome_a, ex in AMOSTRAS:
-        md.append(f'\n## Ano a ano — {nome_a}\n\n| Indicador | Ano | F | NF | n | p t | p MW exato |\n|---|---|---|---|---|---|---|')
-        for ind, rot, un in PRINCIPAIS:
-            for l in por_ano(dados, grupo, ind, ex):
-                md.append(f"| {rot} | {l['ano']} | {l['F']:.2f} | {l['NF']:.2f} | {l['nF']}×{l['nNF']} | {l['p_t']:.3f} | {l['p_mw']:.3f} |")
-    nome_rec, ex_rec = AMOSTRAS[-1]
+
+def tabela_anual(dados, grupo, ex, arquivo, legenda, rotulo, nota):
     linhas_tex = []
     for ind, rot, un in PRINCIPAIS:
-        for l in por_ano(dados, grupo, ind, ex_rec):
+        for l in por_ano(dados, grupo, ind, ex):
             linhas_tex.append([R.CURTO.get(rot, rot) if l['ano'] == R.ANOS[0] else '', str(l['ano']),
                                R.fmt_val(l['F'], un) if l['nF'] else '--', R.fmt_val(l['NF'], un) if l['nNF'] else '--',
                                f"{l['nF']} $\\times$ {l['nNF']}", fp(l['p_t']), fp(l['p_mw'])])
-    R.tabela_latex('tab-banca-anual.tex', f'Comparação ano a ano -- amostra {nome_rec.lower()}', 'tab:banca-anual',
-                   ['Indicador', 'Ano', 'F', 'NF', 'n', 'p (t)', 'p (MW)'], linhas_tex,
-                   'Cada empresa é uma observação em 31/12 de cada ano; excluídas as observações com PL negativo '
-                   'ou prejuízo. p (MW): Mann-Whitney exato. $^{***}$, $^{**}$ e $^{*}$: significativo a 1\\%, 5\\% e 10\\%.',
-                   'llrrccc')
+    R.tabela_latex(arquivo, legenda, rotulo, ['Indicador', 'Ano', 'F', 'NF', 'n', 'p (t)', 'p (MW)'], linhas_tex,
+                   nota, 'llrrccc')
+
+
+CAB = ('| Amostra | Indicador | F | NF | obs F | obs NF | anos F<NF | anos p<5% | anos p<10% | mediana F | mediana NF |\n'
+       '|---|---|---|---|---|---|---|---|---|---|---|')
+CAB_TEX = ['Amostra (F $\\times$ NF)', 'Indicador', 'F', 'NF', 'Obs.', 'F $<$ NF',
+           'p $<$ 5\\%', 'p $<$ 10\\%']
+NOTA_ANUAL = ('Cada empresa é uma observação em 31/12 de cada ano; {filtro}. Testes aplicados só quando há ao menos '
+              'duas empresas em cada grupo. p (MW): Mann-Whitney exato. $^{{***}}$, $^{{**}}$ e $^{{*}}$: '
+              'significativo a 1\\%, 5\\% e 10\\%.')
+OPER_TXT = ('Obs.: observações empresa-ano (F/NF). Colunas F $<$ NF, p $<$ 5\\% e p $<$ 10\\%: número de anos. '
+            'Sem ambos: sem operadoras e sem comércio. Operadoras: Hapvida, Qualicorp e Bradsaúde; Comércio: RaiaDrogasil, Panvel e Profarma.')
+
+
+def main():
+    if len(sys.argv) > 1:
+        R.PLANILHA = sys.argv[1]
+    dados0, grupo, _ = R.carregar()
+    grupo = {t: ('F' if t in FAMILIARES_C3 else 'NF') for t in grupo}
+    assert sum(g == 'F' for g in grupo.values()) == 10 and len(grupo) == 16, grupo
+    md = ['# Ajustes pedidos pela orientadora\n',
+          'Classificação: Cenário 3. Médias = média de todas as observações empresa-ano válidas do grupo; '
+          'testes t de Welch e Mann-Whitney exato aplicados ano a ano (31/12).\n']
+    dados_sem_filtro = dados0
+    for nome_f, prej in FILTROS:
+        dados, excl = filtrar(dados0, grupo, prej)
+        md.append(f'\n# Filtro: {nome_f}\n\n## Observações excluídas\n')
+        md += [f'- {t} {a}: {m} ({grupo[t]})' for t, a, m in excl] or ['- nenhuma']
+        md.append('\n## Comparação por amostra\n\n' + CAB)
+        linhas, tex = bloco_amostras(dados, grupo)
+        md += linhas
+        for nome_a, ex in AMOSTRAS:
+            md.append(f'\n### Ano a ano — {nome_a}\n\n| Indicador | Ano | F | NF | n | p t | p MW exato |\n|---|---|---|---|---|---|---|')
+            for ind, rot, un in PRINCIPAIS:
+                for l in por_ano(dados, grupo, ind, ex):
+                    md.append(f"| {rot} | {l['ano']} | {l['F']:.2f} | {l['NF']:.2f} | {l['nF']}×{l['nNF']} | {l['p_t']:.3f} | {l['p_mw']:.3f} |")
+        if prej:
+            R.tabela_latex('tab-banca-amostras.tex',
+                           'Comparação entre os grupos por composição da amostra (observações empresa-ano)',
+                           'tab:banca-amostras', CAB_TEX, tex,
+                           'F e NF: média de todas as observações empresa-ano válidas do grupo (31/12, 2018--2025), '
+                           'excluídas as observações com PL negativo ou prejuízo. Testes t de Welch e de Mann-Whitney '
+                           '(exato) aplicados a cada ano separadamente; contam-se os anos com ao menos duas empresas por grupo '
+                           'e aqueles em que pelo menos um dos testes é significativo. ' + OPER_TXT, 'llrrcccc')
+            for nome_a, ex in (AMOSTRAS[0], AMOSTRAS[-1]):
+                suf = 'completa' if not ex else 'homogenea'
+                tabela_anual(dados, grupo, ex, f'tab-banca-anual-{suf}.tex',
+                             f'Comparação ano a ano -- amostra {nome_a.lower()}', f'tab:banca-anual-{suf}',
+                             NOTA_ANUAL.format(filtro='excluídas as observações com PL negativo ou prejuízo')
+                             + ('' if not ex else ' ' + OPER_TXT))
+        else:
+            R.tabela_latex('tab-banca-sopl.tex',
+                           'Sensibilidade: exclusão apenas das observações com PL negativo',
+                           'tab:banca-sopl', CAB_TEX, tex,
+                           'Mesmo procedimento da \\autoref{tab:banca-amostras}, mantendo as observações com prejuízo e '
+                           'excluindo apenas as com PL negativo. ' + OPER_TXT, 'llrrcccc')
 
     os.makedirs(os.path.dirname(SAIDA_MD), exist_ok=True)
     with open(SAIDA_MD, 'w', encoding='utf-8') as fh:
         fh.write('\n'.join(md) + '\n')
-    print('\n'.join(md))
+    print(f'ok: {SAIDA_MD}')
 
 
 if __name__ == '__main__':
