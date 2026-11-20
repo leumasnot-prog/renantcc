@@ -152,7 +152,7 @@ Regras comuns: base em ações ON; "família" = uma ou mais famílias do mesmo b
 | BIOM | Biomm | ~8% | NF | NF | NF | EBITDA negativo 2018–2024 |
 | AALR | Alliar | 0 | NF | NF | NF | PL negativo em 2025 |
 | QUAL | Qualicorp | 0 | NF | NF | NF | |
-| LMED | Lifemed | 0 | NF | NF | NF | |
+| LMED | Lifemed | 55,2% (fundador F. Pallamolla via holdings; preside o CA) | **F** | **F** | **F** | Reclassificada em 20/11/2026 (FRE 2026) |
 | SAUD | Bradsaúde (ex-Odontoprev) | 0 (Bradesco) | NF | NF | NF | **Sem dívida financeira** (ver seção 8) |
 
 Totais na base completa: **C1 = 5 F × 11 NF; C2 = 7 F × 9 NF; C3 = 10 F × 6 NF.**
@@ -395,3 +395,14 @@ Fontes consultadas sobre a Bradsaúde (15/10): Eu Quero Investir; Money Times; A
 | p-valor | Probabilidade de observar uma diferença igual ou maior se os grupos fossem iguais |
 | Robustez | Repetir a análise com outras definições (cenários C1/C2, sem SAUD, subperíodos) para ver se o resultado se mantém |
 | Empresa-ano | Uma observação por empresa por exercício (31/12) |
+
+
+---
+
+## 16. Atualização de 20/11/2026 (resposta à orientadora)
+
+- **Lifemed (LMED) reclassificada como familiar nos 3 cenários** (FRE 2026: Franco Pallamolla controla ~55% das ON via Lifemed Adm. e Kumla e preside o CA; mesma regra da Blau). Totais: **C1 = 6×10; C2 = 8×8; C3 = 11×5**. A classificação agora fica no código (`resultados_c3.py`, `FAMILIARES`), não na coluna B da planilha — **as planilhas ainda mostram LMED como NF e precisam ser corrigidas**.
+- Percentuais do FRE 2026: DASA 85,0%; OFSA 56,7%; HAPV 39,7%; PNVL 44,1%; RADL 24,7%; BALM 89,2%.
+- Pedidos da orientadora: amostra de referência sem operadoras (HAPV, QUAL, SAUD) e sem comércio (RADL, PNVL, PFRM) = 7×3; testes ano a ano (sem média de médias); exclusão do PL negativo (principal) e de prejuízo (sensibilidade). Script `tcc/analise/ajustes_banca.py`; Seção 4.5.
+- Resultados novos: amostra completa sem diferença significativa em nada (subperíodo da pandemia deixou de ser significativo); sem operadoras, F < NF na dívida bruta/ativo em 8 de 8 anos, p < 5% (t) em 2022 e 2023; prazo da dívida sem diferença consistente.
+- Para rodar: `TCC_PLANILHA="caminho/da/planilha.xlsx" python3 tcc/analise/resultados_c3.py` (idem `robustez_extra.py`, `ajustes_banca.py`, `graficos.py`).

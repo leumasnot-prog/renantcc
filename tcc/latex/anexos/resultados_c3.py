@@ -28,7 +28,7 @@ import openpyxl
 from scipy import stats
 
 RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-PLANILHA = os.path.join(RAIZ, 'tcc', 'arquivos', 'TCC Atual - Cenário 3.xlsx')
+PLANILHA = os.environ.get('TCC_PLANILHA', os.path.join(RAIZ, 'tcc', 'arquivos', 'TCC Atual - Cenário 3.xlsx'))
 ABA = 'Saúde - 1218 à 1225'
 SAIDA_MD = os.path.join(RAIZ, 'tcc', 'analise', 'saidas', 'resultados.md')
 DIR_TAB = os.path.join(RAIZ, 'tcc', 'latex', 'tabelas')
@@ -37,11 +37,13 @@ ANOS = list(range(2018, 2026))
 COL_ANO = {a: 4 * i for i, a in enumerate(ANOS)}  # índice da coluna de 31/12 nas 29 datas
 SUBPERIODOS = {'2018--2019': [2018, 2019], '2020--2021': [2020, 2021], '2022--2025': [2022, 2023, 2024, 2025]}
 
-# Classificação dos cenários alternativos (CONTEXTO_TCC.md, tabela 4.2).
-# O arquivo "Cenário 1" está com a classificação do C2 (erro 1), por isso as listas ficam aqui.
+# Classificação dos três cenários, conferida no Formulário de Referência 2026 (dados abertos da CVM).
+# Fica no código, e não na coluna B da planilha, para que qualquer arquivo de cenário sirva de base.
+# Lifemed (LMED): Franco Pallamolla controla ~55% das ON (holdings Lifemed Adm. e Kumla) e preside o CA.
 FAMILIARES = {
-    'C1': {'BLAU', 'DASA', 'BALM', 'OFSA', 'RDOR'},
-    'C2': {'BLAU', 'DASA', 'BALM', 'OFSA', 'RDOR', 'HAPV', 'PNVL'},
+    'C1': {'BLAU', 'DASA', 'BALM', 'OFSA', 'RDOR', 'LMED'},
+    'C2': {'BLAU', 'DASA', 'BALM', 'OFSA', 'RDOR', 'HAPV', 'PNVL', 'LMED'},
+    'C3': {'BLAU', 'DASA', 'BALM', 'OFSA', 'RDOR', 'HAPV', 'PNVL', 'RADL', 'PFRM', 'HYPE', 'LMED'},
 }
 
 INDICADORES = [  # (nome na Economática, rótulo, unidade)
@@ -74,7 +76,7 @@ def carregar():
         if chave in dados:
             raise ValueError(f'linha duplicada na base: {chave}')
         dados[chave] = vals
-        grupo[r[4]] = 'F' if r[1] == 'Familiar' else 'NF'
+        grupo[r[4]] = 'F' if r[4] in FAMILIARES['C3'] else 'NF'
         nome[r[4]] = r[3]
     return dados, grupo, nome
 
@@ -85,7 +87,7 @@ def mw_planilha(f, n):
     postos = stats.rankdata(list(f) + list(n))
     n1, n2 = len(f), len(n)
     u = sum(postos[:n1]) - n1 * (n1 + 1) / 2
-    z = (abs(u - n1 * n2 / 2) - 0.5) / math.sqrt(n1 * n2 * (n1 + n2 + 1) / 12)
+    z = max(0.0, abs(u - n1 * n2 / 2) - 0.5) / math.sqrt(n1 * n2 * (n1 + n2 + 1) / 12)
     return 2 * (1 - stats.norm.cdf(z))
 
 
@@ -179,6 +181,7 @@ def main():
     os.makedirs(DIR_TAB, exist_ok=True)
     os.makedirs(os.path.dirname(SAIDA_MD), exist_ok=True)
     dados, grupo, nome = carregar()
+    nF = sum(1 for g in grupo.values() if g == 'F'); nN = len(grupo) - nF
     md = ['# Resultados recalculados (Cenário 3)\n',
           f'Base: `{ABA}` · {sum(1 for g in grupo.values() if g == "F")} familiares × '
           f'{sum(1 for g in grupo.values() if g == "NF")} não familiares\n']
@@ -220,7 +223,7 @@ def main():
                  ['Ano', '\\multicolumn{2}{c}{Dívida bruta / Ativo}', '\\multicolumn{2}{c}{Exigível / Ativo}',
                   '\\multicolumn{2}{c}{Dívida CP / Dívida total}'] ,
                  [['', 'F', 'NF', 'F', 'NF', 'F', 'NF']] + anuais_tex,
-                 'F: familiares (10 empresas); NF: não familiares (6 empresas; 5 na Dívida CP / Dívida total). '
+                 f'F: familiares ({nF} empresas); NF: não familiares ({nN} empresas; {nN - 1} na Dívida CP / Dívida total). '
                  'Média simples entre as empresas de cada grupo.',
                  'lrrrrrr')
 

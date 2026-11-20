@@ -13,134 +13,134 @@ Classificação: Cenário 3. Médias = média de todas as observações empresa-
 
 | Amostra | Indicador | F | NF | obs F | obs NF | anos F<NF | anos p<5% | anos p<10% | mediana F | mediana NF |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Completa (10F×6NF) | Dívida bruta / Ativo total | 26.07 | 30.67 | 80 | 47 | 8/8 | 0 | 0 | 26.28 | 34.01 |
-| Completa (10F×6NF) | Exigível total / Ativo total | 55.38 | 54.98 | 80 | 47 | 3/8 | 0 | 0 | 54.58 | 55.86 |
-| Completa (10F×6NF) | Dívida CP / Dívida total | 20.53 | 36.64 | 79 | 39 | 8/8 | 0 | 3 | 19.34 | 33.13 |
-| Sem operadoras (9F×4NF) | Dívida bruta / Ativo total | 27.22 | 36.00 | 72 | 31 | 8/8 | 1 | 2 | 30.95 | 34.46 |
-| Sem operadoras (9F×4NF) | Exigível total / Ativo total | 57.47 | 57.24 | 72 | 31 | 4/8 | 0 | 0 | 61.86 | 55.98 |
-| Sem operadoras (9F×4NF) | Dívida CP / Dívida total | 21.61 | 36.84 | 72 | 31 | 7/8 | 0 | 1 | 20.68 | 35.97 |
-| Sem comércio (7F×6NF) | Dívida bruta / Ativo total | 28.62 | 30.67 | 56 | 47 | 4/8 | 0 | 0 | 32.01 | 34.01 |
-| Sem comércio (7F×6NF) | Exigível total / Ativo total | 51.40 | 54.98 | 56 | 47 | 7/8 | 0 | 0 | 47.02 | 55.86 |
-| Sem comércio (7F×6NF) | Dívida CP / Dívida total | 17.28 | 36.64 | 55 | 39 | 8/8 | 2 | 3 | 14.73 | 33.13 |
-| Sem operadoras e sem comércio (6F×4NF) | Dívida bruta / Ativo total | 30.77 | 36.00 | 48 | 31 | 8/8 | 0 | 1 | 33.88 | 34.46 |
-| Sem operadoras e sem comércio (6F×4NF) | Exigível total / Ativo total | 53.86 | 57.24 | 48 | 31 | 6/8 | 0 | 0 | 49.71 | 55.98 |
-| Sem operadoras e sem comércio (6F×4NF) | Dívida CP / Dívida total | 18.43 | 36.84 | 48 | 31 | 8/8 | 1 | 1 | 15.48 | 35.97 |
+| Completa (11F×5NF) | Dívida bruta / Ativo total | 26.81 | 29.94 | 88 | 39 | 5/8 | 0 | 0 | 30.19 | 34.46 |
+| Completa (11F×5NF) | Exigível total / Ativo total | 55.30 | 55.08 | 88 | 39 | 3/8 | 0 | 0 | 54.29 | 58.85 |
+| Completa (11F×5NF) | Dívida CP / Dívida total | 24.73 | 29.00 | 87 | 31 | 6/8 | 0 | 0 | 21.07 | 27.19 |
+| Sem operadoras (10F×3NF) | Dívida bruta / Ativo total | 27.92 | 36.62 | 80 | 23 | 8/8 | 2 | 3 | 31.94 | 39.15 |
+| Sem operadoras (10F×3NF) | Exigível total / Ativo total | 57.17 | 58.20 | 80 | 23 | 4/8 | 0 | 0 | 55.85 | 60.65 |
+| Sem operadoras (10F×3NF) | Dívida CP / Dívida total | 26.08 | 26.60 | 80 | 23 | 6/8 | 0 | 0 | 22.03 | 27.19 |
+| Sem comércio (8F×5NF) | Dívida bruta / Ativo total | 29.32 | 29.94 | 64 | 39 | 4/8 | 0 | 0 | 32.61 | 34.46 |
+| Sem comércio (8F×5NF) | Exigível total / Ativo total | 51.78 | 55.08 | 64 | 39 | 5/8 | 0 | 0 | 49.47 | 58.85 |
+| Sem comércio (8F×5NF) | Dívida CP / Dívida total | 23.50 | 29.00 | 63 | 31 | 6/8 | 0 | 0 | 16.29 | 27.19 |
+| Sem operadoras e sem comércio (7F×3NF) | Dívida bruta / Ativo total | 31.26 | 36.62 | 56 | 23 | 6/8 | 1 | 2 | 33.88 | 39.15 |
+| Sem operadoras e sem comércio (7F×3NF) | Exigível total / Ativo total | 53.95 | 58.20 | 56 | 23 | 6/8 | 0 | 0 | 51.41 | 60.65 |
+| Sem operadoras e sem comércio (7F×3NF) | Dívida CP / Dívida total | 25.26 | 26.60 | 56 | 23 | 5/8 | 0 | 0 | 19.20 | 27.19 |
 
 ### Ano a ano — Completa
 
 | Indicador | Ano | F | NF | n | p t | p MW exato |
 |---|---|---|---|---|---|---|
-| Dívida bruta / Ativo total | 2018 | 23.91 | 26.42 | 10×6 | 0.783 | 0.875 |
-| Dívida bruta / Ativo total | 2019 | 26.97 | 28.25 | 10×6 | 0.870 | 0.635 |
-| Dívida bruta / Ativo total | 2020 | 29.61 | 30.46 | 10×6 | 0.921 | 0.875 |
-| Dívida bruta / Ativo total | 2021 | 25.99 | 35.44 | 10×6 | 0.327 | 0.263 |
-| Dívida bruta / Ativo total | 2022 | 24.87 | 36.06 | 10×6 | 0.223 | 0.118 |
-| Dívida bruta / Ativo total | 2023 | 26.16 | 32.84 | 10×6 | 0.441 | 0.313 |
-| Dívida bruta / Ativo total | 2024 | 24.66 | 28.24 | 10×6 | 0.646 | 0.492 |
-| Dívida bruta / Ativo total | 2025 | 26.36 | 26.99 | 10×5 | 0.947 | 0.679 |
-| Exigível total / Ativo total | 2018 | 50.18 | 47.83 | 10×6 | 0.752 | 0.958 |
-| Exigível total / Ativo total | 2019 | 56.11 | 53.34 | 10×6 | 0.685 | 0.562 |
-| Exigível total / Ativo total | 2020 | 59.04 | 56.03 | 10×6 | 0.638 | 0.713 |
-| Exigível total / Ativo total | 2021 | 54.55 | 60.07 | 10×6 | 0.408 | 0.428 |
-| Exigível total / Ativo total | 2022 | 54.91 | 58.99 | 10×6 | 0.550 | 0.875 |
-| Exigível total / Ativo total | 2023 | 55.45 | 56.78 | 10×6 | 0.859 | 0.958 |
-| Exigível total / Ativo total | 2024 | 55.60 | 54.59 | 10×6 | 0.882 | 0.875 |
-| Exigível total / Ativo total | 2025 | 57.19 | 51.64 | 10×5 | 0.504 | 0.594 |
-| Dívida CP / Dívida total | 2018 | 29.24 | 41.37 | 9×5 | 0.500 | 0.898 |
-| Dívida CP / Dívida total | 2019 | 23.05 | 25.37 | 10×5 | 0.861 | 1.000 |
-| Dívida CP / Dívida total | 2020 | 17.21 | 25.77 | 10×5 | 0.327 | 0.440 |
-| Dívida CP / Dívida total | 2021 | 21.86 | 46.95 | 10×5 | 0.107 | 0.099 |
-| Dívida CP / Dívida total | 2022 | 19.63 | 35.93 | 10×5 | 0.360 | 0.513 |
-| Dívida CP / Dívida total | 2023 | 18.89 | 36.84 | 10×5 | 0.174 | 0.075 |
-| Dívida CP / Dívida total | 2024 | 16.08 | 39.11 | 10×5 | 0.109 | 0.055 |
-| Dívida CP / Dívida total | 2025 | 19.13 | 43.08 | 10×4 | 0.178 | 0.188 |
+| Dívida bruta / Ativo total | 2018 | 24.77 | 25.03 | 11×5 | 0.979 | 1.000 |
+| Dívida bruta / Ativo total | 2019 | 27.61 | 27.10 | 11×5 | 0.954 | 0.827 |
+| Dívida bruta / Ativo total | 2020 | 30.84 | 27.93 | 11×5 | 0.750 | 0.827 |
+| Dívida bruta / Ativo total | 2021 | 26.65 | 35.90 | 11×5 | 0.415 | 0.377 |
+| Dívida bruta / Ativo total | 2022 | 25.97 | 35.87 | 11×5 | 0.360 | 0.145 |
+| Dívida bruta / Ativo total | 2023 | 26.25 | 33.99 | 11×5 | 0.449 | 0.221 |
+| Dívida bruta / Ativo total | 2024 | 25.51 | 27.08 | 11×5 | 0.861 | 0.583 |
+| Dívida bruta / Ativo total | 2025 | 26.87 | 25.76 | 11×4 | 0.925 | 0.753 |
+| Exigível total / Ativo total | 2018 | 50.55 | 46.55 | 11×5 | 0.612 | 0.743 |
+| Exigível total / Ativo total | 2019 | 55.95 | 53.14 | 11×5 | 0.697 | 0.661 |
+| Exigível total / Ativo total | 2020 | 59.23 | 55.01 | 11×5 | 0.540 | 0.661 |
+| Exigível total / Ativo total | 2021 | 54.65 | 60.96 | 11×5 | 0.394 | 0.377 |
+| Exigível total / Ativo total | 2022 | 54.84 | 59.95 | 11×5 | 0.470 | 0.661 |
+| Exigível total / Ativo total | 2023 | 54.82 | 58.44 | 11×5 | 0.649 | 0.743 |
+| Exigível total / Ativo total | 2024 | 55.29 | 55.08 | 11×5 | 0.978 | 0.913 |
+| Exigível total / Ativo total | 2025 | 57.04 | 50.66 | 11×4 | 0.516 | 0.571 |
+| Dívida CP / Dívida total | 2018 | 30.32 | 41.72 | 10×4 | 0.620 | 0.945 |
+| Dívida CP / Dívida total | 2019 | 26.59 | 16.21 | 11×4 | 0.363 | 0.412 |
+| Dívida CP / Dívida total | 2020 | 19.77 | 20.87 | 11×4 | 0.894 | 1.000 |
+| Dívida CP / Dívida total | 2021 | 25.07 | 44.42 | 11×4 | 0.299 | 0.343 |
+| Dívida CP / Dívida total | 2022 | 26.27 | 21.73 | 11×4 | 0.694 | 0.949 |
+| Dívida CP / Dívida total | 2023 | 24.23 | 26.65 | 11×4 | 0.749 | 0.343 |
+| Dívida CP / Dívida total | 2024 | 21.75 | 29.27 | 11×4 | 0.440 | 0.280 |
+| Dívida CP / Dívida total | 2025 | 24.37 | 31.85 | 11×3 | 0.595 | 0.659 |
 
 ### Ano a ano — Sem operadoras
 
 | Indicador | Ano | F | NF | n | p t | p MW exato |
 |---|---|---|---|---|---|---|
-| Dívida bruta / Ativo total | 2018 | 26.56 | 35.29 | 9×4 | 0.264 | 0.503 |
-| Dívida bruta / Ativo total | 2019 | 28.08 | 32.54 | 9×4 | 0.468 | 0.604 |
-| Dívida bruta / Ativo total | 2020 | 31.20 | 38.03 | 9×4 | 0.302 | 0.503 |
-| Dívida bruta / Ativo total | 2021 | 25.93 | 40.52 | 9×4 | 0.068 | 0.148 |
-| Dívida bruta / Ativo total | 2022 | 25.85 | 41.58 | 9×4 | 0.008 | 0.050 |
-| Dívida bruta / Ativo total | 2023 | 27.32 | 36.86 | 9×4 | 0.116 | 0.260 |
-| Dívida bruta / Ativo total | 2024 | 25.47 | 31.59 | 9×4 | 0.314 | 0.503 |
-| Dívida bruta / Ativo total | 2025 | 27.31 | 30.07 | 9×3 | 0.739 | 0.727 |
-| Exigível total / Ativo total | 2018 | 52.86 | 53.99 | 9×4 | 0.877 | 0.710 |
-| Exigível total / Ativo total | 2019 | 57.72 | 56.34 | 9×4 | 0.848 | 0.710 |
-| Exigível total / Ativo total | 2020 | 60.92 | 59.31 | 9×4 | 0.783 | 0.940 |
-| Exigível total / Ativo total | 2021 | 55.08 | 61.84 | 9×4 | 0.328 | 0.414 |
-| Exigível total / Ativo total | 2022 | 57.29 | 60.68 | 9×4 | 0.567 | 1.000 |
-| Exigível total / Ativo total | 2023 | 57.98 | 58.32 | 9×4 | 0.957 | 0.940 |
-| Exigível total / Ativo total | 2024 | 58.03 | 53.80 | 9×4 | 0.518 | 0.604 |
-| Exigível total / Ativo total | 2025 | 59.84 | 52.40 | 9×3 | 0.394 | 0.482 |
-| Dívida CP / Dívida total | 2018 | 29.24 | 26.71 | 9×4 | 0.793 | 0.710 |
-| Dívida CP / Dívida total | 2019 | 25.21 | 31.07 | 9×4 | 0.695 | 0.710 |
-| Dívida CP / Dívida total | 2020 | 18.90 | 31.61 | 9×4 | 0.091 | 0.199 |
-| Dívida CP / Dívida total | 2021 | 22.88 | 37.13 | 9×4 | 0.220 | 0.330 |
-| Dívida CP / Dívida total | 2022 | 20.17 | 44.48 | 9×4 | 0.248 | 0.148 |
-| Dívida CP / Dívida total | 2023 | 18.96 | 39.57 | 9×4 | 0.226 | 0.106 |
-| Dívida CP / Dívida total | 2024 | 17.03 | 41.27 | 9×4 | 0.187 | 0.148 |
-| Dívida CP / Dívida total | 2025 | 20.53 | 44.84 | 9×3 | 0.332 | 0.482 |
+| Dívida bruta / Ativo total | 2018 | 27.24 | 35.93 | 10×3 | 0.336 | 0.573 |
+| Dívida bruta / Ativo total | 2019 | 28.68 | 32.05 | 10×3 | 0.605 | 0.811 |
+| Dívida bruta / Ativo total | 2020 | 32.39 | 36.34 | 10×3 | 0.541 | 0.811 |
+| Dívida bruta / Ativo total | 2021 | 26.65 | 42.98 | 10×3 | 0.094 | 0.217 |
+| Dívida bruta / Ativo total | 2022 | 26.97 | 43.10 | 10×3 | 0.005 | 0.049 |
+| Dívida bruta / Ativo total | 2023 | 27.30 | 40.11 | 10×3 | 0.015 | 0.112 |
+| Dívida bruta / Ativo total | 2024 | 26.33 | 30.77 | 10×3 | 0.532 | 0.573 |
+| Dívida bruta / Ativo total | 2025 | 27.77 | 29.15 | 10×2 | 0.920 | 0.758 |
+| Exigível total / Ativo total | 2018 | 53.00 | 53.91 | 10×3 | 0.919 | 0.811 |
+| Exigível total / Ativo total | 2019 | 57.38 | 57.01 | 10×3 | 0.964 | 0.937 |
+| Exigível total / Ativo total | 2020 | 60.94 | 58.71 | 10×3 | 0.740 | 0.937 |
+| Exigível total / Ativo total | 2021 | 55.14 | 63.91 | 10×3 | 0.279 | 0.287 |
+| Exigível total / Ativo total | 2022 | 56.99 | 62.84 | 10×3 | 0.256 | 0.692 |
+| Exigível total / Ativo total | 2023 | 57.03 | 61.61 | 10×3 | 0.406 | 0.811 |
+| Exigível total / Ativo total | 2024 | 57.44 | 54.37 | 10×3 | 0.680 | 0.692 |
+| Exigível total / Ativo total | 2025 | 59.42 | 50.82 | 10×2 | 0.562 | 0.485 |
+| Dívida CP / Dívida total | 2018 | 30.32 | 22.29 | 10×3 | 0.459 | 0.371 |
+| Dívida CP / Dívida total | 2019 | 28.89 | 20.75 | 10×3 | 0.537 | 0.692 |
+| Dívida CP / Dívida total | 2020 | 21.54 | 27.03 | 10×3 | 0.337 | 0.692 |
+| Dívida CP / Dívida total | 2021 | 26.30 | 30.48 | 10×3 | 0.702 | 0.937 |
+| Dívida CP / Dívida total | 2022 | 27.42 | 28.41 | 10×3 | 0.930 | 0.573 |
+| Dívida CP / Dívida total | 2023 | 24.82 | 26.89 | 10×3 | 0.828 | 0.469 |
+| Dívida CP / Dívida total | 2024 | 23.18 | 28.88 | 10×3 | 0.656 | 0.573 |
+| Dívida CP / Dívida total | 2025 | 26.15 | 28.87 | 10×2 | 0.908 | 0.909 |
 
 ### Ano a ano — Sem comércio
 
 | Indicador | Ano | F | NF | n | p t | p MW exato |
 |---|---|---|---|---|---|---|
-| Dívida bruta / Ativo total | 2018 | 27.36 | 26.42 | 7×6 | 0.930 | 0.836 |
-| Dívida bruta / Ativo total | 2019 | 29.27 | 28.25 | 7×6 | 0.908 | 0.836 |
-| Dívida bruta / Ativo total | 2020 | 34.06 | 30.46 | 7×6 | 0.703 | 0.628 |
-| Dívida bruta / Ativo total | 2021 | 29.56 | 35.44 | 7×6 | 0.554 | 0.534 |
-| Dívida bruta / Ativo total | 2022 | 26.87 | 36.06 | 7×6 | 0.338 | 0.234 |
-| Dívida bruta / Ativo total | 2023 | 28.15 | 32.84 | 7×6 | 0.608 | 0.534 |
-| Dívida bruta / Ativo total | 2024 | 25.84 | 28.24 | 7×6 | 0.774 | 0.628 |
-| Dívida bruta / Ativo total | 2025 | 27.84 | 26.99 | 7×5 | 0.932 | 0.876 |
-| Exigível total / Ativo total | 2018 | 47.38 | 47.83 | 7×6 | 0.960 | 0.945 |
-| Exigível total / Ativo total | 2019 | 51.70 | 53.34 | 7×6 | 0.842 | 0.836 |
-| Exigível total / Ativo total | 2020 | 58.09 | 56.03 | 7×6 | 0.793 | 0.945 |
-| Exigível total / Ativo total | 2021 | 51.13 | 60.07 | 7×6 | 0.248 | 0.295 |
-| Exigível total / Ativo total | 2022 | 50.81 | 58.99 | 7×6 | 0.337 | 0.534 |
-| Exigível total / Ativo total | 2023 | 50.55 | 56.78 | 7×6 | 0.465 | 0.534 |
-| Exigível total / Ativo total | 2024 | 49.99 | 54.59 | 7×6 | 0.553 | 0.445 |
-| Exigível total / Ativo total | 2025 | 51.53 | 51.64 | 7×5 | 0.990 | 0.876 |
-| Dívida CP / Dívida total | 2018 | 21.39 | 41.37 | 6×5 | 0.285 | 0.537 |
-| Dívida CP / Dívida total | 2019 | 20.44 | 25.37 | 7×5 | 0.726 | 0.755 |
-| Dívida CP / Dívida total | 2020 | 12.49 | 25.77 | 7×5 | 0.157 | 0.268 |
-| Dívida CP / Dívida total | 2021 | 18.49 | 46.95 | 7×5 | 0.077 | 0.073 |
-| Dívida CP / Dívida total | 2022 | 19.63 | 35.93 | 7×5 | 0.360 | 0.530 |
-| Dívida CP / Dívida total | 2023 | 16.72 | 36.84 | 7×5 | 0.138 | 0.048 |
-| Dívida CP / Dívida total | 2024 | 12.38 | 39.11 | 7×5 | 0.076 | 0.048 |
-| Dívida CP / Dívida total | 2025 | 17.26 | 43.08 | 7×4 | 0.155 | 0.230 |
+| Dívida bruta / Ativo total | 2018 | 28.11 | 25.03 | 8×5 | 0.779 | 0.724 |
+| Dívida bruta / Ativo total | 2019 | 29.86 | 27.10 | 8×5 | 0.767 | 1.000 |
+| Dívida bruta / Ativo total | 2020 | 35.19 | 27.93 | 8×5 | 0.457 | 0.354 |
+| Dívida bruta / Ativo total | 2021 | 30.01 | 35.90 | 8×5 | 0.604 | 0.622 |
+| Dívida bruta / Ativo total | 2022 | 28.14 | 35.87 | 8×5 | 0.480 | 0.222 |
+| Dívida bruta / Ativo total | 2023 | 28.02 | 33.99 | 8×5 | 0.565 | 0.354 |
+| Dívida bruta / Ativo total | 2024 | 26.87 | 27.08 | 8×5 | 0.981 | 0.724 |
+| Dívida bruta / Ativo total | 2025 | 28.35 | 25.76 | 8×4 | 0.829 | 0.933 |
+| Exigível total / Ativo total | 2018 | 48.23 | 46.55 | 8×5 | 0.850 | 0.943 |
+| Exigível total / Ativo total | 2019 | 52.03 | 53.14 | 8×5 | 0.891 | 0.833 |
+| Exigível total / Ativo total | 2020 | 58.47 | 55.01 | 8×5 | 0.657 | 0.833 |
+| Exigível total / Ativo total | 2021 | 51.70 | 60.96 | 8×5 | 0.252 | 0.354 |
+| Exigível total / Ativo total | 2022 | 51.23 | 59.95 | 8×5 | 0.287 | 0.435 |
+| Exigível total / Ativo total | 2023 | 50.29 | 58.44 | 8×5 | 0.347 | 0.435 |
+| Exigível total / Ativo total | 2024 | 50.25 | 55.08 | 8×5 | 0.535 | 0.524 |
+| Exigível total / Ativo total | 2025 | 52.03 | 50.66 | 8×4 | 0.890 | 1.000 |
+| Dívida CP / Dívida total | 2018 | 24.05 | 41.72 | 7×4 | 0.455 | 0.927 |
+| Dívida CP / Dívida total | 2019 | 25.64 | 16.21 | 8×4 | 0.447 | 0.683 |
+| Dívida CP / Dívida total | 2020 | 16.60 | 20.87 | 8×4 | 0.637 | 0.808 |
+| Dívida CP / Dívida total | 2021 | 23.31 | 44.42 | 8×4 | 0.268 | 0.283 |
+| Dívida CP / Dívida total | 2022 | 28.77 | 21.73 | 8×4 | 0.593 | 0.933 |
+| Dívida CP / Dívida total | 2023 | 24.33 | 26.65 | 8×4 | 0.805 | 0.283 |
+| Dívida CP / Dívida total | 2024 | 20.64 | 29.27 | 8×4 | 0.448 | 0.283 |
+| Dívida CP / Dívida total | 2025 | 24.70 | 31.85 | 8×3 | 0.636 | 0.776 |
 
 ### Ano a ano — Sem operadoras e sem comércio
 
 | Indicador | Ano | F | NF | n | p t | p MW exato |
 |---|---|---|---|---|---|---|
-| Dívida bruta / Ativo total | 2018 | 31.92 | 35.29 | 6×4 | 0.723 | 0.914 |
-| Dívida bruta / Ativo total | 2019 | 31.32 | 32.54 | 6×4 | 0.874 | 0.914 |
-| Dívida bruta / Ativo total | 2020 | 37.18 | 38.03 | 6×4 | 0.912 | 0.914 |
-| Dívida bruta / Ativo total | 2021 | 30.05 | 40.52 | 6×4 | 0.230 | 0.476 |
-| Dívida bruta / Ativo total | 2022 | 28.69 | 41.58 | 6×4 | 0.078 | 0.171 |
-| Dívida bruta / Ativo total | 2023 | 30.22 | 36.86 | 6×4 | 0.340 | 0.610 |
-| Dívida bruta / Ativo total | 2024 | 27.26 | 31.59 | 6×4 | 0.543 | 0.762 |
-| Dívida bruta / Ativo total | 2025 | 29.52 | 30.07 | 6×3 | 0.951 | 1.000 |
-| Exigível total / Ativo total | 2018 | 50.93 | 53.99 | 6×4 | 0.742 | 0.762 |
-| Exigível total / Ativo total | 2019 | 53.36 | 56.34 | 6×4 | 0.748 | 0.762 |
-| Exigível total / Ativo total | 2020 | 60.76 | 59.31 | 6×4 | 0.854 | 1.000 |
-| Exigível total / Ativo total | 2021 | 51.37 | 61.84 | 6×4 | 0.223 | 0.257 |
-| Exigível total / Ativo total | 2022 | 53.71 | 60.68 | 6×4 | 0.409 | 0.610 |
-| Exigível total / Ativo total | 2023 | 53.52 | 58.32 | 6×4 | 0.548 | 0.610 |
-| Exigível total / Ativo total | 2024 | 52.69 | 53.80 | 6×4 | 0.886 | 0.762 |
-| Exigível total / Ativo total | 2025 | 54.57 | 52.40 | 6×3 | 0.812 | 1.000 |
-| Dívida CP / Dívida total | 2018 | 21.39 | 26.71 | 6×4 | 0.585 | 0.914 |
-| Dívida CP / Dívida total | 2019 | 23.26 | 31.07 | 6×4 | 0.622 | 0.476 |
-| Dívida CP / Dívida total | 2020 | 14.23 | 31.61 | 6×4 | 0.043 | 0.114 |
-| Dívida CP / Dívida total | 2021 | 19.45 | 37.13 | 6×4 | 0.148 | 0.257 |
-| Dívida CP / Dívida total | 2022 | 20.45 | 44.48 | 6×4 | 0.252 | 0.171 |
-| Dívida CP / Dívida total | 2023 | 16.46 | 39.57 | 6×4 | 0.186 | 0.114 |
-| Dívida CP / Dívida total | 2024 | 13.20 | 41.27 | 6×4 | 0.143 | 0.171 |
-| Dívida CP / Dívida total | 2025 | 19.03 | 44.84 | 6×3 | 0.309 | 0.548 |
+| Dívida bruta / Ativo total | 2018 | 32.12 | 35.93 | 7×3 | 0.693 | 1.000 |
+| Dívida bruta / Ativo total | 2019 | 31.71 | 32.05 | 7×3 | 0.962 | 1.000 |
+| Dívida bruta / Ativo total | 2020 | 38.02 | 36.34 | 7×3 | 0.810 | 0.667 |
+| Dívida bruta / Ativo total | 2021 | 30.49 | 42.98 | 7×3 | 0.186 | 0.517 |
+| Dívida bruta / Ativo total | 2022 | 29.88 | 43.10 | 7×3 | 0.043 | 0.117 |
+| Dívida bruta / Ativo total | 2023 | 29.77 | 40.11 | 7×3 | 0.081 | 0.267 |
+| Dívida bruta / Ativo total | 2024 | 28.23 | 30.77 | 7×3 | 0.736 | 0.833 |
+| Dívida bruta / Ativo total | 2025 | 29.86 | 29.15 | 7×2 | 0.959 | 1.000 |
+| Exigível total / Ativo total | 2018 | 51.40 | 53.91 | 7×3 | 0.801 | 0.833 |
+| Exigível total / Ativo total | 2019 | 53.50 | 57.01 | 7×3 | 0.709 | 0.667 |
+| Exigível total / Ativo total | 2020 | 60.81 | 58.71 | 7×3 | 0.788 | 1.000 |
+| Exigível total / Ativo total | 2021 | 51.98 | 63.91 | 7×3 | 0.187 | 0.267 |
+| Exigível total / Ativo total | 2022 | 53.78 | 62.84 | 7×3 | 0.207 | 0.383 |
+| Exigível total / Ativo total | 2023 | 52.80 | 61.61 | 7×3 | 0.200 | 0.383 |
+| Exigível total / Ativo total | 2024 | 52.61 | 54.37 | 7×3 | 0.826 | 0.833 |
+| Exigível total / Ativo total | 2025 | 54.71 | 50.82 | 7×2 | 0.781 | 0.889 |
+| Dívida CP / Dívida total | 2018 | 24.05 | 22.29 | 7×3 | 0.868 | 0.667 |
+| Dívida CP / Dívida total | 2019 | 28.80 | 20.75 | 7×3 | 0.573 | 1.000 |
+| Dívida CP / Dívida total | 2020 | 18.68 | 27.03 | 7×3 | 0.259 | 0.517 |
+| Dívida CP / Dívida total | 2021 | 24.82 | 30.48 | 7×3 | 0.630 | 0.833 |
+| Dívida CP / Dívida total | 2022 | 30.77 | 28.41 | 7×3 | 0.861 | 0.667 |
+| Dívida CP / Dívida total | 2023 | 25.19 | 26.89 | 7×3 | 0.884 | 0.517 |
+| Dívida CP / Dívida total | 2024 | 22.52 | 28.88 | 7×3 | 0.659 | 0.667 |
+| Dívida CP / Dívida total | 2025 | 27.28 | 28.87 | 7×2 | 0.948 | 0.889 |
 
 # Filtro: PL negativo ou prejuízo
 
@@ -172,140 +172,140 @@ Classificação: Cenário 3. Médias = média de todas as observações empresa-
 - BIOM 2023: prejuízo (NF)
 - BIOM 2024: prejuízo (NF)
 - BIOM 2025: prejuízo (NF)
-- LMED 2018: prejuízo (NF)
-- LMED 2022: prejuízo (NF)
-- LMED 2023: prejuízo (NF)
-- LMED 2024: prejuízo (NF)
+- LMED 2018: prejuízo (F)
+- LMED 2022: prejuízo (F)
+- LMED 2023: prejuízo (F)
+- LMED 2024: prejuízo (F)
 
 ## Comparação por amostra
 
 | Amostra | Indicador | F | NF | obs F | obs NF | anos F<NF | anos p<5% | anos p<10% | mediana F | mediana NF |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Completa (10F×6NF) | Dívida bruta / Ativo total | 25.38 | 27.08 | 68 | 30 | 4/8 | 0 | 0 | 23.47 | 32.06 |
-| Completa (10F×6NF) | Exigível total / Ativo total | 55.40 | 53.45 | 68 | 30 | 3/8 | 0 | 0 | 53.98 | 55.60 |
-| Completa (10F×6NF) | Dívida CP / Dívida total | 21.10 | 34.05 | 67 | 22 | 6/7 | 0 | 2 | 19.74 | 27.64 |
-| Sem operadoras (9F×4NF) | Dívida bruta / Ativo total | 26.05 | 35.77 | 64 | 15 | 5/5 | 0 | 0 | 27.48 | 34.01 |
-| Sem operadoras (9F×4NF) | Exigível total / Ativo total | 56.37 | 57.69 | 64 | 15 | 2/5 | 0 | 0 | 55.60 | 55.86 |
-| Sem operadoras (9F×4NF) | Dívida CP / Dívida total | 21.80 | 32.52 | 64 | 15 | 5/5 | 0 | 0 | 20.68 | 24.81 |
-| Sem comércio (7F×6NF) | Dívida bruta / Ativo total | 28.12 | 27.08 | 45 | 30 | 4/8 | 0 | 0 | 31.96 | 32.06 |
-| Sem comércio (7F×6NF) | Exigível total / Ativo total | 50.65 | 53.45 | 45 | 30 | 6/8 | 0 | 0 | 46.43 | 55.60 |
-| Sem comércio (7F×6NF) | Dívida CP / Dívida total | 17.91 | 34.05 | 44 | 22 | 6/7 | 0 | 2 | 14.99 | 27.64 |
-| Sem operadoras e sem comércio (6F×4NF) | Dívida bruta / Ativo total | 29.43 | 35.77 | 41 | 15 | 3/5 | 0 | 0 | 32.06 | 34.01 |
-| Sem operadoras e sem comércio (6F×4NF) | Exigível total / Ativo total | 51.70 | 57.69 | 41 | 15 | 4/5 | 0 | 0 | 47.60 | 55.86 |
-| Sem operadoras e sem comércio (6F×4NF) | Dívida CP / Dívida total | 18.77 | 32.52 | 41 | 15 | 5/5 | 0 | 0 | 15.83 | 24.81 |
+| Completa (11F×5NF) | Dívida bruta / Ativo total | 25.95 | 25.77 | 72 | 26 | 4/8 | 0 | 0 | 27.81 | 30.63 |
+| Completa (11F×5NF) | Exigível total / Ativo total | 55.47 | 52.95 | 72 | 26 | 3/8 | 0 | 0 | 54.74 | 55.56 |
+| Completa (11F×5NF) | Dívida CP / Dívida total | 23.31 | 28.21 | 71 | 18 | 3/7 | 0 | 1 | 21.07 | 17.14 |
+| Sem operadoras (10F×3NF) | Dívida bruta / Ativo total | 26.61 | 35.85 | 68 | 11 | 2/3 | 0 | 0 | 30.19 | 34.46 |
+| Sem operadoras (10F×3NF) | Exigível total / Ativo total | 56.38 | 58.06 | 68 | 11 | 1/3 | 0 | 0 | 55.60 | 58.85 |
+| Sem operadoras (10F×3NF) | Dívida CP / Dívida total | 24.07 | 22.42 | 68 | 11 | 2/3 | 0 | 0 | 21.37 | 17.12 |
+| Sem comércio (8F×5NF) | Dívida bruta / Ativo total | 28.73 | 25.77 | 49 | 26 | 4/8 | 0 | 0 | 31.96 | 30.63 |
+| Sem comércio (8F×5NF) | Exigível total / Ativo total | 51.14 | 52.95 | 49 | 26 | 4/8 | 0 | 0 | 49.11 | 55.56 |
+| Sem comércio (8F×5NF) | Dívida CP / Dívida total | 21.44 | 28.21 | 48 | 18 | 3/7 | 0 | 1 | 16.06 | 17.14 |
+| Sem operadoras e sem comércio (7F×3NF) | Dívida bruta / Ativo total | 29.97 | 35.85 | 45 | 11 | 1/3 | 0 | 0 | 32.33 | 34.46 |
+| Sem operadoras e sem comércio (7F×3NF) | Exigível total / Ativo total | 52.14 | 58.06 | 45 | 11 | 2/3 | 0 | 0 | 49.20 | 58.85 |
+| Sem operadoras e sem comércio (7F×3NF) | Dívida CP / Dívida total | 22.47 | 22.42 | 45 | 11 | 2/3 | 0 | 0 | 17.60 | 17.12 |
 
 ### Ano a ano — Completa
 
 | Indicador | Ano | F | NF | n | p t | p MW exato |
 |---|---|---|---|---|---|---|
 | Dívida bruta / Ativo total | 2018 | 24.12 | 19.24 | 9×4 | 0.628 | 0.825 |
-| Dívida bruta / Ativo total | 2019 | 26.97 | 25.90 | 10×5 | 0.901 | 0.953 |
-| Dívida bruta / Ativo total | 2020 | 28.46 | 27.06 | 9×4 | 0.903 | 1.000 |
-| Dívida bruta / Ativo total | 2021 | 25.23 | 32.57 | 9×5 | 0.499 | 0.438 |
+| Dívida bruta / Ativo total | 2019 | 27.61 | 23.88 | 11×4 | 0.711 | 0.851 |
+| Dívida bruta / Ativo total | 2020 | 29.92 | 21.71 | 10×3 | 0.546 | 0.573 |
+| Dívida bruta / Ativo total | 2021 | 26.02 | 32.43 | 10×4 | 0.636 | 0.635 |
 | Dívida bruta / Ativo total | 2022 | 23.75 | 32.41 | 8×3 | 0.651 | 0.497 |
 | Dívida bruta / Ativo total | 2023 | 24.50 | 18.31 | 7×2 | 0.794 | 0.667 |
 | Dívida bruta / Ativo total | 2024 | 23.74 | 28.12 | 8×3 | 0.790 | 0.497 |
-| Dívida bruta / Ativo total | 2025 | 25.59 | 29.13 | 8×4 | 0.765 | 0.570 |
+| Dívida bruta / Ativo total | 2025 | 26.29 | 28.21 | 9×3 | 0.907 | 0.600 |
 | Exigível total / Ativo total | 2018 | 48.58 | 41.87 | 9×4 | 0.382 | 0.503 |
-| Exigível total / Ativo total | 2019 | 56.11 | 51.90 | 10×5 | 0.568 | 0.594 |
-| Exigível total / Ativo total | 2020 | 57.43 | 57.09 | 9×4 | 0.968 | 0.940 |
-| Exigível total / Ativo total | 2021 | 53.10 | 58.12 | 9×5 | 0.493 | 0.606 |
+| Exigível total / Ativo total | 2019 | 55.95 | 51.29 | 11×4 | 0.576 | 0.661 |
+| Exigível total / Ativo total | 2020 | 57.80 | 55.75 | 10×3 | 0.856 | 0.937 |
+| Exigível total / Ativo total | 2021 | 53.36 | 58.74 | 10×4 | 0.533 | 0.635 |
 | Exigível total / Ativo total | 2022 | 55.26 | 58.86 | 8×3 | 0.749 | 0.921 |
 | Exigível total / Ativo total | 2023 | 57.68 | 45.87 | 7×2 | 0.427 | 0.500 |
 | Exigível total / Ativo total | 2024 | 56.53 | 57.05 | 8×3 | 0.960 | 0.921 |
-| Exigível total / Ativo total | 2025 | 59.47 | 54.50 | 8×4 | 0.596 | 0.683 |
+| Exigível total / Ativo total | 2025 | 59.03 | 54.15 | 9×3 | 0.691 | 0.727 |
 | Dívida CP / Dívida total | 2018 | 27.15 | 51.86 | 8×3 | 0.426 | 0.497 |
-| Dívida CP / Dívida total | 2019 | 23.05 | 29.66 | 10×4 | 0.675 | 0.945 |
-| Dívida CP / Dívida total | 2020 | 18.41 | 24.18 | 9×3 | 0.695 | 0.727 |
-| Dívida CP / Dívida total | 2021 | 21.25 | 51.89 | 9×4 | 0.118 | 0.076 |
+| Dívida CP / Dívida total | 2019 | 26.59 | 18.87 | 11×3 | 0.591 | 0.456 |
+| Dívida CP / Dívida total | 2020 | 21.10 | 13.60 | 10×2 | 0.623 | 0.606 |
+| Dívida CP / Dívida total | 2021 | 24.83 | 50.16 | 10×3 | 0.332 | 0.287 |
 | Dívida CP / Dívida total | 2022 | 21.42 | 8.14 | 8×2 | 0.254 | 0.089 |
 | Dívida CP / Dívida total | 2023 | 19.07 | 13.68 | 7×1 | nan | nan |
 | Dívida CP / Dívida total | 2024 | 18.04 | 19.85 | 8×2 | 0.893 | 0.889 |
-| Dívida CP / Dívida total | 2025 | 19.98 | 41.68 | 8×3 | 0.377 | 0.497 |
+| Dívida CP / Dívida total | 2025 | 26.29 | 24.12 | 9×2 | 0.905 | 0.909 |
 
 ### Ano a ano — Sem operadoras
 
 | Indicador | Ano | F | NF | n | p t | p MW exato |
 |---|---|---|---|---|---|---|
 | Dívida bruta / Ativo total | 2018 | 27.13 | 29.80 | 8×2 | 0.715 | 1.000 |
-| Dívida bruta / Ativo total | 2019 | 28.08 | 30.05 | 9×3 | 0.735 | 1.000 |
-| Dívida bruta / Ativo total | 2020 | 30.09 | 38.79 | 8×2 | 0.292 | 0.533 |
-| Dívida bruta / Ativo total | 2021 | 25.06 | 37.43 | 8×3 | 0.164 | 0.279 |
+| Dívida bruta / Ativo total | 2019 | 28.68 | 28.07 | 10×2 | 0.910 | 0.758 |
+| Dívida bruta / Ativo total | 2020 | 31.54 | 34.46 | 9×1 | nan | nan |
+| Dívida bruta / Ativo total | 2021 | 25.96 | 39.57 | 9×2 | 0.336 | 0.436 |
 | Dívida bruta / Ativo total | 2022 | 23.75 | 47.20 | 8×1 | nan | nan |
 | Dívida bruta / Ativo total | 2023 | 24.50 | 36.62 | 7×1 | nan | nan |
 | Dívida bruta / Ativo total | 2024 | 23.74 | 41.28 | 8×1 | nan | nan |
-| Dívida bruta / Ativo total | 2025 | 25.59 | 35.89 | 8×2 | 0.165 | 0.400 |
+| Dívida bruta / Ativo total | 2025 | 26.29 | 39.87 | 9×1 | nan | nan |
 | Exigível total / Ativo total | 2018 | 51.39 | 48.21 | 8×2 | 0.750 | 0.889 |
-| Exigível total / Ativo total | 2019 | 57.72 | 54.95 | 9×3 | 0.743 | 0.864 |
-| Exigível total / Ativo total | 2020 | 59.35 | 64.71 | 8×2 | 0.408 | 0.711 |
-| Exigível total / Ativo total | 2021 | 53.52 | 59.18 | 8×3 | 0.465 | 0.630 |
+| Exigível total / Ativo total | 2019 | 57.38 | 55.26 | 10×2 | 0.874 | 1.000 |
+| Exigível total / Ativo total | 2020 | 59.55 | 68.30 | 9×1 | nan | nan |
+| Exigível total / Ativo total | 2021 | 53.76 | 60.95 | 9×2 | 0.549 | 0.582 |
 | Exigível total / Ativo total | 2022 | 55.26 | 65.33 | 8×1 | nan | nan |
 | Exigível total / Ativo total | 2023 | 57.68 | 55.86 | 7×1 | nan | nan |
 | Exigível total / Ativo total | 2024 | 56.53 | 58.85 | 8×1 | nan | nan |
-| Exigível total / Ativo total | 2025 | 59.47 | 58.50 | 8×2 | 0.878 | 1.000 |
+| Exigível total / Ativo total | 2025 | 59.03 | 61.45 | 9×1 | nan | nan |
 | Dívida CP / Dívida total | 2018 | 27.15 | 27.79 | 8×2 | 0.964 | 1.000 |
-| Dívida CP / Dívida total | 2019 | 25.21 | 38.68 | 9×3 | 0.449 | 0.482 |
-| Dívida CP / Dívida total | 2020 | 20.45 | 35.08 | 8×2 | 0.367 | 0.267 |
-| Dívida CP / Dívida total | 2021 | 22.31 | 40.44 | 8×3 | 0.266 | 0.279 |
+| Dívida CP / Dívida total | 2019 | 28.89 | 27.01 | 10×2 | 0.916 | 0.909 |
+| Dívida CP / Dívida total | 2020 | 23.22 | 24.81 | 9×1 | nan | nan |
+| Dívida CP / Dívida total | 2021 | 26.18 | 32.12 | 9×2 | 0.762 | 0.909 |
 | Dívida CP / Dívida total | 2022 | 21.42 | 14.57 | 8×1 | nan | nan |
 | Dívida CP / Dívida total | 2023 | 19.07 | 13.68 | 7×1 | nan | nan |
 | Dívida CP / Dívida total | 2024 | 18.04 | 9.23 | 8×1 | nan | nan |
-| Dívida CP / Dívida total | 2025 | 19.98 | 43.62 | 8×2 | 0.605 | 0.889 |
+| Dívida CP / Dívida total | 2025 | 26.29 | 10.45 | 9×1 | nan | nan |
 
 ### Ano a ano — Sem comércio
 
 | Indicador | Ano | F | NF | n | p t | p MW exato |
 |---|---|---|---|---|---|---|
 | Dívida bruta / Ativo total | 2018 | 27.36 | 19.24 | 7×4 | 0.473 | 0.527 |
-| Dívida bruta / Ativo total | 2019 | 29.27 | 25.90 | 7×5 | 0.721 | 1.000 |
-| Dívida bruta / Ativo total | 2020 | 33.07 | 27.06 | 6×4 | 0.635 | 0.610 |
-| Dívida bruta / Ativo total | 2021 | 29.00 | 32.57 | 6×5 | 0.755 | 0.792 |
+| Dívida bruta / Ativo total | 2019 | 29.86 | 23.88 | 8×4 | 0.572 | 0.683 |
+| Dívida bruta / Ativo total | 2020 | 34.50 | 21.71 | 7×3 | 0.378 | 0.267 |
+| Dívida bruta / Ativo total | 2021 | 29.59 | 32.43 | 7×4 | 0.836 | 0.927 |
 | Dívida bruta / Ativo total | 2022 | 25.88 | 32.41 | 5×3 | 0.735 | 0.571 |
 | Dívida bruta / Ativo total | 2023 | 26.72 | 18.31 | 4×2 | 0.729 | 0.533 |
 | Dívida bruta / Ativo total | 2024 | 24.85 | 28.12 | 5×3 | 0.846 | 0.571 |
-| Dívida bruta / Ativo total | 2025 | 27.20 | 29.13 | 5×4 | 0.878 | 0.730 |
+| Dívida bruta / Ativo total | 2025 | 27.98 | 28.21 | 6×3 | 0.989 | 0.714 |
 | Exigível total / Ativo total | 2018 | 47.38 | 41.87 | 7×4 | 0.541 | 0.648 |
-| Exigível total / Ativo total | 2019 | 51.70 | 51.90 | 7×5 | 0.981 | 0.876 |
-| Exigível total / Ativo total | 2020 | 55.52 | 57.09 | 6×4 | 0.874 | 1.000 |
-| Exigível total / Ativo total | 2021 | 48.40 | 58.12 | 6×5 | 0.246 | 0.329 |
+| Exigível total / Ativo total | 2019 | 52.03 | 51.29 | 8×4 | 0.935 | 0.933 |
+| Exigível total / Ativo total | 2020 | 56.32 | 55.75 | 7×3 | 0.962 | 1.000 |
+| Exigível total / Ativo total | 2021 | 49.43 | 58.74 | 7×4 | 0.317 | 0.527 |
 | Exigível total / Ativo total | 2022 | 49.73 | 58.86 | 5×3 | 0.475 | 0.786 |
 | Exigível total / Ativo total | 2023 | 50.76 | 45.87 | 4×2 | 0.739 | 1.000 |
 | Exigível total / Ativo total | 2024 | 49.23 | 57.05 | 5×3 | 0.493 | 0.571 |
-| Exigível total / Ativo total | 2025 | 52.92 | 54.50 | 5×4 | 0.879 | 0.730 |
+| Exigível total / Ativo total | 2025 | 53.36 | 54.15 | 6×3 | 0.950 | 0.905 |
 | Dívida CP / Dívida total | 2018 | 21.39 | 51.86 | 6×3 | 0.344 | 0.381 |
-| Dívida CP / Dívida total | 2019 | 20.44 | 29.66 | 7×4 | 0.575 | 0.788 |
-| Dívida CP / Dívida total | 2020 | 13.49 | 24.18 | 6×3 | 0.490 | 0.548 |
-| Dívida CP / Dívida total | 2021 | 17.00 | 51.89 | 6×4 | 0.088 | 0.067 |
+| Dívida CP / Dívida total | 2019 | 25.64 | 18.87 | 8×3 | 0.653 | 0.630 |
+| Dívida CP / Dívida total | 2020 | 18.05 | 13.60 | 7×2 | 0.768 | 0.889 |
+| Dívida CP / Dívida total | 2021 | 22.73 | 50.16 | 7×3 | 0.302 | 0.267 |
 | Dívida CP / Dívida total | 2022 | 22.51 | 8.14 | 5×2 | 0.243 | 0.095 |
 | Dívida CP / Dívida total | 2023 | 15.40 | 13.68 | 4×1 | nan | nan |
 | Dívida CP / Dívida total | 2024 | 14.03 | 19.85 | 5×2 | 0.681 | 1.000 |
-| Dívida CP / Dívida total | 2025 | 17.86 | 41.68 | 5×3 | 0.343 | 0.571 |
+| Dívida CP / Dívida total | 2025 | 27.68 | 24.12 | 6×2 | 0.857 | 0.857 |
 
 ### Ano a ano — Sem operadoras e sem comércio
 
 | Indicador | Ano | F | NF | n | p t | p MW exato |
 |---|---|---|---|---|---|---|
 | Dívida bruta / Ativo total | 2018 | 31.92 | 29.80 | 6×2 | 0.808 | 0.643 |
-| Dívida bruta / Ativo total | 2019 | 31.32 | 30.05 | 6×3 | 0.864 | 0.905 |
-| Dívida bruta / Ativo total | 2020 | 36.61 | 38.79 | 5×2 | 0.825 | 1.000 |
-| Dívida bruta / Ativo total | 2021 | 29.48 | 37.43 | 5×3 | 0.435 | 0.786 |
+| Dívida bruta / Ativo total | 2019 | 31.71 | 28.07 | 7×2 | 0.577 | 0.500 |
+| Dívida bruta / Ativo total | 2020 | 37.69 | 34.46 | 6×1 | nan | nan |
+| Dívida bruta / Ativo total | 2021 | 30.09 | 39.57 | 6×2 | 0.474 | 0.857 |
 | Dívida bruta / Ativo total | 2022 | 25.88 | 47.20 | 5×1 | nan | nan |
 | Dívida bruta / Ativo total | 2023 | 26.72 | 36.62 | 4×1 | nan | nan |
 | Dívida bruta / Ativo total | 2024 | 24.85 | 41.28 | 5×1 | nan | nan |
-| Dívida bruta / Ativo total | 2025 | 27.20 | 35.89 | 5×2 | 0.311 | 0.571 |
+| Dívida bruta / Ativo total | 2025 | 27.98 | 39.87 | 6×1 | nan | nan |
 | Exigível total / Ativo total | 2018 | 50.93 | 48.21 | 6×2 | 0.806 | 0.857 |
-| Exigível total / Ativo total | 2019 | 53.36 | 54.95 | 6×3 | 0.875 | 0.714 |
-| Exigível total / Ativo total | 2020 | 58.21 | 64.71 | 5×2 | 0.474 | 0.857 |
-| Exigível total / Ativo total | 2021 | 48.13 | 59.18 | 5×3 | 0.249 | 0.250 |
+| Exigível total / Ativo total | 2019 | 53.50 | 55.26 | 7×2 | 0.899 | 0.667 |
+| Exigível total / Ativo total | 2020 | 58.69 | 68.30 | 6×1 | nan | nan |
+| Exigível total / Ativo total | 2021 | 49.38 | 60.95 | 6×2 | 0.376 | 0.429 |
 | Exigível total / Ativo total | 2022 | 49.73 | 65.33 | 5×1 | nan | nan |
 | Exigível total / Ativo total | 2023 | 50.76 | 55.86 | 4×1 | nan | nan |
 | Exigível total / Ativo total | 2024 | 49.23 | 58.85 | 5×1 | nan | nan |
-| Exigível total / Ativo total | 2025 | 52.92 | 58.50 | 5×2 | 0.498 | 0.381 |
+| Exigível total / Ativo total | 2025 | 53.36 | 61.45 | 6×1 | nan | nan |
 | Dívida CP / Dívida total | 2018 | 21.39 | 27.79 | 6×2 | 0.659 | 0.857 |
-| Dívida CP / Dívida total | 2019 | 23.26 | 38.68 | 6×3 | 0.405 | 0.381 |
-| Dívida CP / Dívida total | 2020 | 15.78 | 35.08 | 5×2 | 0.265 | 0.190 |
-| Dívida CP / Dívida total | 2021 | 17.85 | 40.44 | 5×3 | 0.191 | 0.250 |
+| Dívida CP / Dívida total | 2019 | 28.80 | 27.01 | 7×2 | 0.923 | 1.000 |
+| Dívida CP / Dívida total | 2020 | 20.71 | 24.81 | 6×1 | nan | nan |
+| Dívida CP / Dívida total | 2021 | 24.39 | 32.12 | 6×2 | 0.702 | 0.857 |
 | Dívida CP / Dívida total | 2022 | 22.51 | 14.57 | 5×1 | nan | nan |
 | Dívida CP / Dívida total | 2023 | 15.40 | 13.68 | 4×1 | nan | nan |
 | Dívida CP / Dívida total | 2024 | 14.03 | 9.23 | 5×1 | nan | nan |
-| Dívida CP / Dívida total | 2025 | 17.86 | 43.62 | 5×2 | 0.577 | 0.857 |
+| Dívida CP / Dívida total | 2025 | 27.68 | 10.45 | 6×1 | nan | nan |

@@ -38,7 +38,7 @@ AMOSTRAS = [
     ('Sem comércio', COMERCIO),
     ('Sem operadoras e sem comércio', OPERADORAS + COMERCIO),
 ]
-FAMILIARES_C3 = {'BLAU', 'DASA', 'BALM', 'OFSA', 'RDOR', 'HAPV', 'PNVL', 'RADL', 'PFRM', 'HYPE'}
+FAMILIARES_C3 = R.FAMILIARES['C3']
 PL_IND, ROA_IND = 'Exigivel Tt / Pat Liq %', 'ROA Rentab do Ativo %'
 PRINCIPAIS = [R.INDICADORES[0], R.INDICADORES[1], R.INDICADORES[4]]  # Dív/Ativo, Exig/Ativo, CP/Total
 SAIDA_MD = os.path.join(R.RAIZ, 'tcc', 'analise', 'saidas', 'ajustes_banca.md')
@@ -145,11 +145,9 @@ OPER_TXT = ('Obs.: observações empresa-ano (F/NF). Colunas F $<$ NF, p $<$ 5\\
 
 
 def main():
-    if len(sys.argv) > 1:
-        R.PLANILHA = sys.argv[1]
     dados0, grupo, _ = R.carregar()
     grupo = {t: ('F' if t in FAMILIARES_C3 else 'NF') for t in grupo}
-    assert sum(g == 'F' for g in grupo.values()) == 10 and len(grupo) == 16, grupo
+    assert sum(g == 'F' for g in grupo.values()) == 11 and len(grupo) == 16, grupo
     md = ['# Ajustes pedidos pela orientadora\n',
           'Classificação: Cenário 3. Médias = média de todas as observações empresa-ano válidas do grupo; '
           'testes t de Welch e Mann-Whitney exato aplicados ano a ano (31/12).\n']
