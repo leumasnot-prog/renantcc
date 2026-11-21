@@ -41,7 +41,8 @@ plt.rcParams.update({
 
 def main():
     dados, grupo, _ = R.carregar()
-    destino = os.path.join(R.RAIZ, 'tcc', 'latex', 'figuras')
+    destino = R.DIR_FIG
+    os.makedirs(destino, exist_ok=True)
     for ind, arq, rotulo in GRAFICOS:
         fig, ax = plt.subplots(figsize=(6.3, 3.2))
         ax.axvspan(dt.date(2020, 3, 1), dt.date(2021, 12, 31), color='#eeeeee', zorder=0)

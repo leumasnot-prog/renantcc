@@ -41,7 +41,7 @@ AMOSTRAS = [
 FAMILIARES_C3 = R.FAMILIARES['C3']
 PL_IND, ROA_IND = 'Exigivel Tt / Pat Liq %', 'ROA Rentab do Ativo %'
 PRINCIPAIS = [R.INDICADORES[0], R.INDICADORES[1], R.INDICADORES[4]]  # Dív/Ativo, Exig/Ativo, CP/Total
-SAIDA_MD = os.path.join(R.RAIZ, 'tcc', 'analise', 'saidas', 'ajustes_banca.md')
+SAIDA_MD = os.path.join(R.SAIDAS, 'ajustes_banca.md')
 
 
 def filtrar(dados, grupo, prejuizo=True):

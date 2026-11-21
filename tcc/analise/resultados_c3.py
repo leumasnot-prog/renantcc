@@ -27,11 +27,18 @@ import numpy as np
 import openpyxl
 from scipy import stats
 
-RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-PLANILHA = os.environ.get('TCC_PLANILHA', os.path.join(RAIZ, 'tcc', 'arquivos', 'TCC Atual - Cenário 3.xlsx'))
+AQUI = os.path.dirname(os.path.abspath(__file__))
+RAIZ = os.path.abspath(os.path.join(AQUI, '..', '..'))
+NO_REPOSITORIO = os.path.isdir(os.path.join(RAIZ, 'tcc', 'latex'))
+# Fora do repositório (ex.: scripts enviados em .zip), a planilha padrão fica na mesma pasta dos
+# scripts e todas as saídas vão para a pasta 'saidas' ao lado deles.
+SAIDAS = os.path.join(RAIZ, 'tcc', 'analise', 'saidas') if NO_REPOSITORIO else os.path.join(AQUI, 'saidas')
+PLANILHA = os.environ.get('TCC_PLANILHA', os.path.join(RAIZ, 'tcc', 'arquivos', 'TCC Atual - Cenário 3 (final).xlsx')
+                          if NO_REPOSITORIO else os.path.join(AQUI, 'TCC Atual - Cenário 3 (final).xlsx'))
 ABA = 'Saúde - 1218 à 1225'
-SAIDA_MD = os.path.join(RAIZ, 'tcc', 'analise', 'saidas', 'resultados.md')
-DIR_TAB = os.path.join(RAIZ, 'tcc', 'latex', 'tabelas')
+SAIDA_MD = os.path.join(SAIDAS, 'resultados.md')
+DIR_TAB = os.path.join(RAIZ, 'tcc', 'latex', 'tabelas') if NO_REPOSITORIO else os.path.join(SAIDAS, 'tabelas')
+DIR_FIG = os.path.join(RAIZ, 'tcc', 'latex', 'figuras') if NO_REPOSITORIO else os.path.join(SAIDAS, 'figuras')
 
 ANOS = list(range(2018, 2026))
 COL_ANO = {a: 4 * i for i, a in enumerate(ANOS)}  # índice da coluna de 31/12 nas 29 datas

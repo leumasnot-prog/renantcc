@@ -146,7 +146,8 @@ def main():
                    R.NOTA_P + ' Os indicadores sobre o patrimônio líquido (PL) incluem a Alliar em 2025, quando o PL '
                    'da empresa foi negativo.', 'lrrccc')
 
-    out = os.path.join(R.RAIZ, 'tcc', 'analise', 'saidas', 'robustez_extra.md')
+    os.makedirs(R.SAIDAS, exist_ok=True)
+    out = os.path.join(R.SAIDAS, 'robustez_extra.md')
     open(out, 'w', encoding='utf-8').write('\n'.join(md) + '\n')
     print('\n'.join(md))
 
